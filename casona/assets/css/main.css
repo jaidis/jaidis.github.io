@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+/******************************************************************************
+*
+*  Barra de Navegacion
+*
+******************************************************************************/
+
+.bg-submenu {
+  /* background-color: #1264a3; */
+  background-color: #772953;
+}
+
+.bg-submenu>a {
+  color: #FFF !important;
+}
+
+.bg-submenu>a:hover {
+  color: #000 !important;
+}
+
+.dropdown-item:active {
+  /* background-color: #1264a3 !important; */
+  background-color: #772953 !important;
+}
+
+/******************************************************************************
+*
+*  Contenedor principal
+*
+******************************************************************************/
+
+.imagen {
+  background-image: url(../img/fondo-header.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 100%;
+  height: 100%;
+}
+
+.h1-cabecera {
+  font-family: 'Lobster', cursive;
+  padding-top: 15rem;
+  padding-bottom: 0;
+  /* margin-bottom: 0; */
+  color: rgba(242, 242, 242, 1);
+}
+
+.h3-cabecera {
+  font-family: 'Lobster', cursive;
+  padding-bottom: 0;
+  font-size: 2.5rem;
+  color: rgba(242, 242, 242, 1);
+}
+
+/******************************************************************************
+*
+*  Contenedor secundario
+*
+******************************************************************************/
+
+.h1-jumbotron {
+  font-family: 'Lobster', cursive;
+  padding-bottom: 2rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.container-2 {
+  padding-top: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-image: url(../img/fondo-principal.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 100%;
+  height: 100%;
+}
+
+.jumbotron-container-2 {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+/******************************************************************************
+*
+*  Contenedor carta
+*
+******************************************************************************/
+
+.container-carta {
+  padding-top: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-image: url(../img/fondo-carta.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 100%;
+  height: 100%;
+}
+
+.menu-cartas {
+  position: fixed;
+  top: 20vh;
+}
+
+.menu-cartas a {
+  text-decoration: none;
+  color: rgb(34, 34, 34);
+}
+
+.menu-cartas a:hover {
+  color: rgb(88, 88, 88);
+}
+
+.jumbotron-container-carta {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.titulo {
+  font-family: 'Lobster', cursive;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+
+.h1-lateral {
+  font-family: 'Lobster', cursive;
+  margin: 0;
+  margin-bottom: 1.2rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+/******************************************************************************
+*
+*  Contenedor contacto
+*
+******************************************************************************/
+
+.container-contacto {
+  padding-top: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-image: url(../img/fondo-contacto.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 100%;
+  height: 69rem;
+}
+
+.jumbotron-container-contacto {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.contenedor-mapa {
+  height: 28rem;
+}
+
+#mapa {
+  min-width: 99.9%;
+  min-height: 99.9%;
+}
+
+@media screen and (max-width: 320px) {
+  #mapa {
+    max-width: 98%;
+    min-height: 98%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container-contacto {
+    height: 66rem;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .container-contacto {
+    height: 74rem;
+  }
+}
+
+/******************************************************************************
+*
+*  Contenedor reserva
+*
+******************************************************************************/
+
+.container-reserva {
+  padding-top: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-image: url(../img/fondo-reserva.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 100%;
+  height: 100%;
+}
+
+.jumbotron-container-reserva {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.h1-jumbotron-reserva {
+  font-family: 'Lobster', cursive;
+  padding-bottom: 2rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+/******************************************************************************
+*
+*  Contenedor comentarios
+*
+******************************************************************************/
+
+.h1-jumbotron-comentarios {
+  font-family: 'Lobster', cursive;
+  padding-bottom: 1rem;
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.container-comentarios {
+  padding-top: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-image: url(../img/fondo-comentarios.jpg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 100%;
+  height: 100%;
+}
+
+.jumbotron-container-comentarios {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.votacion{
+  text-align: center;
+  color: #FF851B !important;
+}
+
+.estrellas{
+  font-size: 2em !important;
+}
+
+@media (min-width: 426px) {
+  .estrellas {
+    font-size: 3em !important;
+  }
+}
+
+/******************************************************************************
+*
+*  Contenedor Galeria
+*
+******************************************************************************/
+
+.h1-jumbotron-galeria {
+  font-family: 'Lobster', cursive;
+  padding-bottom: 2rem;
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.container-galeria {
+  padding-top: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-image: url(../img/fondo-galeria.jpg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 100%;
+  height: 100%;
+}
+
+.jumbotron-container-galeria {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* padding-top: 0; */
+}
+
+.modal-dialog-resized{
+  max-width: 1000px !important;
+}
+
+/******************************************************************************
+*
+*  Pie de página
+*
+******************************************************************************/
+
+.footer {
+  padding-top: 2rem;
+}
+
+.footer-col {
+  text-align: center;
+  text-transform: uppercase;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-bottom: 2rem;
+}
+
+.icon-left {
+  display: none;
+}
+
+/******************************************************************************
+*
+*  Media Query > 700px
+*
+******************************************************************************/
+
+@media (max-width: 700px) {
+  .row-cartas {
+    text-align: center;
+  }
+}
+
+/******************************************************************************
+*
+*  Media Query < 768px
+*
+******************************************************************************/
+
+@media (min-width: 768px) {
+  .icon-left {
+    display: inline-block;
+  }
+  .footer-left {
+    text-align: left;
+  }
+  .footer-center {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .row-special {
+    flex-wrap: nowrap;
+  }
+  .footer-right {
+    text-align: right;
+  }
+  .row-cartas {
+    text-align: left;
+  }
+}

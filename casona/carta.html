@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <base href="/casona/"> -->
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/f738c7a0bf.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <title>La Casona</title>
+</head>
+
+<body>
+  <nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-primary">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- <em class="navbar-brand fa fa-pied-piper fa-3x mr-3"></em> -->
+    <img class="navbar-brand mr-0" src="assets/img/logo.png" width="100" height="70" alt="La Casona">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html"><i class="fa fa-home fa-fw mx-2"></i>Inicio</a>
+        </li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="carta.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-cutlery fa-fw mx-2"></i>Carta/Menú
+          </a>
+          <div class="dropdown-menu bg-submenu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="carta.html#entrantes">Entrantes</a>
+            <a class="dropdown-item" href="carta.html#primeros">Primeros</a>
+            <a class="dropdown-item" href="carta.html#segundos">Segundos</a>
+            <a class="dropdown-item" href="carta.html#postres">Postres</a>
+            <a class="dropdown-item" href="carta.html#bebidas">Bebidas</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="menus.html">Menús especiales</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="reserva.html">
+            <i class="fa fa-calendar-plus-o fa-fw mx-2"></i>
+            Reserva
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">
+            <i class="fa fa-info fa-fw mx-2"></i>
+            Contacto
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="comentarios.html">
+            <i class="fa fa-star fa-fw mx-2"></i>
+            Reseñas
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="galeria.html">
+            <i class="fa fa-picture-o fa-fw mx-2"></i>
+            Galería
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container container-carta rounded"id="principal">
+    <div class="row">
+      <div class="col-md-4 col-lg-3 col-xl-2 d-none d-md-block menu-cartas mx-2">
+        <div class="jumbotron jumbotron-container-carta p-0" id="menu-lateral">
+          <a href="#entrantes"><h1 class="h1-lateral pt-4">Entrantes</h1></a>
+          <a href="#primeros"><h1 class="h1-lateral">Primeros</h1></a>
+          <a href="#segundos"><h1 class="h1-lateral">Segundos</h1></a>
+          <a href="#postres"><h1 class="h1-lateral">Postres</h1></a>
+          <a href="#bebidas"><h1 class="h1-lateral">Bebidas</h1></a>
+          <a href="#menus"><h1 class="h1-lateral pb-1">Menús</h1></a>
+        </div>
+      </div>
+      <div class="offset-md-4 col-md-8">
+        <div class="row">
+          <div class="col-12">
+            <div class="jumbotron jumbotron-container-carta" id="entrantes">
+              <h1 class="h1-jumbotron">Entrantes</h1>
+              <div class="row row-cartas">
+                <div class="col-12 col-lg-6">
+                  <p class="titulo">
+                    Ensalada saladulce <strong class="ml-2">12,90 €</strong>
+                    <p class="lead">Ensalada de queso de cabra, jamón ibérico, frutos secos y membrillo con vinagreta de miel y balsámico</p>
+                  </p>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="titulo">
+                    Croquetas de la casa <strong class="ml-2">9,50 €</strong>
+                    <p class="lead">Croquetas caseras de jamón ibérico</p>
+                  </p>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="titulo">
+                    Fritura del mar <strong class="ml-2">19 €</strong>
+                    <p class="lead">Chipirones, calamares a la andaluza y chanquetes fritos</p>
+                  </p>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="titulo">
+                    Mejillones <strong class="ml-2">10,50 €</strong>
+                    <p class="lead">Mejillones al vapor o a la marinera</p>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="jumbotron jumbotron-container-carta" id="primeros">
+              <h1 class="h1-jumbotron">Primeros</h1>
+              <div class="row row-cartas">
+                <div class="col-12 col-lg-6">
+                  <p class="titulo">
+                    Pulpo parrillero <strong class="ml-2">19,50 €</strong>
+                    <p class="lead">Pulpo a la parrilla con verduras de temporada</p>
+                  </p>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="titulo">
+                    Arroz verdal <strong class="ml-2">18 €</strong>
+                    <p class="lead">Arroz de verduras de temporada</p>
+                  </p>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="titulo">
+                    Tataki <strong class="ml-2">18,90 €</strong>
+                    <p class="lead">Tataki de atún con melocotón, germinados y perlas de wasabi </p>
+                  </p>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="titulo">
+                    Sopa del mar <strong class="ml-2">12,50 €</strong>
+                    <p class="lead">Sopa de marisco con merluza, gambas, rape y almejas</p>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="jumbotron jumbotron-container-carta" id="segundos">
+              <h1 class="h1-jumbotron">Segundos</h1>
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <p class="titulo">
+                    Solomillo casonero <strong class="ml-2">18,50 €</strong>
+                    <p class="lead">Solomillo de ternera a la parrilla con alcachofas crujientes, aceite de mostaza, parmentier de patata y trufa negra</p>
+                  </p>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="titulo">
+                    Roast beef <strong class="ml-2">15,70 €</strong>
+                    <p class="lead">Roast beef de lomo de buey con gratén de patata y salsa de mistela</p>
+                  </p>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="titulo">
+                    Solomillo Troyano <strong class="ml-2">22,90 €</strong>
+                    <p class="lead">Solomillo de cerdo a la parrilla con salsa bearnesa y holandesa, fundición de quesos y jamón de bellota</p>
+                  </p>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="titulo">
+                    Secreto <strong class="ml-2">12,50 €</strong>
+                    <p class="lead">Secreto de cerdo a la parrilla con patatas caseras y verduras al vapor</p>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="jumbotron jumbotron-container-carta" id="postres">
+              <h1 class="h1-jumbotron">Postres</h1>
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <p class="titulo">
+                    Helados artesanos <strong class="ml-2">4,50 €</strong>
+                    <p class="lead">Sabores: vainilla, chocolate, yogur con frutos del bosque, frambuesas, avellana y coco, té verde y dulce de leche</p>
+                  </p>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="titulo">
+                    Piña helada <strong class="ml-2">4,50 €</strong>
+                    <p class="lead">Piña natural marinada con especies y helado de vainilla</p>
+                  </p>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="titulo">
+                    Tiramisú <strong class="ml-2">5,50 €</strong>
+                    <p class="lead">Tiramisú con helado de café</p>
+                  </p>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="titulo">
+                    Pionono <strong class="ml-2">2,50 €</strong>
+                    <p class="lead">Pionono de Santa Fé de Casa Isla</p>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="jumbotron jumbotron-container-carta" id="bebidas">
+              <h1 class="h1-jumbotron">Bebidas</h1>
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <p class="titulo">
+                    Refrescos <strong class="ml-2">2,50 €</strong>
+                    <p class="lead">Amplia selección de refrescos nacionales</p>
+                  </p>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="titulo">
+                    Cervezas del mundo <strong class="ml-2">3,90 €</strong>
+                    <p class="lead">Selección de cervezas especiales de europa y américa del norte</p>
+                  </p>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="titulo">
+                    Vinos blancos y tintos <strong class="ml-2">4,90 €</strong>
+                    <p class="lead">Amplia de selección de vinos blancos y tintos</p>
+                  </p>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="titulo">
+                    Combinados <strong class="ml-2">6,50 €</strong>
+                    <p class="lead">Combinados o "fresquitos", tomar con moderación</p>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="jumbotron jumbotron-container-carta" id="menus">
+              <h1 class="h1-jumbotron">Menús Especiales</h1>
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <p class="titulo">
+                    Menús diarios <strong class="ml-2">8,50 €</strong>
+                    <p class="lead">Compuestos por primero, segundo, postre y bebida (refresco o agua)</p>
+                  </p>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="titulo">
+                    Menús degustación <strong class="ml-2">18,50 €</strong>
+                    <p class="lead">Compuesto por 12 platos que le permitirán degustar nuestros platos mas especiales.
+                    Se incluye postre y bebida (refresco o agua)</p>
+                  </p>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="titulo">
+                    Menú granaino <strong class="ml-2">12,50 €</strong>
+                    <p class="lead">Compuesto por ensalada con hortalizas de Granada, patatas a lo pobre con pimientos
+                      y chorizo, bebida (refresco o agua) y de postre un Pionono de Granada</p>
+                  </p>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="titulo">
+                    Menú italiano <strong class="ml-2">14,50 €</strong>
+                    <p class="lead">Compuesto por ensalada de pasta, pizza al gusto (máximo 4 ingredientes) y helado de
+                      postre. Incluye bebida (refresco o agua)</p>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="py-4 my-4"></div> -->
+  </div>
+  <footer class="footer bg-primary text-white">
+    <div class="row text-center mx-0">
+      <div class="col-12 col-md-4 footer-col footer-left">
+        <p class="p-0 m-0"><a href="index.html" class="text-white"><i class="fa fa-home fa-fw mr-1 icon-left"></i>Inicio</a></p>
+        <p class="p-0 m-0"><a href="carta.html" class="text-white"><i class="fa fa-cutlery fa-fw mr-1 icon-left"></i>Carta</a></p>
+        <p class="p-0 m-0"><a href="reserva.html" class="text-white"><i class="fa fa-calendar-plus-o fa-fw mr-1 icon-left"></i>Reserva</a></p>
+        <p class="p-0 m-0"><a href="contacto.html" class="text-white"><i class="fa fa-info fa-fw mr-1 icon-left"></i>Contacto</a></p>
+        <p class="p-0 m-0"><a href="comentarios.html" class="text-white"><i class="fa fa-star fa-fw mr-1 icon-left"></i>Reseñas</a></p>
+        <p class="p-0 m-0"><a href="galeria.html" class="text-white"><i class="fa fa-picture-o fa-fw mr-1 icon-left"></i>Galeria</a></p>
+      </div>
+      <div class="col-12 col-md-4 footer-col footer-center">
+        <div class="row justify-content-center row-special">
+          <a href="index.html" class="text-white"><i class="fa fa-facebook-official fa-3x px-2"></i></a>
+          <a href="index.html" class="text-white"><i class="fa fa-twitter-square fa-3x px-2"></i></a>
+          <a href="index.html" class="text-white"><i class="fa fa-whatsapp fa-3x px-2"></i></a>
+          <a href="index.html" class="text-white"><i class="fa fa-instagram fa-3x px-2"></i></a>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 footer-col footer-right">
+        <p class="p-0 m-0">Calle Lanjarón, 8</p>
+        <p class="p-0 m-0">Albolote</p>
+        <p class="p-0 m-0">CP:18220</p>
+        <p class="p-0 m-0"><strong>E-mail</strong> <em>info@lacasona.es</em></p>
+        <p class="p-0 m-0"><strong>Teléfono</strong> <em>958 49 00 00</em></p>
+        <p class="p-0 m-0"><strong>Horario</strong> <em>L-V 07:00-20:00</em></p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js" charset="utf-8"></script>
+
+</body>
+
+</html>

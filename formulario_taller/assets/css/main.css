@@ -1,0 +1,42 @@
+  @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+    body {
+      background-color: #a991d4;
+    }
+
+    .Fuente {
+      font-family: 'Kaushan Script', cursive !important;
+    }
+
+    .navbar-brand {
+      font-size: 1.8rem;
+      padding: 0;
+    }
+
+    .nav-link {
+      font-size: 1.8rem;
+      padding: 0;
+    }
+
+    .jumbotron-special {
+      border-radius: 0.25rem !important;
+      background-color: #ffffffcc !important;
+    }
+
+    label {
+      font-family: 'Kaushan Script', cursive !important;
+    }
+
+    footer {
+      font-size: 1.25rem;
+    }
+
+    .fixed-bottom {
+
+      position: sticky !important;
+    }
+
+    @media (min-width: 992px) {
+      .fixed-bottom {
+        position: fixed !important;
+      }
+    }

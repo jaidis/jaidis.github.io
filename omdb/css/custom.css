@@ -1,0 +1,10 @@
+.cargando {
+  z-index: 999999;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 102%;
+  height: 102%;
+  background: url(../img/cargando.gif) 50% 50% no-repeat #EEE;
+}

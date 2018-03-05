@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <base href="/casona/"> -->
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/f738c7a0bf.css">
+  <!-- <link rel="stylesheet" href="assets/css/animate.css"> -->
+  <title>La Casona</title>
+</head>
+
+<body>
+  <nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-primary">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- <em class="navbar-brand fa fa-pied-piper fa-3x mr-3"></em> -->
+    <img class="navbar-brand mr-0" src="assets/img/logo.png" width="100" height="70" alt="La Casona">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html"><i class="fa fa-home fa-fw mx-2"></i>Inicio</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="carta.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-cutlery fa-fw mx-2"></i>Carta/Menú
+          </a>
+          <div class="dropdown-menu bg-submenu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="carta.html#entrantes">Entrantes</a>
+            <a class="dropdown-item" href="carta.html#primeros">Primeros</a>
+            <a class="dropdown-item" href="carta.html#segundos">Segundos</a>
+            <a class="dropdown-item" href="carta.html#postres">Postres</a>
+            <a class="dropdown-item" href="carta.html#bebidas">Bebidas</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="menus.html">Menús especiales</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="reserva.html">
+            <i class="fa fa-calendar-plus-o fa-fw mx-2"></i>
+            Reserva
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">
+            <i class="fa fa-info fa-fw mx-2"></i>
+            Contacto
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="comentarios.html">
+            <i class="fa fa-star fa-fw mx-2"></i>
+            Reseñas
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="galeria.html">
+            <i class="fa fa-picture-o fa-fw mx-2"></i>
+            Galería
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container container-galeria rounded mt-4" id="principal">
+    <div class="row">
+      <div class="col-12">
+        <div class="jumbotron jumbotron-container-galeria">
+          <h1 class="h1-jumbotron-galeria">Galería fotográfica</h1>
+          <div class="row text-center text-lg-left">
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <button type="button" class="btn btn-link btn-block d-block mb-4" data-target="#galeria-01" data-toggle="modal">
+                  <img class="img-fluid img-thumbnail" src="assets/img/galeria-01.jpg" alt="">
+                </button>
+              <div class="modal fade" id="galeria-01" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-resized" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Imagen Ampliada</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                      <img class="img-fluid" src="assets/img/galeria-01.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <button type="button" class="btn btn-link btn-block d-block mb-4" data-target="#galeria-02" data-toggle="modal">
+                  <img class="img-fluid img-thumbnail" src="assets/img/galeria-02.jpg" alt="">
+              </button>
+              <div class="modal fade" id="galeria-02" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-resized" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Imagen Ampliada</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                      <img class="img-fluid" src="assets/img/galeria-02.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <button type="button" class="btn btn-link btn-block d-block mb-4" data-target="#galeria-03" data-toggle="modal">
+                  <img class="img-fluid img-thumbnail" src="assets/img/galeria-03.jpg" alt="">
+              </button>
+              <div class="modal fade" id="galeria-03" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-resized" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Imagen Ampliada</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                      <img class="img-fluid" src="assets/img/galeria-03.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <button type="button" class="btn btn-link btn-block d-block mb-4" data-target="#galeria-04" data-toggle="modal">
+                  <img class="img-fluid img-thumbnail" src="assets/img/galeria-04.jpg" alt="">
+              </button>
+              <div class="modal fade" id="galeria-04" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-resized" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Imagen Ampliada</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                      <img class="img-fluid" src="assets/img/galeria-04.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <button type="button" class="btn btn-link btn-block d-block mb-4" data-target="#galeria-05" data-toggle="modal">
+                  <img class="img-fluid img-thumbnail" src="assets/img/galeria-05.jpg" alt="">
+              </button>
+              <div class="modal fade" id="galeria-05" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-resized" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Imagen Ampliada</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                      <img class="img-fluid" src="assets/img/galeria-05.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <button type="button" class="btn btn-link btn-block d-block mb-4" data-target="#galeria-06" data-toggle="modal">
+                  <img class="img-fluid img-thumbnail" src="assets/img/galeria-06.jpg" alt="">
+              </button>
+              <div class="modal fade" id="galeria-06" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-resized" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Imagen Ampliada</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                      <img class="img-fluid" src="assets/img/galeria-06.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <button type="button" class="btn btn-link btn-block d-block mb-4" data-target="#galeria-07" data-toggle="modal">
+                  <img class="img-fluid img-thumbnail" src="assets/img/galeria-07.jpg" alt="">
+              </button>
+              <div class="modal fade" id="galeria-07" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-resized" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Imagen Ampliada</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                      <img class="img-fluid" src="assets/img/galeria-07.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <button type="button" class="btn btn-link btn-block d-block mb-4" data-target="#galeria-08" data-toggle="modal">
+                  <img class="img-fluid img-thumbnail" src="assets/img/galeria-08.jpg" alt="">
+              </button>
+              <div class="modal fade" id="galeria-08" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-resized" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Imagen Ampliada</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                      <img class="img-fluid" src="assets/img/galeria-08.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <button type="button" class="btn btn-link btn-block d-block mb-4" data-target="#galeria-09" data-toggle="modal">
+                  <img class="img-fluid img-thumbnail" src="assets/img/galeria-09.jpg" alt="">
+              </button>
+              <div class="modal fade" id="galeria-09" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-resized" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Imagen Ampliada</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                      <img class="img-fluid" src="assets/img/galeria-09.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <button type="button" class="btn btn-link btn-block d-block mb-4" data-target="#galeria-10" data-toggle="modal">
+                  <img class="img-fluid img-thumbnail" src="assets/img/galeria-10.jpg" alt="">
+              </button>
+              <div class="modal fade" id="galeria-10" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-resized" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Imagen Ampliada</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                      <img class="img-fluid" src="assets/img/galeria-10.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <button type="button" class="btn btn-link btn-block d-block mb-4" data-target="#galeria-11" data-toggle="modal">
+                  <img class="img-fluid img-thumbnail" src="assets/img/galeria-11.jpg" alt="">
+              </button>
+              <div class="modal fade" id="galeria-11" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-resized" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Imagen Ampliada</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                      <img class="img-fluid" src="assets/img/galeria-11.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <button type="button" class="btn btn-link btn-block d-block mb-4" data-target="#galeria-12" data-toggle="modal">
+                  <img class="img-fluid img-thumbnail" src="assets/img/galeria-12.jpg" alt="">
+              </button>
+              <div class="modal fade" id="galeria-12" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-resized" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Imagen Ampliada</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                      <img class="img-fluid" src="assets/img/galeria-12.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="py-4 my-4"></div> -->
+  </div>
+  <footer class="footer bg-primary text-white">
+    <div class="row text-center mx-0">
+      <div class="col-12 col-md-4 footer-col footer-left">
+        <p class="p-0 m-0"><a href="index.html" class="text-white"><i class="fa fa-home fa-fw mr-1 icon-left"></i>Inicio</a></p>
+        <p class="p-0 m-0"><a href="carta.html" class="text-white"><i class="fa fa-cutlery fa-fw mr-1 icon-left"></i>Carta</a></p>
+        <p class="p-0 m-0"><a href="reserva.html" class="text-white"><i class="fa fa-calendar-plus-o fa-fw mr-1 icon-left"></i>Reserva</a></p>
+        <p class="p-0 m-0"><a href="contacto.html" class="text-white"><i class="fa fa-info fa-fw mr-1 icon-left"></i>Contacto</a></p>
+        <p class="p-0 m-0"><a href="comentarios.html" class="text-white"><i class="fa fa-star fa-fw mr-1 icon-left"></i>Reseñas</a></p>
+        <p class="p-0 m-0"><a href="galeria.html" class="text-white"><i class="fa fa-picture-o fa-fw mr-1 icon-left"></i>Galeria</a></p>
+      </div>
+      <div class="col-12 col-md-4 footer-col footer-center">
+        <div class="row justify-content-center row-special">
+          <a href="index.html" class="text-white"><i class="fa fa-facebook-official fa-3x px-2"></i></a>
+          <a href="index.html" class="text-white"><i class="fa fa-twitter-square fa-3x px-2"></i></a>
+          <a href="index.html" class="text-white"><i class="fa fa-whatsapp fa-3x px-2"></i></a>
+          <a href="index.html" class="text-white"><i class="fa fa-instagram fa-3x px-2"></i></a>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 footer-col footer-right">
+        <p class="p-0 m-0">Calle Lanjarón, 8</p>
+        <p class="p-0 m-0">Albolote</p>
+        <p class="p-0 m-0">CP:18220</p>
+        <p class="p-0 m-0"><strong>E-mail</strong> <em>info@lacasona.es</em></p>
+        <p class="p-0 m-0"><strong>Teléfono</strong> <em>958 49 00 00</em></p>
+        <p class="p-0 m-0"><strong>Horario</strong> <em>L-V 07:00-20:00</em></p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js" charset="utf-8"></script>
+
+</body>
+
+</html>
