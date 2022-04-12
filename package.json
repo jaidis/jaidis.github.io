@@ -1,0 +1,24 @@
+{
+  "name": "jaidis.github.io",
+  "version": "1.0.0",
+  "description": "Documentation of all my notes for future reference",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaidis/jaidis.github.io.git"
+  },
+  "author": "Manuel Muñoz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jaidis/jaidis.github.io/issues"
+  },
+  "homepage": "https://github.com/jaidis/jaidis.github.io#readme",
+  "devDependencies": {
+    "vuepress": "2.0.0-beta.39",
+    "vuepress-plugin-copy-code2": "2.0.0-beta.38"
+  }
+}
