@@ -7,7 +7,6 @@ Cajón desastre en formato Markdown con enlaces y otras configuraciones en gener
 | Info                    | Enlace                            |
 | ----------------------- | --------------------------------- |
 | ADB                     | [Link](FILES/ADB.md)              |
-| Bookmarks               | [Link](FILES/BOOKMARKS.md)        |
 | Bookmarks Developer     | [Link](FILES/BOOKMARKS-DEV.md)    |
 | Desktop Files (Linux)   | [Link](FILES/DESKTOP-FILES.md)    |
 | Docker Compose          | [Link](FILES/DOCKER-COMPOSE.md)   |
