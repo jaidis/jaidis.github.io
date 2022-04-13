@@ -19,10 +19,12 @@ Cajón desastre en formato Markdown con enlaces y otras configuraciones en gener
 | GitHub Emojis           | [Link](FILES/GITHUB-EMOJIS.md)    |
 | GPG & SSH               | [Link](FILES/GPG-SSH.md)          |
 | Grub                    | [Link](FILES/GRUB.md)             |
+| Lego                    | [Link](FILES/LEGO.md)             |
 | Linux                   | [Link](FILES/LINUX.md)            |
 | MACOS                   | [Link](FILES/MACOS.md)            |
 | Oh My Zsh               | [Link](FILES/OH-MY-ZSH.md)        |
 | Otros                   | [Link](FILES/OTHERS.md)           |
+| PS Vita                 | [Link](FILES/PSVITA.md)           |
 | Rasperry Pi 4           | [Link](FILES/PI.md)               |
 | React Native            | [Link](FILES/RN.md)               |
 | React Native Links      | [Link](FILES/RN-LINKS.md)         |

@@ -17,11 +17,13 @@ let links: any = [
   "GITHUB-EMOJIS",
   "GPG-SSH",
   "GRUB",
+  "LEGO",
   "LINUX",
   "MACOS",
   "OH-MY-ZSH",
   "OTHERS",
   "PI",
+  "PSVITA",
   "RN",
   "RN-LINKS",
   "RN-PACKAGES",
@@ -69,7 +71,7 @@ export default defineUserConfig<DefaultThemeOptions>({
     logo: "https://vuejs.org/images/logo.png",
 
     //repo
-    repo: "jaidis/links",
+    repo: "jaidis/notas",
   },
   plugins: [
     copyCode({

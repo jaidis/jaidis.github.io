@@ -2,9 +2,10 @@
 
 ### #Feeding data
 
+- [All of Frontend - Share interesting, entry-level open source projects on GitHub. ](https://github.com/521xueweihan/HelloGitHub)
 - [All of Frontend - The front-end content you want to know is here ](https://github.com/KieSun/all-of-frontend)
 - [Design Resources for Developers - Curated list of design and UI resources from stock photos, web templates, CSS frameworks, UI libraries, tools and much more ](https://github.com/bradtraversy/design-resources-for-developers)
-- [All of Frontend - Share interesting, entry-level open source projects on GitHub. ](https://github.com/521xueweihan/HelloGitHub)
+- [mrd0x ](https://mrd0x.com/)
 
 ### Awesome lists
 
@@ -20,6 +21,7 @@
 - [Awesome React Native ](https://github.com/jondot/awesome-react-native)
 - [Awesome Selfhosted ](https://github.com/awesome-selfhosted/awesome-selfhosted)
 - [Awesome Tunneling ](https://github.com/anderspitman/awesome-tunneling)
+- [Awesome VuePress ](https://github.com/vuepress/awesome-vuepress)
 - [Awesome ZSH plugins ](https://github.com/unixorn/awesome-zsh-plugins)
 - [Marcel Bischoff's Awesome Command Line Apps ](https://git.herrbischoff.com/awesome-command-line-apps/about/)
 - [Marcel Bischoff's Awesome macOS Command Line ](https://git.herrbischoff.com/awesome-macos-command-line/about/)
@@ -254,6 +256,8 @@
 - [UMI - 🌋 Pluggable enterprise-level react application framework ](https://github.com/umijs/umi)
 - [Vue element admin ](https://github.com/PanJiaChen/vue-element-admin)
 - [Vue vben admin - A modern vue admin. It is based on Vue3, vite and TypeScript. It's fast！ ](https://github.com/vbenjs/vue-vben-admin)
+- [VuePress - :memo: Minimalistic Vue-powered static site generator ](https://vuepress.vuejs.org/)
+- [VuePress v2 - :memo: Minimalistic Vue-powered static site generator ](https://github.com/vuepress/vuepress-next)
 - [Vuetify - :dragon: Material Component Framework for Vue ](https://github.com/vuetifyjs/vuetify)
 
 ### Frameworks Documentation Generator
@@ -292,6 +296,10 @@
 - [PySimpleGUI ](https://github.com/PySimpleGUI/PySimpleGUI)
 - [Python-GUI-examples ](https://github.com/swharden/Python-GUI-examples)
 - [Textual ](https://github.com/willmcgugan/textual)
+
+### GUI, TUI,...(Rust)
+
+- [Iced - A cross-platform GUI library for Rust, inspired by Elm ](https://github.com/iced-rs/iced)
 
 ### Hosting
 
@@ -378,6 +386,7 @@
 - [JADX - Dex to Java decompiler ](https://github.com/skylot/jadx)
 - [Learn to use email with git! ](https://git-send-email.io/)
 - [Qinglong - A timed task management panel that supports typescript, javaScript, python3, and shell ](https://github.com/whyour/qinglong)
+- [Rome Toolchain. - A linter, compiler, bundler, and more for JavaScript, TypeScript, HTML, Markdown, and CSS. ](https://github.com/rome/tools)
 - [The Book of Screet Knowledge - A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more ](https://github.com/trimstray/the-book-of-secret-knowledge)
 - [The Complete FAANG Preparation ](https://github.com/AkashSingh3031/The-Complete-FAANG-Preparation)
 - [web2img - This is the real WebPack ](https://github.com/etherdream/web2img)
@@ -432,6 +441,7 @@
 - [10015 - Online tools ](https://10015.io/)
 - [ASCII to Hex Converter ](https://www.rapidtables.com/convert/number/ascii-to-hex.html)
 - [cloudconvert - Webm to Mp4 ](https://cloudconvert.com/webm-to-mp4)
+- [CodeEdit App for macOS – Elevate your code editing experience. Open source, free forever. ](https://github.com/CodeEditApp/CodeEdit)
 - [Cryptii - Web app and framework offering modular conversion, encoding and encryption ](https://github.com/cryptii/cryptii)
 - [DevToys - A Swiss Army knife for developers ](https://github.com/veler/DevToys)
 - [DevToysMac - A Swiss Army knife for developers ](https://github.com/ObuchiYuki/DevToysMac)
@@ -440,10 +450,12 @@
 - [jscompress ](https://jscompress.com/)
 - [jsonformatter ](https://jsonformatter.org/)
 - [Prowler - AWS Security Tool ](https://github.com/toniblyx/prowler)
+- [Rustpad - Efficient and minimal collaborative code editor, self-hosted, no database required ](https://github.com/ekzhang/rustpad)
 - [simdjson - Parsing gigabytes of JSON per second ](https://github.com/simdjson/simdjson)
 - [Sixo Online APK Analyzer ](https://www.sisik.eu/apk-tool)
 - [squoosh ](https://squoosh.app/)
 - [tinypng ](https://tinypng.com/)
+- [Turborepo - The High-performance Build System for JavaScript & TypeScript Codebases ](https://github.com/vercel/turborepo)
 
 ### UI, toolkit,...
 

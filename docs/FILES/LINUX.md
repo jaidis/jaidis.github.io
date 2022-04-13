@@ -301,6 +301,22 @@ sudo ln -fs /opt/etcher/balenaEtcher-1.5.100-x64.AppImage /usr/bin/etcher
 sudo update-grub
 ```
 
+##### Montar un servidor de HTML rápidamente en local con Python 3
+
+```bash
+python3 -m http.server <opcional_port>
+python3 -m http.server 8080
+```
+
+_En caso de tener Python 2 instalado utilizar el siguiente comando_
+
+```bash
+python -m SimpleHTTPServer <opcional_port>
+python -m SimpleHTTPServer 8008
+```
+
+> Tip: tanto **http.server** como **SimpleHTTPServer** utilizan por defecto el puerto **8000**
+
 ##### Mostrar el UUID de todas las particiones
 
 ```bash

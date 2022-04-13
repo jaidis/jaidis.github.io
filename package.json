@@ -1,6 +1,6 @@
 {
   "name": "jaidis.github.io",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Documentation of all my notes for future reference",
   "scripts": {
     "docs:dev": "vuepress dev docs",
