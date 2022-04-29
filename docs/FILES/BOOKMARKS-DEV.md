@@ -64,12 +64,15 @@
 
 ### Clean code, efficiently, tested, tips...
 
+- [30 Days Of JavaScript ](https://github.com/Asabeneh/30-Days-Of-JavaScript)
+- [30 Days Of React ](https://github.com/Asabeneh/30-Days-Of-React)
 - [Awesome Guidelines ](https://awesome-guidelines.com/)
 - [Clean Code concepts adapted for JavaScript ](https://github.com/ryanmcdermott/clean-code-javascript)
 - [:memo: JavaScript Algorithms ](https://github.com/trekhleb/javascript-algorithms)
 - [Laravel Tips - Awesome Laravel tips and tricks for all artisans ](https://github.com/LaravelDaily/laravel-tips)
 - [🧘 react philosophies - Things I think about when I write React code ](https://github.com/mithi/react-philosophies)
 - [The Algorithms ](https://the-algorithms.com/)
+- [What the f\*ck JavaScript? - :zany_face: A list of funny and tricky JavaScript examples ](https://github.com/denysdovhan/wtfjs)
 
 ### Cloud Computing
 
@@ -144,6 +147,7 @@
 - [NocoDB - Open Source Airtable Alternative - turns any MySQL, Postgres, SQLite into a spreadsheet with REST APIs ](https://github.com/nocodb/nocodb)
 - [PlanetScale - is the only serverless database platform you can start in seconds and scale indefinitely ](https://planetscale.com/)
 - [QuestDB - An open source SQL database designed to process time series data, faster ](https://github.com/questdb/questdb)
+- [Realm - A mobile database: a replacement for SQLite & ORMs. ](https://github.com/realm/realm-dart)
 - [SpiceDB - A Zanzibar-inspired database that stores, computes, and validates application permissions ](https://github.com/authzed/spicedb)
 
 ### Design, prototyping,...
@@ -222,6 +226,7 @@
 - [frontity - The React framework for WordPress ](https://frontity.org/)
 - [go-zero - A web and rpc framework written in Go ](https://github.com/zeromicro/go-zero)
 - [grapesjs ](https://grapesjs.com/)
+- [preactjs - Fast 3kB alternative to React with the same modern API ](https://preactjs.com/)
 - [reactjs ](https://reactjs.org/)
 - [reactjs nextjs - The React Framework ](https://github.com/vercel/next.js)
 - [reactjs nextauth.js - Authentication for Next.js ](https://github.com/nextauthjs/next-auth)
@@ -247,13 +252,14 @@
 - [Bulletproof React 🛡️ ⚛️ ](https://github.com/alan2207/bulletproof-react)
 - [Element Plus - 🎉 A Vue.js 3 UI Library made by Element team ](https://github.com/element-plus/element-plus)
 - [Mantine - React components library with native dark theme support ](https://github.com/mantinedev/mantine)
-- [Next JS Boilerplate - 🚀 Boilerplate and Starter for Next.js 12+, Tailwind CSS 2.0 and TypeScript ⚡️ Made with developer experience first: Next.js + TypeScript + ESLint + Prettier + Husky + Lint-Staged + VSCode + Netlify + PostCSS + Tailwind CSS ](https://github.com/ixartz/Next-js-Boilerplate)
+- [Next JS Boilerplate - 🚀 Boilerplate and Starter for Next.js 12+, Tailwind CSS 2.0 and TypeScript :zap: Made with developer experience first: Next.js + TypeScript + ESLint + Prettier + Husky + Lint-Staged + VSCode + Netlify + PostCSS + Tailwind CSS ](https://github.com/ixartz/Next-js-Boilerplate)
 - [Radix UI - An open-source UI component library for building high-quality, accessible design systems and web apps ](https://github.com/radix-ui/primitives)
 - [React Native Universal Monorepo ](https://github.com/mmazzarolo/react-native-universal-monorepo)
 - [Remix - Build Better Websites. Create modern, resilient user experiences with web fundamentals ](https://github.com/remix-run/remix)
 - [Stitches - CSS-in-JS with near-zero runtime, SSR, multi-variant support, and a best-in-class developer experience ](https://github.com/modulz/stitches)
-- [Varlet - Material design mobile component library for Vue3 ](https://github.com/haoziqaq/varlet)
+- [Typescript-nextjs-starter - Non-opinionated TypeScript starter for Next.js. All the tools you need to build your next project :zap: ](https://github.com/jpedroschmitz/typescript-nextjs-starter)
 - [UMI - 🌋 Pluggable enterprise-level react application framework ](https://github.com/umijs/umi)
+- [Varlet - Material design mobile component library for Vue3 ](https://github.com/haoziqaq/varlet)
 - [Vue element admin ](https://github.com/PanJiaChen/vue-element-admin)
 - [Vue vben admin - A modern vue admin. It is based on Vue3, vite and TypeScript. It's fast！ ](https://github.com/vbenjs/vue-vben-admin)
 - [VuePress - :memo: Minimalistic Vue-powered static site generator ](https://vuepress.vuejs.org/)
@@ -345,6 +351,12 @@
 - [clipboard.js - ✂️ Modern copy to clipboard. No Flash. Just 3kb gzipped 📋 ](https://github.com/zenorocha/clipboard.js)
 - [html2canvas - Screenshots with JavaScript ](https://github.com/niklasvh/html2canvas)
 - [microdiff - A fast, zero dependency object and array comparison library. Significantly faster than most other deep comparison libraries and has full TypeScript support ](https://github.com/AsyncBanana/microdiff)
+- [Leaflet - :leaves: JavaScript library for mobile-friendly interactive maps ](https://github.com/Leaflet/Leaflet)
+- [whatsapp-web.js - A WhatsApp client library for NodeJS that connects through the WhatsApp Web browser app ](https://github.com/pedroslopez/whatsapp-web.js)
+
+### Libraries (Rust)
+
+- [Fleet - :rocket: The blazing fast build tool for Rust. ](https://github.com/dimensionhq/fleet)
 
 ### Libraries (Swift)
 
@@ -447,15 +459,20 @@
 - [DevToysMac - A Swiss Army knife for developers ](https://github.com/ObuchiYuki/DevToysMac)
 - [Facebook's Design ](https://design.facebook.com/toolsandresources/)
 - [Facebook's OpenSource ](https://opensource.fb.com/)
+- [Fastlane - :rocket: The easiest way to automate building and releasing your iOS and Android apps ](https://github.com/fastlane/fastlane)
+- [Httpie - :pie: Modern, user-friendly command-line HTTP client for the API era. JSON support, colors, sessions, downloads, plugins & more. ](https://github.com/httpie/httpie)
 - [jscompress ](https://jscompress.com/)
 - [jsonformatter ](https://jsonformatter.org/)
+- [JSON Visio - :jigsaw: Visualize your JSON data onto graphs seamlessly. ](https://github.com/AykutSarac/jsonvisio.com)
 - [Prowler - AWS Security Tool ](https://github.com/toniblyx/prowler)
 - [Rustpad - Efficient and minimal collaborative code editor, self-hosted, no database required ](https://github.com/ekzhang/rustpad)
+- [Sherlock - :mag_right: Hunt down social media accounts by username across social networks ](https://github.com/sherlock-project/sherlock)
 - [simdjson - Parsing gigabytes of JSON per second ](https://github.com/simdjson/simdjson)
 - [Sixo Online APK Analyzer ](https://www.sisik.eu/apk-tool)
 - [squoosh ](https://squoosh.app/)
 - [tinypng ](https://tinypng.com/)
 - [Turborepo - The High-performance Build System for JavaScript & TypeScript Codebases ](https://github.com/vercel/turborepo)
+- [Weylus - Use your tablet as graphic tablet/touch screen on your computer. ](https://github.com/H-M-H/Weylus)
 
 ### UI, toolkit,...
 
@@ -469,6 +486,7 @@
 - [skelet ](https://github.com/Selekkt/skelet/)
 - [skeleton ](http://getskeleton.com/)
 - [Semantic UI ](https://github.com/semantic-org/semantic-ui)
+- [Storybook - :notebook: The UI component explorer. Develop, document, & test React, Vue, Angular, Web Components, Ember, Svelte & more! ](https://github.com/storybookjs/storybook)
 - [tailwindcss ](https://tailwindcss.com/)
 
 ### Video

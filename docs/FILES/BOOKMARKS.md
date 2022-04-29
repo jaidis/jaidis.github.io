@@ -43,6 +43,7 @@
 ### DIY (Do It Yourself)
 
 - [DIY CNC Machine - How to build your own CNC machine from scratch ](https://github.com/maxvfischer/DIY-CNC-machine)
+- [Laptop Stand ](https://voot.de/projects/laptop-stand/)
 
 ### Hackintosh :desktop_computer: Nuc6i5syh, Asus Zenbook UX303UA,...
 
@@ -207,6 +208,7 @@
 
 - [Bromite - Bromite a Chromium fork with ad blocking and privacy enhancements; take back your browser!](https://github.com/bromite/bromite)
 - [dns66 - DNS-based Host Blocker (and lightweight ad blocker) for Android ](https://github.com/julian-klode/dns66)
+- [FairEmail - Fully featured, open source, privacy friendly email app for Android ](https://github.com/M66B/FairEmail)
 - [florisboard - An open-source keyboard for Android which respects your privacy ](https://github.com/florisboard/florisboard)
 - [Fossapps - Create Your own Fossapps Package from a wide range of Free and Open Source Apps ](https://github.com/wacko1805/Fossapps-creator)
 - [microG Project - A free-as-in-freedom re-implementation of Google’s proprietary Android user space apps and libraries ](https://microg.org/)
@@ -241,9 +243,16 @@
 - [Universal Android Debloater GUI - Cross-platform GUI written in Rust using ADB to debloat non-rooted android devices. Improve your privacy, the security and battery life of your device ](https://github.com/0x192/universal-android-debloater)
 - [Wireless USB OC Big Sur Adapter - Drivers for Realtek USB Wi-Fi adapters ](https://github.com/chris1111/Wireless-USB-OC-Big-Sur-Adapter)
 
+### Open Source Apps :window: Windows
+
+- [Fan Control - This is the release repository for Fan Control, a highly customizable fan controlling software for Windows. ](https://github.com/Rem0o/FanControl.Releases)
+
 ### Open Source Apps Universal
 
 - [Koodo Reader - A modern ebook manager and reader with sync and backup capacities for Windows, macOS, Linux and Web ](https://github.com/troyeguo/koodo-reader)
+- [NotepadNext - A cross-platform, reimplementation of Notepad++ ](https://github.com/dail8859/NotepadNext)
+- [Spacedrive - A open source cross-platform file explorer, powered by a virtual distributed filesystem written in Rust. ](https://github.com/spacedriveapp/spacedrive)
+- [Video-subtitle-extractor (vse) - A GUI tool for extracting hard-coded subtitle (hardsub) from videos and generating srt files. ](https://github.com/YaoFANGUK/video-subtitle-extractor)
 
 ### Open Source Webs
 
@@ -321,8 +330,7 @@
 
 ### Torrents :magnet: Internacionales
 
-- [Unblocked ](https://unblockit.ch/)
-- [Unblocked Code Source](https://github.com/unblocked-pw/unblocked-pw.github.io)
+- [Unblocked ](https://unblockit.llc/)
 - [1337x ](https://1337x.to/)
 - [rarbg ](https://rarbgmirror.org/)
 - [KickassTorrents ](https://katcr.to)
@@ -330,6 +338,7 @@
 - [skytorrents ](http://www.skytorrents.me/)
 - [eztv ](https://eztv.re/)
 - [YTS YIFY ](https://yts.rs/)
+- [TorrentGalaxy ](https://torrentgalaxy.to/)
 - [alt-torrent ](http://www.alt-torrent.com)
 - [torrentparadise ](https://torrentparadise.pm/)
 - [yify-torrent ](https://yify-torrent.cc/)
@@ -345,13 +354,13 @@
 
 ### Torrents :magnet: en Español :es:
 
-- [atomixhq ](https://atomixhq.link/)
-- [divxtotal ](https://www.divxtotal.nl/)
+- [atomixhq ](https://atomixhq.club/)
+- [divxtotal ](https://www.divxtotal.re/)
 - [elitehd ](http://www.elitehd.li/)
 - [elite-torrent ](https://www1.elite-torrent.org/)
 - [grantorrent ](https://grantorrent.ch/)
-- [mejortorrent ](https://mejortorrent.one/)
-- [mejortorrent ](https://www.mejortorrentes.com/)
+- [mejortorrent ](https://mejortorrent.nz/)
+- [zonatorrent ](https://zonatorrent.tv)
 
 ### VPN
 

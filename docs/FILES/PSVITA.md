@@ -19,6 +19,7 @@
 
 ## Plugins
 
+- [NoNpDrm ](https://github.com/TheOfficialFloW/NoNpDrm)
 - [PSVita-StorageMgr - Kernel plugin that automatically mounts/redirects any storage device on any mount points you want](https://github.com/CelesteBlue-dev/PSVita-StorageMgr)
 
 ## Reddit

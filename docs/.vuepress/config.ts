@@ -50,6 +50,8 @@ export default defineUserConfig<DefaultThemeOptions>({
   // theme and its config
   theme: "@vuepress/theme-default",
   themeConfig: {
+    editLink: false,
+
     // locales
     locales: {
       "/": {
@@ -71,7 +73,7 @@ export default defineUserConfig<DefaultThemeOptions>({
     logo: "https://vuejs.org/images/logo.png",
 
     //repo
-    repo: "jaidis/notas",
+    // repo: "jaidis/notas",
   },
   plugins: [
     copyCode({
