@@ -183,6 +183,7 @@
 |     | [Calling an async method from component constructor in Dart ](https://stackoverflow.com/q/38933801/)        |
 |     | [Create a controller for a custom widget ](https://www.flutterclutter.dev/flutter/tutorials/-/2021/2149/)   |
 |     | [How to align text over image in flutter? ](https://stackoverflow.com/a/56816217)                           |
+|     | [Complete Flutter Course Bundle - eCommerce App ](https://github.com/bizz84/complete-flutter-course)        |
 
 ### Modules / Packages
 

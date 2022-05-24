@@ -75,7 +75,7 @@ ssh-keygen -t rsa -C "my_custom_email@gmail.com"
 ##### Copiar el certificado a otro dispositivo, como una raspberry y evitar pedir la contraseña cada vez que se inicia sesión
 
 ```bash
-ssh-copy-id pi@192.168.18.100
+ssh-copy-id pi@192.168.100.2
 ```
 
 ##### Asociamos el certificado a la herramienta SSH y añadimos el certificado SSH a Github (manualmente desde la web)

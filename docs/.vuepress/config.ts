@@ -1,7 +1,6 @@
-import { defineUserConfig } from "vuepress";
-import type { DefaultThemeOptions } from "vuepress";
+import { defineUserConfig, defaultTheme, viteBundler } from "vuepress";
 
-import { copyCode } from "vuepress-plugin-copy-code2";
+import { copyCodePlugin } from "vuepress-plugin-copy-code2";
 
 let links: any = [
   "ADB",
@@ -32,7 +31,10 @@ let links: any = [
   "RTL8812BU",
 ];
 
-export default defineUserConfig<DefaultThemeOptions>({
+export default defineUserConfig({
+  //bundler
+  bundler: viteBundler({}),
+
   // locales
   locales: {
     "/": {
@@ -48,8 +50,7 @@ export default defineUserConfig<DefaultThemeOptions>({
   },
 
   // theme and its config
-  theme: "@vuepress/theme-default",
-  themeConfig: {
+  theme: defaultTheme({
     editLink: false,
 
     // locales
@@ -74,9 +75,9 @@ export default defineUserConfig<DefaultThemeOptions>({
 
     //repo
     // repo: "jaidis/notas",
-  },
+  }),
   plugins: [
-    copyCode({
+    copyCodePlugin({
       locales: {
         "/": {
           copy: "Copiado correctamente 🎉",

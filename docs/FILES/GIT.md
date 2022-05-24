@@ -322,9 +322,15 @@ Nota: El servicio de Github limitada los archivos que superen los `100 MB` y se 
 ## Enlaces
 
 - [Git and Git Flow Cheat Sheet ](https://github.com/arslanbilal/git-cheat-sheet)
+- [GitHub - Actions virtual environments ](https://github.com/actions/virtual-environments)
+- [GitHub - Beautify GitHub Profile ](https://github.com/rzashakeri/beautify-github-profile)
 - [GitHub - custom domain for your GitHub Pages site ](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)
 - [GitHub - supported grammars ](https://github.com/github/linguist/tree/master/vendor)
 - [GitHub - supported grammars - list ](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)
+
+## GUI
+
+- [Guitar - Git GUI Client ](https://github.com/soramimi/Guitar)
 
 ### Servicios en la nube 🌩
 
@@ -336,3 +342,4 @@ Nota: El servicio de Github limitada los archivos que superen los `100 MB` y se 
 
 - [Gitea ](https://gitea.io/)
 - [Gogs ](https://gogs.io/)
+- [OneDev - Self-hosted Git Server with Built-in CI/CD ](https://github.com/theonedev/onedev)

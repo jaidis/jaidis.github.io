@@ -110,6 +110,34 @@ sudo tune2fs -m 1 <partition>
 sudo tune2fs -m 1 /dev/sda5
 ```
 
+##### Comprimir/Descomprimir archivos
+
+<details>
+  <summary>CheatSheet</summary>
+
+>
+
+|             | Compress | Uncompress |
+| ----------- | -------- | ---------- |
+| 7z          | 7z a     | 7z x       |
+| bz          |          | bzip2 -d   |
+| bz2         | bzip2 -z | bzip2 -d   |
+| gzip        | gzip     | gzip -d    |
+| lha         | lha -a   | lha -e     |
+| rar         | rar      | rar e      |
+| rar (unrar) |          | unrar x    |
+| tar         | tar cvf  | tar xvf    |
+| tar.bz      |          | tar jxvf   |
+| tar.bz2     | tar jcvf | tar jxvf   |
+| tar.gz      | tar zcvf | tar zxvf   |
+| tar.tgz     | tar zcvf | tar zxvf   |
+| tar.xz      | tar Jcvf | tar Jxvf   |
+| tar.z       | tar Zcvf | tar Zxvf   |
+| tgz         | tar zcvf | tar zxvf   |
+| xz          | xz -z    | xz -d      |
+
+</details>
+
 ##### Descomprimir un archivo en formato 7z
 
 ```bash
@@ -627,7 +655,7 @@ sudo lshw -C network
        nombre lógico: wlx984827470d4f
        serie:
        capacidades: ethernet physical wireless
-       configuración: broadcast=yes driver=rtl88XXau ip=192.168.18.11 multicast=yes wireless=IEEE 802.11bgn
+       configuración: broadcast=yes driver=rtl88XXau ip=192.168.100.11 multicast=yes wireless=IEEE 802.11bgn
 ```
 
 </details>

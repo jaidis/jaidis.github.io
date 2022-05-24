@@ -55,12 +55,19 @@
 - [[Guide] ASUS Zenbook UX310UA (& UX310UQK)... ](https://www.tonymacx86.com/threads/guide-asus-zenbook-ux310ua-ux310uqk-macos-mojave-catalina-with-clover-big-sur-monterey-using-opencore-efi-installation-guide.224591/)
 - [[Guide] Asus Zenbook using Clover UEFI hotpatch ](https://www.tonymacx86.com/threads/guide-asus-zenbook-using-clover-uefi-hotpatch.257448/)
 - [[Guide] Install El Capitan on ASUS UX330UA (Skylake) Clover UEFI ](https://www.tonymacx86.com/threads/guide-install-el-capitan-on-asus-ux330ua-skylake-clover-uefi.204479/)
-- [ASUS-ZENBOOK-HACKINTOSH ](https://github.com/hieplpvip/ASUS-ZENBOOK-HACKINTOSH/issues)
+- [brunocurado's Zenhack - Hackintosh on Zenbook UX303UA ](https://github.com/brunocurado/Zenhack)
+- [hieplpvip's ASUS-ZENBOOK-HACKINTOSH ](https://github.com/hieplpvip/ASUS-ZENBOOK-HACKINTOSH/issues)
+- [swoosh1234's NUC6i5SYH-Hackintosh](https://github.com/swoosh1234/NUC6i5SYH-Hackintosh)
 - [AsusSMC Installation Instruction ](https://github.com/hieplpvip/AsusSMC/wiki/Installation-Instruction)
 - [Kext -> VoodooI2C ](https://github.com/VoodooI2C/VoodooI2C)
 - [Inventory of supported/unsupported wireless cards #1, Snow Leopard -> El Capitan ](https://osxlatitude.com/forums/topic/2120-inventory-of-supportedunsupported-wireless-cards-1-snow-leopard-el-capitan/)
 - [NUC6i5SYH Intel's download ](https://www.intel.es/content/www/es/es/products/sku/89190/intel-nuc-kit-nuc6i5syh/downloads.html)
 - [BIOS [SYSKLi35] 0073, id 18449, 09/09/2020 ](https://www.intel.es/content/www/es/es/download/18449/bios-update-syskli35.html)
+- [appleserial's NUC8I5BEH ](https://github.com/appleserial/NUC8I5BEH)
+- [ecklf's OpenCore-NUC8i5BEH ](https://github.com/ecklf/OpenCore-NUC8i5BEH)
+- [carter2005's nuc8i5beh ](https://github.com/carter2005/nuc8i5beh)
+- [SanjayRavindran's Intel_NUC8i5BEH ](https://github.com/SanjayRavindran/Intel_NUC8i5BEH)
+- [zearp's Nucintosh ](https://github.com/zearp/Nucintosh)
 
 ### Imagenes :framed_picture: (wallpapers, camisetas, etc)
 
@@ -204,60 +211,6 @@
 - [1001tracklists.com ](https://www.1001tracklists.com/dj/purplediscomachine/index.html)
 - [edmliveset.com ](https://www.edmliveset.com/artist/Purple-Disco-Machine/)
 
-### Open Source Apps :iphone: Android
-
-- [Bromite - Bromite a Chromium fork with ad blocking and privacy enhancements; take back your browser!](https://github.com/bromite/bromite)
-- [dns66 - DNS-based Host Blocker (and lightweight ad blocker) for Android ](https://github.com/julian-klode/dns66)
-- [FairEmail - Fully featured, open source, privacy friendly email app for Android ](https://github.com/M66B/FairEmail)
-- [florisboard - An open-source keyboard for Android which respects your privacy ](https://github.com/florisboard/florisboard)
-- [Fossapps - Create Your own Fossapps Package from a wide range of Free and Open Source Apps ](https://github.com/wacko1805/Fossapps-creator)
-- [microG Project - A free-as-in-freedom re-implementation of Google’s proprietary Android user space apps and libraries ](https://microg.org/)
-- [NewPipe - A libre lightweight streaming front-end for Android ](https://github.com/TeamNewPipe/NewPipe)
-- [NewPipe SponsorBlock - A fork of NewPipe with SponsorBlock functionality ](https://github.com/polymorphicshade/NewPipe)
-- [openboard - 100% FOSS keyboard, based on AOSP ](https://github.com/dslul/openboard)
-- [opengapps - The main repository of the Open GApps Project ](https://github.com/opengapps/opengapps)
-- [Pokedex - Android Pokedex demo ](https://github.com/skydoves/Pokedex)
-- [Tachiyomi - Free and open source manga reader for Android ](https://github.com/tachiyomiorg/tachiyomi)
-
-### Open Source Apps :tv: Android TV
-
-- [FLauncher - Open-source alternative launcher for Android TV, built with Flutter ](https://gitlab.com/etienn01/flauncher)
-- [SmartTubeNext - Ad free app for watching tube videos on Android TV boxes ](https://github.com/yuliskov/SmartTubeNext)
-
-### Open Source Apps :penguin: Linux
-
-- [AppImagePool - A simple, modern AppImageHub Client, powered by flutter ](https://github.com/prateekmedia/appimagepool)
-- [Crontab UI - Easy and safe way to manage your crontab file ](https://github.com/alseambusher/crontab-ui)
-
-### Open Source Apps :apple: MacOS
-
-- [BetterDummy - Software Dummy Display Adapter for Apple Silicon Macs to Have Custom HiDPI Resolutions. ](https://github.com/waydabber/BetterDummy)
-- [Dozer - Hide menu bar icons on macOS ](https://github.com/Mortennn/Dozer)
-- [EFI-Agent - Simple, low resource, efficient and no frills tool to mount EFI partitions ](https://github.com/headkaze/EFI-Agent)
-- [Mestral - Open-source Dropbox client for macOS and Linux ](https://github.com/SamSchott/maestral)
-- [MonitorControl - Control your external monitor brightness & volume on your Mac ](https://github.com/MonitorControl/MonitorControl)
-- [PD Runner - A VM launcher for Parallels Desktop ](https://github.com/lihaoyun6/PD-Runner)
-- [scrcpy - Display and control your Android device ](https://github.com/Genymobile/scrcpy)
-- [Stats - macOS system monitor in your menu bar ](https://github.com/exelban/stats)
-- [TopNotch - Makes the notch disappear like a :ninja: ](https://topnotch.app/)
-- [Universal Android Debloater GUI - Cross-platform GUI written in Rust using ADB to debloat non-rooted android devices. Improve your privacy, the security and battery life of your device ](https://github.com/0x192/universal-android-debloater)
-- [Wireless USB OC Big Sur Adapter - Drivers for Realtek USB Wi-Fi adapters ](https://github.com/chris1111/Wireless-USB-OC-Big-Sur-Adapter)
-
-### Open Source Apps :window: Windows
-
-- [Fan Control - This is the release repository for Fan Control, a highly customizable fan controlling software for Windows. ](https://github.com/Rem0o/FanControl.Releases)
-
-### Open Source Apps Universal
-
-- [Koodo Reader - A modern ebook manager and reader with sync and backup capacities for Windows, macOS, Linux and Web ](https://github.com/troyeguo/koodo-reader)
-- [NotepadNext - A cross-platform, reimplementation of Notepad++ ](https://github.com/dail8859/NotepadNext)
-- [Spacedrive - A open source cross-platform file explorer, powered by a virtual distributed filesystem written in Rust. ](https://github.com/spacedriveapp/spacedrive)
-- [Video-subtitle-extractor (vse) - A GUI tool for extracting hard-coded subtitle (hardsub) from videos and generating srt files. ](https://github.com/YaoFANGUK/video-subtitle-extractor)
-
-### Open Source Webs
-
-- [Piped - An alternative privacy-friendly YouTube frontend which is efficient by design ](https://github.com/TeamPiped/Piped)
-
 ### Paquetería (webs, comparadores, tracking,...)
 
 - [17track ](https://buyer.17track.net/en)
@@ -279,6 +232,7 @@
 - [The tech game -> PS2 Modding & tools ](https://www.thetechgame.com/Downloads/cid=289/playstation-2-modding-tools.html)
 - [PSX Place -> SD Card Adapter ](https://www.psx-place.com/threads/mx4sio-sio2sd-sd-card-adapter-and-sd-driver-for-the-ps2-sio2-interface.29210/)
 - [How To Add Multiple PS2 Games on a single DVD ](https://homebrewgr.info/en/guides/multiple-ps2-games-single-dvd/)
+- [FreeDVDBoot - PlayStation 2 DVD Player Exploit ](https://github.com/CTurt/FreeDVDBoot)
 
 ### Reddit :world_map:
 

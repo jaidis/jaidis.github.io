@@ -32,8 +32,8 @@ _Y a continuación, indicamos la interfaz, ip, puerta de enlace y DNS_
 
 ```
 interface eth0
-static ip_address=192.168.18.100/24
-static routers=192.168.18.1
+static ip_address=192.168.100.2/24
+static routers=192.168.100.1
 static domain_name_servers=1.1.1.1 8.8.8.8
 ```
 
@@ -76,6 +76,25 @@ sudo crontab -e
 sudo rpi-eeprom-update
 ```
 
+<details>
+  <summary>Mostrar</summary>
+
+```bash
+*** UPDATE AVAILABLE ***
+BOOTLOADER: update available
+   CURRENT: jue abr 29 16:11:25 UTC 2021 (1619712685)
+    LATEST: mar ene 25 14:30:41 UTC 2022 (1643121041)
+   RELEASE: default (/lib/firmware/raspberrypi/bootloader/default)
+            Use raspi-config to change the release.
+
+  VL805_FW: Dedicated VL805 EEPROM
+     VL805: up to date
+   CURRENT: 000138a1
+    LATEST: 000138a1
+```
+
+</details>
+
 _En caso de que exista una actualización ejecutaremos de nuevo el comando `rpi-eeprom-update` añadiendo el parámetro `-a` para aplicar la actualización, una vez aplicada la actualización es necesario reiniciar la raspberry_
 
 ```bash
@@ -86,16 +105,24 @@ sudo rpi-eeprom-update -a
   <summary>Mostrar</summary>
 
 ```bash
-BOOTLOADER: up to date
+*** INSTALLING EEPROM UPDATES ***
+
+BOOTLOADER: update available
    CURRENT: jue abr 29 16:11:25 UTC 2021 (1619712685)
-    LATEST: jue abr 29 16:11:25 UTC 2021 (1619712685)
+    LATEST: mar ene 25 14:30:41 UTC 2022 (1643121041)
    RELEASE: default (/lib/firmware/raspberrypi/bootloader/default)
             Use raspi-config to change the release.
 
-VL805_FW: Dedicated VL805 EEPROM
-VL805: up to date
-CURRENT: 000138a1
-LATEST: 000138a1
+  VL805_FW: Dedicated VL805 EEPROM
+     VL805: up to date
+   CURRENT: 000138a1
+    LATEST: 000138a1
+   CURRENT: jue abr 29 16:11:25 UTC 2021 (1619712685)
+    UPDATE: mar ene 25 14:30:41 UTC 2022 (1643121041)
+    BOOTFS: /boot
+
+EEPROM updates pending. Please reboot to apply the update.
+To cancel a pending update run "sudo rpi-eeprom-update -r".
 ```
 
 </details>
@@ -290,6 +317,24 @@ dtoverlay=sdhost,overclock_50=100
 
 # Removes the warning overlay and additionally allows turbo when low-voltage is present.
 avoid_warnings=2
+```
+
+</details>
+
+##### Configuración del archivo FSTAB (Pi 4)
+
+<details>
+  <summary>Mostrar</summary>
+
+```bash
+proc            /proc           proc    defaults          0       0
+PARTUUID=7d225014-01  /boot           vfat    defaults,flush    0       2
+PARTUUID=7d225014-02  /               ext4    defaults,noatime  0       1
+tmpfs    /tmp    tmpfs    noatime,nodiratime,nodev,nosuid,mode=1777,defaults    0    0
+tmpfs    /var/tmp    tmpfs    noatime,nodiratime,nodev,nosuid,mode=1777,defaults    0    0
+tmpfs    /home/pi/docker-config/jellyfin/cache    tmpfs    noatime,nodiratime,nodev,nosuid,mode=1777,defaults    0    0
+tmpfs    /home/pi/docker-config/jellyfin/log    tmpfs    noatime,nodiratime,nodev,nosuid,mode=1777,defaults    0    0
+tmpfs    /home/pi/docker-config/lidarr/logs    tmpfs    noatime,nodiratime,nodev,nosuid,mode=1777,defaults    0    0
 ```
 
 </details>
