@@ -9,6 +9,7 @@ Cajón desastre en formato Markdown con enlaces y otras configuraciones en gener
 | ADB                     | [Link](FILES/ADB.md)              |
 | Bookmarks Developer     | [Link](FILES/BOOKMARKS-DEV.md)    |
 | Desktop Files (Linux)   | [Link](FILES/DESKTOP-FILES.md)    |
+| Docker                  | [Link](FILES/DOCKER.md)           |
 | Docker Compose          | [Link](FILES/DOCKER-COMPOSE.md)   |
 | Flutter                 | [Link](FILES/FLUTTER.md)          |
 | Flutter Code Snippets   | [Link](FILES/FLUTTER-CODES.md)    |
@@ -29,15 +30,10 @@ Cajón desastre en formato Markdown con enlaces y otras configuraciones en gener
 | React Native            | [Link](FILES/RN.md)               |
 | React Native Links      | [Link](FILES/RN-LINKS.md)         |
 | React Native Packages   | [Link](FILES/RN-PACKAGES.md)      |
-| VSCode configuration    | [Link](FILES/VSCODE.md)           |
 | TP-Link Archer T2U Plus | [Link](FILES/RTL8812AU.md)        |
 | TP-Link Archer T3U Plus | [Link](FILES/RTL8812BU.md)        |
-
-<!-- ### Contenido -->
-
-<!-- | Info                    | Enlace                            | -->
-<!-- | ----------------------- | --------------------------------- | -->
-<!-- | Bookmarks               | [Link](FILES/BOOKMARKS.md)        | -->
+| VSCode configuration    | [Link](FILES/VSCODE.md)           |
+| Windows                 | [Link](FILES/WINDOWS.md)          |
 
 <!-- ### Scripts
 

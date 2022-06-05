@@ -44,6 +44,7 @@
 
 - [DIY CNC Machine - How to build your own CNC machine from scratch ](https://github.com/maxvfischer/DIY-CNC-machine)
 - [Laptop Stand ](https://voot.de/projects/laptop-stand/)
+- [Positron V3 ](https://github.com/KRALYN/PositronV3)
 
 ### Hackintosh :desktop_computer: Nuc6i5syh, Asus Zenbook UX303UA,...
 

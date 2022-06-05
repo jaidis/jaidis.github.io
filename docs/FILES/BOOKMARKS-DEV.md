@@ -14,6 +14,7 @@
 - [Awesome Cheatsheets ](https://github.com/LeCoupa/awesome-cheatsheets)
 - [Awesome Cloud Security ](https://github.com/4ndersonLin/awesome-cloud-security)
 - [Awesome CSS Frameworks ](https://github.com/troxler/awesome-css-frameworks)
+- [Awesome for Beginners ](https://github.com/MunGell/awesome-for-beginners)
 - [Awesome GitHub Cheat Sheet ](https://github.com/tiimgreen/github-cheat-sheet)
 - [Awesome IPFS ](https://github.com/ipfs/awesome-ipfs)
 - [Awesome macOS open source applications ](https://github.com/serhii-londar/open-source-mac-os-apps)
@@ -56,6 +57,8 @@
 
 ### Cheat Sheet
 
+- [Cheatsheets - Community-sourced cheatsheets ](https://github.com/cheat/cheatsheets)
+- [Devhints - TL;DR for developer documentation, a ridiculous collection of cheatsheets ](https://github.com/rstacruz/cheatsheets)
 - [fontawesome v4.7.0 ](https://htmlcheatsheet.com/)
 - [fontawesome v5 ](https://fontawesome.com/v5/cheatsheet)
 - [Git Cheat Sheet - @soulrider911 ](http://git-cheatsheet.com/)
@@ -71,6 +74,7 @@
 
 - [30 Days Of JavaScript ](https://github.com/Asabeneh/30-Days-Of-JavaScript)
 - [30 Days Of React ](https://github.com/Asabeneh/30-Days-Of-React)
+- [50 Projects in 50 Days - 50+ mini web projects using HTML, CSS & JS ](https://github.com/bradtraversy/50projects50days)
 - [Awesome Guidelines ](https://awesome-guidelines.com/)
 - [Clean Code concepts adapted for JavaScript ](https://github.com/ryanmcdermott/clean-code-javascript)
 - [:memo: JavaScript Algorithms ](https://github.com/trekhleb/javascript-algorithms)
@@ -132,8 +136,10 @@
 ### CSS3, Flexbox,...
 
 - [Animate CSS ](https://animate.style/)
+- [Animate CSS ](https://animate.style/)
 - [css3generator ](http://css3generator.com/)
 - [cssmatic ](https://cssmatic.com/)
+- [css-buttons - 100 Modern CSS Buttons, Free And Royalty Free ](https://github.com/eludadev/css-buttons)
 - [css-tricks ](https://css-tricks.com/guides/)
 - [Flexbox Defense - Interactive tutorial ](http://www.flexboxdefense.com/)
 - [Flexbox Froggy - Interactive tutorial ](https://flexboxfroggy.com/)
@@ -150,6 +156,7 @@
 
 - [CockroachDB - cloud-native distributed SQL database ](https://github.com/cockroachdb/cockroach)
 - [immudb - immutable database based on zero trust, SQL and Key-Value, tamperproof, data change history ](https://github.com/codenotary/immudb)
+- [Neon - The serverless open source alternative to AWS Aurora Postgres ](https://github.com/neondatabase/neon)
 - [MangoDB - A truly Open Source MongoDB alternative ](https://github.com/MangoDB-io/MangoDB)
 - [NocoDB - Open Source Airtable Alternative - turns any MySQL, Postgres, SQLite into a spreadsheet with REST APIs ](https://github.com/nocodb/nocodb)
 - [PlanetScale - is the only serverless database platform you can start in seconds and scale indefinitely ](https://planetscale.com/)
@@ -230,6 +237,7 @@
 
 ##### Go
 
+- [Bud - The Full-Stack Web Framework for Go ](https://github.com/livebud/bud)
 - [Fiber - ⚡️ Express inspired web framework written in Go ](https://github.com/gofiber/fiber)
 - [Gin - A HTTP web framework written in Go (Golang). It features a Martini-like API with much better performance -- up to 40 times faster. If you need smashing performance, get yourself some Gin ](https://github.com/gin-gonic/gin)
 - [Kratos - Your ultimate Go microservices framework for the cloud-native era ](https://github.com/go-kratos/kratos)
@@ -240,6 +248,7 @@
 - [electronjs ](https://www.electronjs.org/)
 - [expressjs ](http://expressjs.com/)
 - [frontity - The React framework for WordPress ](https://frontity.org/)
+- [gatsby - Build blazing fast, modern apps and websites with React ](https://github.com/gatsbyjs/gatsby/)
 - [go-zero - A web and rpc framework written in Go ](https://github.com/zeromicro/go-zero)
 - [grapesjs ](https://grapesjs.com/)
 - [preactjs - Fast 3kB alternative to React with the same modern API ](https://preactjs.com/)
@@ -295,6 +304,7 @@
 - [Swagger UI ](https://github.com/swagger-api/swagger-ui)
 - [VuePress - :memo: Minimalistic Vue-powered static site generator ](https://vuepress.vuejs.org/)
 - [VuePress v2 - :memo: Minimalistic Vue-powered static site generator ](https://github.com/vuepress/vuepress-next)
+- [Wiji.js - A modern and powerful wiki app built on Node.js ](https://github.com/requarks/wiki)
 
 ### Frameworks Mobile Apps (JS)
 
@@ -324,6 +334,7 @@
 
 ##### Python
 
+- [CustomTkinter -A modern and customizable python UI-library based on Tkinter ](https://github.com/TomSchimansky/CustomTkinter)
 - [PySimpleGUI ](https://github.com/PySimpleGUI/PySimpleGUI)
 - [Python-GUI-examples ](https://github.com/swharden/Python-GUI-examples)
 - [Textual ](https://github.com/willmcgugan/textual)
@@ -376,6 +387,11 @@
 ##### Android
 
 - [btrace - a high performance Android trace tool which is based on Systrace, it support to define custom events automatically during building apk and using bhook to provider more native events like IO ](https://github.com/bytedance/btrace)
+
+##### Go
+
+- [Lo - :boom: A Lodash-style Go library based on Go 1.18+ Generics (map, filter, contains, find...)](https://github.com/samber/lo)
+- [TinyGo - Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and command-line tools. Based on LLVM ](https://github.com/tinygo-org/tinygo)
 
 ##### JS
 
@@ -434,6 +450,7 @@
 
 - [AppFlowy - A open-source alternative to Notion. You are in charge of your data and customizations. Built with Flutter and Rust ](https://github.com/AppFlowy-IO/appflowy)
 - [Focalboard - A open source, self-hosted alternative to Trello, Notion, and Asana ](https://github.com/mattermost/focalboard)
+- [GitNoter - An open source, markdown-based, self-hosted note taking webapp ](https://github.com/git-noter/gitnoter)
 - [Logseq - A privacy-first, open-source platform for knowledge management and collaboration ](https://github.com/logseq/logseq)
 
 ### Open Source Apps
@@ -485,6 +502,7 @@
 
 - [Fan Control - This is the release repository for Fan Control, a highly customizable fan controlling software for Windows. ](https://github.com/Rem0o/FanControl.Releases)
 - [Picotorrent - A tiny, hackable BitTorrent client ](https://github.com/picotorrent/picotorrent)
+- [Winfetch - :hammer_and_wrench: A command-line system information utility written in PowerShell. Like Neofetch, but for Windows](https://github.com/kiedtl/winfetch)
 
 ##### Universal
 
@@ -501,6 +519,10 @@
 
 - [Piped - An alternative privacy-friendly YouTube frontend which is efficient by design ](https://github.com/TeamPiped/Piped)
 
+### OS (Operating system)
+
+- [WinesapOS - Game with Linux anywhere, no installation required! ](https://github.com/LukeShortCloud/winesapOS)
+
 ### Others, miscellaneous,...
 
 - [50 incredible web development tools you need to know ](https://www.creativebloq.com/features/web-dev-tools)
@@ -510,6 +532,7 @@
 - [Github - Open Source Guides ](https://github.com/github/opensource.guide)
 - [JADX - Dex to Java decompiler ](https://github.com/skylot/jadx)
 - [Learn to use email with git! ](https://git-send-email.io/)
+- [PaoPao - :fire: A artistic "twitter like" community built on gin+zinc+vue+ts](https://github.com/rocboss/paopao-ce)
 - [Qinglong - A timed task management panel that supports typescript, javaScript, python3, and shell ](https://github.com/whyour/qinglong)
 - [Rome Toolchain. - A linter, compiler, bundler, and more for JavaScript, TypeScript, HTML, Markdown, and CSS. ](https://github.com/rome/tools)
 - [The Book of Screet Knowledge - A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more ](https://github.com/trimstray/the-book-of-secret-knowledge)
@@ -537,6 +560,7 @@
 ### Remote Desktop
 
 - [p2p - 🖥️ Remote Desktop P2P based. Portable, No configuration or installation needed, communicate your endpoint to the peer, and vice versa, press connect and enjoy. 🖥️ ](https://github.com/miroslavpejic85/p2p)
+- [RustDesk - Open source virtual / remote desktop infrastructure for everyone! The open source TeamViewer alternative. Display and control your PC and Android devices ](https://github.com/rustdesk/rustdesk)
 
 ### Resources for developers
 
@@ -577,6 +601,7 @@
 - [Facebook's Design ](https://design.facebook.com/toolsandresources/)
 - [Facebook's OpenSource ](https://opensource.fb.com/)
 - [Fastlane - :rocket: The easiest way to automate building and releasing your iOS and Android apps ](https://github.com/fastlane/fastlane)
+- [Go Appimage - Go implementation of AppImage tools. Still experimental ](https://github.com/probonopd/go-appimage)
 - [Httpie - :pie: Modern, user-friendly command-line HTTP client for the API era. JSON support, colors, sessions, downloads, plugins & more. ](https://github.com/httpie/httpie)
 - [jscompress ](https://jscompress.com/)
 - [jsonformatter ](https://jsonformatter.org/)

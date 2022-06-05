@@ -359,6 +359,7 @@ truncate --size=$[(16875519+1)*512] myimage.img
 - [Official Recalbox RGB Dual CASE (RPi4 and RPi3) ](https://www.thingiverse.com/thing:5365275)
 - [Pi400RGB - Scart/VGA interface for Raspberry Pi 400 ](https://github.com/llegoff/Pi400RGB)
 - [Pi400RGB case (SCART and VGA) ](https://www.thingiverse.com/thing:5277051)
+- [Pico Fighting Board - Open source PCB for arcade sticks using Raspberry Pi Pico ](https://github.com/FeralAI/PicoFightingBoard)
 - [Pi-Hole on Docker using OMV Raspberry Pi 4 “Network Wide Ad-Blocker” ](https://pcmac.biz/pi-hole-on-docker-using-omv-raspberry-pi-4-network-wide-ad-blocker/)
 - [Raspberry para torpes ](https://raspberryparatorpes.net/category/proyectos/)
 - [Raspberry Pi Documentation ](https://www.raspberrypi.org/documentation/)

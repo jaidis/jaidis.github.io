@@ -1,34 +1,6 @@
 # Docker Compose
 
-##### Limpiar archivos no necesarios de anteriores contenedores. Nota: todos los contenedores han de estar activos, si están parados también borrara la información de dichos contenedores
-
-```bash
-df -h && docker system prune --all --force && sudo find /var/lib/docker/containers/ -type f -name “\*.log” -delete && df -h && sudo shutdown -r now
-```
-
-## Portainer
-
-**[Portainer](https://www.portainer.io/) es una imagen de docker que nos ofrece una UI que podemos utilizar desde el navegador web**
-
-##### Creamos la primera vez un volume para que lo pueda utilizar el contenedor y posteriormente arrancamos la imagen de `portainer-ce`
-
-```bash
-docker volume create portainer_data && docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
-```
-
-##### Actualizar contenedor de `portainer-ce` en una sola línea (sin borrar el volume)
-
-```bash
-docker container stop portainer && docker container rm -f portainer && docker image rm -f portainer/portainer-ce:latest && docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
-```
-
-##### Borrar toda la información asociada a `portainer-ce`
-
-```bash
-docker container stop portainer && docker container rm -f portainer && docker volume rm -f portainer_data && docker image rm -f portainer/portainer-ce:latest
-```
-
-## Contenedores creados con docker-compose (la mayoría en la Raspberry)
+## Container templates (almost all raspberry compatible)
 
 ##### Adguard
 
@@ -475,7 +447,7 @@ services:
 version: "3.0"
 services:
   yayserver:
-    image: jaidis/php7.4-apache2-pdo-mysqli-arm
+    image: jaidis/php-7.4.29-apache2-pdo-mysqli:bullseye-arm64v8
     container_name: yayserver
     volumes:
       - /home/pi/docker-data/yayserver:/var/www/html
@@ -488,4 +460,10 @@ services:
     restart: unless-stopped
     external_links:
       - mariadb
+    networks:
+      - linked
+
+networks:
+  linked:
+    external: true
 ```
