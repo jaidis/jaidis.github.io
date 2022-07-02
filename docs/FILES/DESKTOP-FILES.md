@@ -104,6 +104,34 @@ Exec=/usr/bin/google-chrome-stable --incognito --disk-cache-dir=/dev/null
 
 </details>
 
+### Postman
+
+**Archivo de configuración para que aparecezca en el submenú de programación/desarrollo**
+
+Ruta del archivo
+
+```bash
+sudo xed /usr/share/applications/postman.desktop
+```
+
+<details>
+  <summary>Mostrar</summary>
+
+```bash
+[Desktop Entry]
+Encoding=UTF-8
+Name=Postman
+Comment=Postman
+Exec=/opt/Postman/Postman
+Icon=/opt/Postman/app/resources/app/assets/icon.png
+Categories=Development
+Type=Application
+Terminal=false
+Name[es_ES]=Postman
+```
+
+</details>
+
 ### React Native Debugger
 
 **Archivo de configuración para que aparecezca en el submenú de programación/desarrollo**
@@ -189,6 +217,36 @@ Icon=/opt/VSCode/resources/app/resources/linux/code.png
 Exec="/opt/VSCode/code" %f
 Categories=Development;IDE;
 Terminal=false
+```
+
+</details>
+
+>
+
+**Versión oficial**
+
+<details>
+  <summary>Mostrar</summary>
+
+```bash
+[Desktop Entry]
+Name=Visual Studio Code
+Comment=Code Editing. Redefined.
+GenericName=Text Editor
+Exec=/usr/share/code/code --unity-launch %F
+Icon=com.visualstudio.code
+Type=Application
+StartupNotify=false
+StartupWMClass=Code
+Categories=TextEditor;Development;IDE;
+MimeType=text/plain;inode/directory;application/x-code-workspace;
+Actions=new-empty-window;
+Keywords=vscode;
+
+[Desktop Action new-empty-window]
+Name=New Empty Window
+Exec=/usr/share/code/code --new-window %F
+Icon=com.visualstudio.code
 ```
 
 </details>

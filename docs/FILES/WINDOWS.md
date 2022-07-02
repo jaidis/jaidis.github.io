@@ -9,6 +9,10 @@
 - [The Ultimate Windows Development Environment Guide ](https://unicorn-utterances.com/posts/ultimate-windows-development-environment-guide)
 - [Windows Terminal - from a developer for developers ](https://cmatskas.com/windows-terminal-from-a-developer-for-developers/)
 
+<!--
+
 ### Template
 
 - [dummy ](dummy)
+
+-->

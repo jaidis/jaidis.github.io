@@ -6,6 +6,7 @@ let links: any = [
   "ADB",
   "BOOKMARKS-DEV",
   "DESKTOP-FILES",
+  "DOCKER",
   "DOCKER-COMPOSE",
   "FLUTTER",
   "FLUTTER-CODES",
@@ -26,9 +27,10 @@ let links: any = [
   "RN",
   "RN-LINKS",
   "RN-PACKAGES",
-  "VSCODE",
   "RTL8812AU",
   "RTL8812BU",
+  "VSCODE",
+  "WINDOWS",
 ];
 
 export default defineUserConfig({

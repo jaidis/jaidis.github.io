@@ -273,6 +273,10 @@
 - [Getting started with Appwrite ](https://dev.to/asmit2952/getting-started-with-appwrite-3oic)
 - [Awesome Appwrite - Carefully curated list of awesome Appwrite resources ](https://github.com/appwrite/awesome-appwrite)
 
+<!--
+
 ### Template
 
 - [dummy ](dummy)
+
+-->

@@ -43,6 +43,7 @@
 ### DIY (Do It Yourself)
 
 - [DIY CNC Machine - How to build your own CNC machine from scratch ](https://github.com/maxvfischer/DIY-CNC-machine)
+- [E-Paper Clock ](https://www.instructables.com/E-Paper-Clock//)
 - [Laptop Stand ](https://voot.de/projects/laptop-stand/)
 - [Positron V3 ](https://github.com/KRALYN/PositronV3)
 
@@ -376,6 +377,10 @@
 - [WSAGAScript - Scripts to install Google Apps into a WSA image. Plus optional root ](https://github.com/ADeltaX/WSAGAScript)
 - [WSAtools - Easy-to-use apk installer for Windows Subsystem for Android ](https://github.com/weareblahs/WSAtools)
 
+<!--
+
 ### Template
 
 - [dummy ](dummy)
+
+-->

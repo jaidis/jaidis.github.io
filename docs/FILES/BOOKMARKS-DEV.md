@@ -77,10 +77,12 @@
 - [50 Projects in 50 Days - 50+ mini web projects using HTML, CSS & JS ](https://github.com/bradtraversy/50projects50days)
 - [Awesome Guidelines ](https://awesome-guidelines.com/)
 - [Clean Code concepts adapted for JavaScript ](https://github.com/ryanmcdermott/clean-code-javascript)
+- [Data Structure & Algorithms 101 with doodles ](https://github.com/girliemac/a-picture-is-worth-a-1000-words)
+- [Devops Exercises - Linux, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible, Git, Kubernetes, Terraform, OpenStack, SQL, NoSQL, Azure, GCP, DNS, Elastic, Network, Virtualization. DevOps Interview Questions ](https://github.com/bregman-arie/devops-exercises)
 - [:memo: JavaScript Algorithms ](https://github.com/trekhleb/javascript-algorithms)
 - [Laravel Tips - Awesome Laravel tips and tricks for all artisans ](https://github.com/LaravelDaily/laravel-tips)
 - [🧘 react philosophies - Things I think about when I write React code ](https://github.com/mithi/react-philosophies)
-
+- [Roadmap.sh - Roadmap to becoming a developer in 2022 ](https://github.com/kamranahmedse/developer-roadmap)
 - [Rustlings - :crab: Small exercises to get you used to reading and writing Rust code! ](https://github.com/rust-lang/rustlings/)
 - [The Algorithms ](https://the-algorithms.com/)
 - [What the f\*ck JavaScript? - :zany_face: A list of funny and tricky JavaScript examples ](https://github.com/denysdovhan/wtfjs)
@@ -507,6 +509,7 @@
 ##### Universal
 
 - [bpytop - Linux/OSX/FreeBSD resource monitor ](https://github.com/aristocratos/bpytop)
+- [Flameshot - Powerful yet simple to use screenshot software :desktop_computer: :camera_flash: ](https://github.com/flameshot-org/flameshot)
 - [Glances - A top/htop alternative for GNU/Linux, BSD, Mac OS and Windows operating systems ](https://github.com/nicolargo/glances)
 - [Koodo Reader - A modern ebook manager and reader with sync and backup capacities for Windows, macOS, Linux and Web ](https://github.com/troyeguo/koodo-reader)
 - [NotepadNext - A cross-platform, reimplementation of Notepad++ ](https://github.com/dail8859/NotepadNext)
@@ -660,6 +663,10 @@
 - [XcodeBenchmark - measures the compilation time of a large codebase on iMac, MacBook, and Mac Pro ](https://github.com/devMEremenko/XcodeBenchmark)
 - [Xcodes - The best command-line tool to install and switch between multiple versions of Xcode ](https://github.com/RobotsAndPencils/xcodes)
 
+<!--
+
 ### Template
 
 - [dummy ](dummy)
+
+-->
