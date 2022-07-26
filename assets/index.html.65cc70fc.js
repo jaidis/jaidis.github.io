@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-8daa1a0e","path":"/","title":"Notas","lang":"es-ES","frontmatter":{},"excerpt":"","headers":[{"level":3,"title":"Contenido","slug":"contenido","children":[]}],"git":{"updatedTime":1654440791000,"contributors":[{"name":"Manuel Mu\xF1oz","email":"manmunlop@gmail.com","commits":4}]},"filePathRelative":"README.md"}');export{e as data};

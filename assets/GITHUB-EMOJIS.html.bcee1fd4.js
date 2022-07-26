@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-f17e505a","path":"/FILES/GITHUB-EMOJIS.html","title":"","lang":"es-ES","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1649755148000,"contributors":[{"name":"Manuel Mu\xF1oz","email":"manmunlop@gmail.com","commits":1}]},"filePathRelative":"FILES/GITHUB-EMOJIS.md"}');export{e as data};
