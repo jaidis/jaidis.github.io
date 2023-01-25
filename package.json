@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/jaidis/jaidis.github.io",
   "devDependencies": {
-    "vuepress": "2.0.0-beta.51",
-    "vuepress-plugin-copy-code2": "2.0.0-beta.96"
+    "vuepress": "2.0.0-beta.60",
+    "vuepress-plugin-copy-code2": "2.0.0-beta.168"
   }
 }
