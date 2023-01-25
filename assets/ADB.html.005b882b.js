@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-941350aa","path":"/FILES/ADB.html","title":"ADB","lang":"es-ES","frontmatter":{},"excerpt":"","headers":[{"level":2,"title":"Comandos","slug":"comandos","children":[]}],"git":{"updatedTime":1649755148000,"contributors":[{"name":"Manuel Mu\xF1oz","email":"manmunlop@gmail.com","commits":1}]},"filePathRelative":"FILES/ADB.md"}');export{e as data};
