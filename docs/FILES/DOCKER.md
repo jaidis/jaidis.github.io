@@ -74,7 +74,7 @@ ldd docker-compose-Linux-armv7l
 
 </details>
 
-### Portainer
+## Portainer
 
 **[Portainer](https://www.portainer.io/) es una imagen de docker que nos ofrece una UI que podemos utilizar desde el navegador web**
 
@@ -96,7 +96,7 @@ _Borrar toda la información asociada a `portainer-ce`_
 docker container stop portainer && docker container rm -f portainer && docker volume rm -f portainer_data && docker image rm -f portainer/portainer-ce:latest
 ```
 
-### Tips
+## Tips
 
 _Limpiar archivos no necesarios de anteriores contenedores. Nota: todos los contenedores han de estar activos, si están parados también borrara la información de dichos contenedores_
 

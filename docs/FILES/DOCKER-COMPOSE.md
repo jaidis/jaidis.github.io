@@ -398,7 +398,7 @@ services:
 version: "3.0"
 services:
   code-server:
-    image: linuxserver/code-server
+    image: lscr.io/linuxserver/code-server:latest
     container_name: code-server
     ports:
       - 8448:8443

@@ -13,3 +13,7 @@
 ## MODs
 
 - [Porsche 934 Turno RSR Kit ](https://rebrickable.com/mocs/MOC-69779/NikolayFX/porsche-934-turbo-rsr-kit/#details)
+
+## Pegatinas
+
+- [Brick Sticker Shop ](https://brickstickershop.com)

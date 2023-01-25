@@ -114,19 +114,22 @@
 
 ### Juegos Roms :joystick:
 
-- [archive - CHD Playstation -> PSX CHD ](https://archive.org/details/chd_psx)
-- [Best of the Best™ - Solo los mejores juegos ](http://tiny.cc/BOB_MAIN)
-- [Best of the Best™ - Changelog ](http://tiny.cc/BOB_whats_new)
-- [cdromance -> PSX, PS2, PSP, Dreamcast,... ](https://cdromance.com/)
+- [archive - CHD Playstation](https://archive.org/details/chd_psx) - PSX CHD
+- [Best of the Best™](http://tiny.cc/BOB_MAIN) - Solo los mejores juegos
+- [Best of the Best™](http://tiny.cc/BOB_whats_new) - Changelog
+- [cdromance](https://cdromance.com/) - PSX, PS2, PSP, Dreamcast,...
+- [dlpsgame](https://dlpsgame.com/category/ps3/) - PS2, PS3, PS4
 - [edge emulation ](https://edgeemu.net/)
 - [freeroms ](https://www.freeroms.com/)
-- [gamesgx -> PS2 ](https://www.gamesgx.net/)
-- [juegospsvitavpk -> PSVita ](http://www.juegospsvitavpk.com/)
-- [lodelasroms -> PSX CHD ](http://lodelasroms.myddns.rocks/)
-- [nesgm -> PSVita ](https://nesgm.net/category/juegos-ps-vita/)
+- [gamesgx](https://www.gamesgx.net/) - PS2
+- [juegospsvitavpk](http://www.juegospsvitavpk.com/) - PSVita
+- [lodelasroms](http://lodelasroms.myddns.rocks/) - PSX CHD
+- [nesgm](https://nesgm.net/category/juegos-ps-vita/) - PSVita
 - [nextgenroms ](https://www.nextgenroms.com/)
-- [Planetemu -> Mame ](https://www.planetemu.net/machine/mame)
-- [WoWroMs -> Mame, PSX, PSP, NDS,... ](https://wowroms.com/en/)
+- [nopaystation](https://nopaystation.com/) - PSX, PSP, PS3, PSVita
+- [Planetemu -> Mame](https://www.planetemu.net/machine/mame)
+- [Projeto Launchbox](https://archive.org/details/@ronifoca) - MD, SNES, PSX
+- [WoWroMs](https://wowroms.com/en/) - Mame, PSX, PSP, NDS,...
 
 ### Kodi :tv:
 
@@ -252,10 +255,12 @@
 
 ### Streaming :tv: TV, Musica, Deportes,...
 
+- [acestream ](https://www.futbolgratis.workers.dev/)
 - [clubbersradio ](http://myradiostream.com/station/flashplayer.php?s=s31&p=22720)
 - [clubbersradio mobile ](http://myradiostream.com/mobile/clubbersradio)
 - [deezer ](https://www.deezer.com/es/)
 - [emisora ](https://emisora.org.es/)
+- [iptv ](https://github.com/iptv-org/iptv)
 - [Photocall ](https://photocall.tv/)
 - [radio.garden ](https://radio.garden)
 - [sportsonline ](http://sportsonline.to/)
@@ -369,11 +374,12 @@
 
 - [Files - A modern file manager that pushes the boundaries of the platform ](https://github.com/files-community/Files)
 - [MediaCreationTool - Universal MCT wrapper script for all Windows 10/11 versions from 1507 to 21H2! ](https://github.com/AveYo/MediaCreationTool.bat)
+- [Optimizer - The finest Windows Optimizer ](https://github.com/hellzerg/optimizer)
 - [ThisIsWin11 - The real PowerToys for Windows 11 ](https://github.com/builtbybel/ThisIsWin11)
 
 ### Windows :window: WSA (Windows Subsystem for Android) :iphone:
 
-- [Magisk on WSA - Integrate Magisk root and OpenGApps into WSA ](https://github.com/LSPosed/MagiskOnWSA)
+- [Magisk on WSA - Integrate Magisk root and OpenGApps into WSA ](https://github.com/LSPosed/MagiskOnWSALocal)
 - [WSAGAScript - Scripts to install Google Apps into a WSA image. Plus optional root ](https://github.com/ADeltaX/WSAGAScript)
 - [WSAtools - Easy-to-use apk installer for Windows Subsystem for Android ](https://github.com/weareblahs/WSAtools)
 

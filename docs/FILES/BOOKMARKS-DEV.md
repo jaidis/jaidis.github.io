@@ -2,9 +2,9 @@
 
 ### #Feeding data
 
-- [All of Frontend - Share interesting, entry-level open source projects on GitHub. ](https://github.com/521xueweihan/HelloGitHub)
-- [All of Frontend - The front-end content you want to know is here ](https://github.com/KieSun/all-of-frontend)
-- [Design Resources for Developers - Curated list of design and UI resources from stock photos, web templates, CSS frameworks, UI libraries, tools and much more ](https://github.com/bradtraversy/design-resources-for-developers)
+- [All of Frontend](https://github.com/521xueweihan/HelloGitHub) - Share interesting, entry-level open source projects on GitHub.
+- [All of Frontend ](https://github.com/KieSun/all-of-frontend)- The front-end content you want to know is here
+- [Design Resources for Developers](https://github.com/bradtraversy/design-resources-for-developers) - Curated list of design and UI resources from stock photos, web templates, CSS frameworks, UI libraries, tools and much more
 - [mrd0x ](https://mrd0x.com/)
 
 ### Awesome lists
@@ -20,11 +20,13 @@
 - [Awesome macOS open source applications ](https://github.com/serhii-londar/open-source-mac-os-apps)
 - [Awesome Jupyter Notebooks ](https://github.com/jupyter-naas/awesome-notebooks)
 - [Awesome open-source alternatives to SaaS ](https://github.com/RunaCapital/awesome-oss-alternatives)
+- [Awesome Python ](https://github.com/vinta/awesome-python)
 - [Awesome React Native ](https://github.com/jondot/awesome-react-native)
 - [Awesome Selfhosted ](https://github.com/awesome-selfhosted/awesome-selfhosted)
 - [Awesome Stacks ](https://github.com/stackshareio/awesome-stacks)
 - [Awesome Tunneling ](https://github.com/anderspitman/awesome-tunneling)
 - [Awesome VuePress ](https://github.com/vuepress/awesome-vuepress)
+- [Awesome Web Security ](https://github.com/qazbnm456/awesome-web-security)
 - [Awesome ZSH plugins ](https://github.com/unixorn/awesome-zsh-plugins)
 - [Marcel Bischoff's Awesome Command Line Apps ](https://git.herrbischoff.com/awesome-command-line-apps/about/)
 - [Marcel Bischoff's Awesome macOS Command Line ](https://git.herrbischoff.com/awesome-macos-command-line/about/)
@@ -32,22 +34,23 @@
 
 ### Bash, shell,...
 
-- [Aturin - :turtle: Magical shell history ](https://github.com/ellie/atuin)
-- [bat - A cat clone with syntax highlighting and Git integration ](https://github.com/sharkdp/bat)
-- [fig - Adds autocomplete to your macos terminal ](https://github.com/withfig/autocomplete)
-- [nushell - A new type of shell ](https://github.com/nushell/nushell)
-- [Tabby - A terminal for a more modern age ](https://github.com/Eugeny/tabby)
-- [The Art of Command Line - Master the command line, in one page ](https://github.com/jlevy/the-art-of-command-line)
-- [The Fuck - Magnificent app which corrects your previous console command ](https://github.com/nvbn/thefuck)
+- [Aturin](https://github.com/ellie/atuin) - :turtle: Magical shell history
+- [bat](https://github.com/sharkdp/bat)- A cat clone with syntax highlighting and Git integration
+- [fig](https://github.com/withfig/autocomplete) - Adds autocomplete to your macos terminal
+- [nushell](https://github.com/nushell/nushell) - A new type of shell
+- [Tabby](https://github.com/Eugeny/tabby) - A terminal for a more modern age
+- [Tere](https://github.com/mgunyho/tere) - Terminal file explorer, a faster alternative to cd + ls
+- [The Art of Command Line](https://github.com/jlevy/the-art-of-command-line) - Master the command line, in one page
+- [The Fuck](https://github.com/nvbn/thefuck) - Magnificent app which corrects your previous console command
 
 ### Browser customization
 
-- [user.js - Firefox privacy, security and anti-fingerprinting: a comprehensive user.js template for configuration and hardening ](https://github.com/arkenfox/user.js)
+- [user.js](https://github.com/arkenfox/user.js) - Firefox privacy, security and anti-fingerprinting: a comprehensive user.js template for configuration and hardening
 
 ### Browser support
 
 - [caniuse ](https://caniuse.com/)
-- [UAParser.js - Detect Browser, Engine, OS, CPU, and Device type/model from User-Agent data. Supports browser & node.js environment ](https://github.com/faisalman/ua-parser-js)
+- [UAParser.js](https://github.com/faisalman/ua-parser-js) - Detect Browser, Engine, OS, CPU, and Device type/model from User-Agent data. Supports browser & node.js environment
 
 ### CDN
 
@@ -57,8 +60,8 @@
 
 ### Cheat Sheet
 
-- [Cheatsheets - Community-sourced cheatsheets ](https://github.com/cheat/cheatsheets)
-- [Devhints - TL;DR for developer documentation, a ridiculous collection of cheatsheets ](https://github.com/rstacruz/cheatsheets)
+- [Cheatsheets](https://github.com/cheat/cheatsheets) - Community-sourced cheatsheets
+- [Devhints](https://github.com/rstacruz/cheatsheets) - TL;DR for developer documentation, a ridiculous collection of cheatsheets
 - [fontawesome v4.7.0 ](https://htmlcheatsheet.com/)
 - [fontawesome v5 ](https://fontawesome.com/v5/cheatsheet)
 - [Git Cheat Sheet - @soulrider911 ](http://git-cheatsheet.com/)
@@ -66,7 +69,7 @@
 - [htmlcheatsheet (HTML, CSS, JS, JQUERY) ](https://htmlcheatsheet.com/)
 - [ihateregex ](https://ihateregex.io/)
 - [Modern PHP Cheatsheet ](https://github.com/smknstd/modern-php-cheatsheet)
-- [OWASP Cheat Sheet Series - Open Web Application Security Project ](https://cheatsheetseries.owasp.org/)
+- [OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/) - Open Web Application Security Project
 - [The Ultimate Markdown Cheat Sheet ](https://towardsdatascience.com/the-ultimate-markdown-cheat-sheet-3d3976b31a0)
 - [TodoMVC App Written in Vanilla JS in 2022 ](https://github.com/1Marc/todomvc-vanillajs-2022)
 
@@ -74,25 +77,29 @@
 
 - [30 Days Of JavaScript ](https://github.com/Asabeneh/30-Days-Of-JavaScript)
 - [30 Days Of React ](https://github.com/Asabeneh/30-Days-Of-React)
-- [50 Projects in 50 Days - 50+ mini web projects using HTML, CSS & JS ](https://github.com/bradtraversy/50projects50days)
+- [50 Projects in 50 Days](https://github.com/bradtraversy/50projects50days) - 50+ mini web projects using HTML, CSS & JS
+- [:orange_book: Amazon Web Services](https://github.com/open-guides/og-aws) - a practical guide
 - [Awesome Guidelines ](https://awesome-guidelines.com/)
 - [Clean Code concepts adapted for JavaScript ](https://github.com/ryanmcdermott/clean-code-javascript)
 - [Data Structure & Algorithms 101 with doodles ](https://github.com/girliemac/a-picture-is-worth-a-1000-words)
-- [Devops Exercises - Linux, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible, Git, Kubernetes, Terraform, OpenStack, SQL, NoSQL, Azure, GCP, DNS, Elastic, Network, Virtualization. DevOps Interview Questions ](https://github.com/bregman-arie/devops-exercises)
+- [Devops Exercises](https://github.com/bregman-arie/devops-exercises) - Linux, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible, Git, Kubernetes, Terraform, OpenStack, SQL, NoSQL, Azure, GCP, DNS, Elastic, Network, Virtualization. DevOps Interview Questions
 - [:memo: JavaScript Algorithms ](https://github.com/trekhleb/javascript-algorithms)
-- [Laravel Tips - Awesome Laravel tips and tricks for all artisans ](https://github.com/LaravelDaily/laravel-tips)
-- [🧘 react philosophies - Things I think about when I write React code ](https://github.com/mithi/react-philosophies)
-- [Roadmap.sh - Roadmap to becoming a developer in 2022 ](https://github.com/kamranahmedse/developer-roadmap)
-- [Rustlings - :crab: Small exercises to get you used to reading and writing Rust code! ](https://github.com/rust-lang/rustlings/)
+- [Laravel Tips](https://github.com/LaravelDaily/laravel-tips) - Awesome Laravel tips and tricks for all artisans
+- [Node.js Best Practices](https://github.com/goldbergyoni/nodebestpractices) - :white_check_mark: The Node.js best practices list (August 2022)
+- [Patterns](https://www.patterns.dev/) - Improve how you architect webapps
+- [🧘 react philosophies](https://github.com/mithi/react-philosophies) - Things I think about when I write React code
+- [Roadmap.sh](https://github.com/kamranahmedse/developer-roadmap) - Roadmap to becoming a developer in 2022
+- [Rustlings](https://github.com/rust-lang/rustlings/) - :crab: Small exercises to get you used to reading and writing Rust code!
 - [The Algorithms ](https://the-algorithms.com/)
-- [What the f\*ck JavaScript? - :zany_face: A list of funny and tricky JavaScript examples ](https://github.com/denysdovhan/wtfjs)
+- [What the f\*ck JavaScript?](https://github.com/denysdovhan/wtfjs) - :zany_face: A list of funny and tricky JavaScript examples
+- [TotalTypeScript](https://www.totaltypescript.com/) - Become the TypeScript Wizard at Your Company
 
 ### Cloud Computing
 
 - [Amazon Web Service ](https://aws.amazon.com/es/)
-- [localstack - 💻 A fully functional local AWS cloud stack. Develop and test your cloud & Serverless apps offline! ](https://github.com/localstack/localstack)
+- [localstack](https://github.com/localstack/localstack) - 💻 A fully functional local AWS cloud stack. Develop and test your cloud & Serverless apps offline!
 - [Public Cloud Services Comparison ](https://comparecloud.in/)
-- [Supabase - The Open Source Firebase Alternative ](https://supabase.io/)
+- [Supabase](https://supabase.io/) - The Open Source Firebase Alternative
 
 ### Cloud Computing 🏞 Storage Images
 
@@ -165,6 +172,7 @@
 - [QuestDB - An open source SQL database designed to process time series data, faster ](https://github.com/questdb/questdb)
 - [Realm - A mobile database: a replacement for SQLite & ORMs. ](https://github.com/realm/realm-dart)
 - [SpiceDB - A Zanzibar-inspired database that stores, computes, and validates application permissions ](https://github.com/authzed/spicedb)
+- [SurrealDB](https://github.com/surrealdb/surrealdb) - A scalable, distributed, collaborative, document-graph database, for the realtime web
 - [WatermelonDB - watermelon Reactive & asynchronous database for powerful React and React Native apps zap ](https://github.com/Nozbe/WatermelonDB)
 
 ### Design, prototyping,...
@@ -186,6 +194,7 @@
 - [kubesphere - The container platform tailored for Kubernetes multi-cloud, datacenter, and edge management ](https://github.com/kubesphere/kubesphere)
 - [Kunde21 raspberry repo ](https://github.com/Kunde21/raspberry-dev)
 - [linuxserver images ](https://fleet.linuxserver.io/)
+- [littlelink-server](https://github.com/techno-tim/littlelink-server) - A lightweight, open source, and self-hosted alternative to linktree in a Docker container!
 - [portainer - Making Docker and Kubernetes management easy ](https://github.com/portainer/portainer/)
 - [portainer templates (community) ](https://www.reddit.com/r/portainer/comments/gym7ar/the_selfhostedpro_and_nashosted_portainer_app/)
 - [portainer templates source code ](https://github.com/SelfhostedPro/selfhosted_templates)
@@ -212,6 +221,7 @@
 ### Examples, Exercises, Quizzes,...
 
 - [Go generics the hard way - A hands-on approach to getting started with Go generics ](https://github.com/akutz/go-generics-the-hard-way)
+- [gopherlings - :blue_book: Learn Go by fixing tiny incorrect programs ](https://github.com/soypat/gopherlings)
 - [LearnGo ](https://github.com/inancgumus/learngo)
 
 ### Fonts, Icons,...
@@ -239,29 +249,37 @@
 
 ##### Go
 
-- [Bud - The Full-Stack Web Framework for Go ](https://github.com/livebud/bud)
-- [Fiber - ⚡️ Express inspired web framework written in Go ](https://github.com/gofiber/fiber)
-- [Gin - A HTTP web framework written in Go (Golang). It features a Martini-like API with much better performance -- up to 40 times faster. If you need smashing performance, get yourself some Gin ](https://github.com/gin-gonic/gin)
-- [Kratos - Your ultimate Go microservices framework for the cloud-native era ](https://github.com/go-kratos/kratos)
+- [Bud](https://github.com/livebud/bud) - The Full-Stack Web Framework for Go
+- [Echo](https://github.com/labstack/echo) - High performance, minimalist Go web framework
+- [Fiber](https://github.com/gofiber/fiber) - ⚡️ Express inspired web framework written in Go
+- [Gin](https://github.com/gin-gonic/gin) - A HTTP web framework written in Go (Golang). It features a Martini-like API with much better performance -- up to 40 times faster. If you need smashing performance, get yourself some Gin
+- [go-zero](https://github.com/zeromicro/go-zero) - A web and rpc framework written in Go
+- [Go Micro](https://github.com/asim/go-micro) - A Go microservices framework
+- [Kratos](https://github.com/go-kratos/kratos) - Your ultimate Go microservices framework for the cloud-native era
+- [Pocketbase](https://github.com/pocketbase/pocketbase) - Open Source realtime backend in 1 file
+
+##### Java
+
+- [Spring Cloud Tencent](https://github.com/Tencent/spring-cloud-tencent) - A Spring Boot based Service Governance Framework provided by Tencent, including service discovery, traffic control, circuitbreak, ratelimit, config and so on.
 
 ##### JS
 
 - [angular ](https://angular.io/)
 - [electronjs ](https://www.electronjs.org/)
 - [expressjs ](http://expressjs.com/)
-- [frontity - The React framework for WordPress ](https://frontity.org/)
-- [gatsby - Build blazing fast, modern apps and websites with React ](https://github.com/gatsbyjs/gatsby/)
-- [go-zero - A web and rpc framework written in Go ](https://github.com/zeromicro/go-zero)
+- [Fresh](https://github.com/denoland/fresh) - The next-gen web framework
+- [frontity](https://frontity.org/) - The React framework for WordPress
+- [gatsby](https://github.com/gatsbyjs/gatsby/) - Build blazing fast, modern apps and websites with React
 - [grapesjs ](https://grapesjs.com/)
-- [preactjs - Fast 3kB alternative to React with the same modern API ](https://preactjs.com/)
+- [preactjs](https://preactjs.com/) - Fast 3kB alternative to React with the same modern API
 - [reactjs ](https://reactjs.org/)
-- [reactjs nextjs - The React Framework ](https://github.com/vercel/next.js)
-- [reactjs nextauth.js - Authentication for Next.js ](https://github.com/nextauthjs/next-auth)
+- [reactjs nextjs](https://github.com/vercel/next.js) - The React Framework
+- [reactjs nextauth.js](https://github.com/nextauthjs/next-auth) - Authentication for Next.js
 - [React Native for Windows + macOS ](https://microsoft.github.io/react-native-windows/)
 - [svelte ](https://github.com/sveltejs/svelte)
 - [vuejs ](https://vuejs.org/)
-- [vuejs nuxtjs - The Intuitive Vue Framework ](https://github.com/nuxt/nuxt.js)
-- [vuejs vant - Lightweight Mobile UI Components built on Vue ](https://github.com/youzan/vant)
+- [vuejs nuxtjs](https://github.com/nuxt/nuxt.js) - The Intuitive Vue Framework
+- [vuejs vant](https://github.com/youzan/vant) - Lightweight Mobile UI Components built on Vue
 
 ##### PHP
 
@@ -273,7 +291,7 @@
 
 ##### Rust
 
-- [Tauri - Build smaller, faster, and more secure desktop applications with a web frontend](https://github.com/tauri-apps/tauri)
+- [Tauri](https://github.com/tauri-apps/tauri) - Build smaller, faster, and more secure desktop applications with a web frontend
 
 ### Frameworks Boilerplate, UI,... (JS)
 
@@ -283,6 +301,7 @@
 - [Blueprint - A React-based UI toolkit for the web ](https://github.com/palantir/blueprint)
 - [Bulletproof React 🛡️ ⚛️ ](https://github.com/alan2207/bulletproof-react)
 - [Element Plus - 🎉 A Vue.js 3 UI Library made by Element team ](https://github.com/element-plus/element-plus)
+- [HooBank](https://github.com/adrianhajdin/project_hoobank) - Modern UI/UX website using React.js & Tailwind CSS
 - [Mantine - React components library with native dark theme support ](https://github.com/mantinedev/mantine)
 - [MDsveX - markdown preprocessor for Svelte ](https://github.com/pngwn/MDsveX)
 - [MUI Core (formerly Material-UI) - The React UI library you always wanted. Follow your own design system, or start with Material Design - Freemium](https://github.com/mui/material-ui)
@@ -302,11 +321,12 @@
 
 - [docusaurus ](https://docusaurus.io/)
 - [doxygen ](https://www.doxygen.nl/index.html)
-- [MkDocs - Project documentation with Markdown ](https://github.com/mkdocs/mkdocs/)
+- [MkDocs](https://github.com/mkdocs/mkdocs/) - Project documentation with Markdown
+- [Redoc](https://github.com/Redocly/redoc) - :blue_book: OpenAPI/Swagger-generated API Reference Documentation
 - [Swagger UI ](https://github.com/swagger-api/swagger-ui)
-- [VuePress - :memo: Minimalistic Vue-powered static site generator ](https://vuepress.vuejs.org/)
-- [VuePress v2 - :memo: Minimalistic Vue-powered static site generator ](https://github.com/vuepress/vuepress-next)
-- [Wiji.js - A modern and powerful wiki app built on Node.js ](https://github.com/requarks/wiki)
+- [VuePress](https://vuepress.vuejs.org/) - :memo: Minimalistic Vue-powered static site generator
+- [VuePress v2](https://github.com/vuepress/vuepress-next) - :memo: Minimalistic Vue-powered static site generator
+- [Wiji.js](https://github.com/requarks/wiki) - A modern and powerful wiki app built on Node.js
 
 ### Frameworks Mobile Apps (JS)
 
@@ -358,6 +378,10 @@
 
 - [jwt ](https://jwt.io/)
 
+### IDEs
+
+- [Lapce](https://github.com/lapce/lapce) - Lightning-fast and Powerful Code Editor written in Rust
+
 ### Images 🖼️
 
 - [dummyimage ](https://dummyimage.com/)
@@ -373,6 +397,7 @@
 - [pixeltrue - free illustrations ](https://www.pixeltrue.com/free-illustrations)
 - [placeholder ](https://placeholder.com/)
 - [placeimg ](https://placeimg.com/)
+- [Randomuser.me](https://github.com/RandomAPI/Randomuser.me-Node)
 - [stockvault ](https://www.stockvault.net/)
 - [unsplash ](https://unsplash.com/)
 
@@ -392,14 +417,18 @@
 
 ##### Go
 
-- [Lo - :boom: A Lodash-style Go library based on Go 1.18+ Generics (map, filter, contains, find...)](https://github.com/samber/lo)
-- [TinyGo - Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and command-line tools. Based on LLVM ](https://github.com/tinygo-org/tinygo)
+- [GORM](https://github.com/go-gorm/gorm) - The fantastic ORM library for Golang, aims to be developer friendly
+- [Lo](https://github.com/samber/lo) - :boom: A Lodash-style Go library based on Go 1.18+ Generics (map, filter, contains, find...)
+- [TinyGo](https://github.com/tinygo-org/tinygo) - Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and command-line tools. Based on LLVM
+- [Wails](https://github.com/wailsapp/wails) - Create beautiful applications using Go
 
 ##### JS
 
 - [Axios - Promise based HTTP client for the browser and node.js ](https://github.com/axios/axios)
+- [bun - Incredibly fast JavaScript runtime, bundler, transpiler and package manager – all in one ](https://github.com/oven-sh/bun)
 - [Cesium - An open-source JavaScript library for world-class 3D globes and maps 🌎 ](https://github.com/CesiumGS/cesium)
 - [clipboard.js - ✂️ Modern copy to clipboard. No Flash. Just 3kb gzipped 📋 ](https://github.com/zenorocha/clipboard.js)
+- [Day.js](https://github.com/iamkun/dayjs) - :alarm_clock: 2kB immutable date-time library alternative to Moment.js with the same modern API
 - [Emotion - :woman_singer: CSS-in-JS library designed for high performance style composition ](https://github.com/emotion-js/emotion)
 - [Fleet - :rocket: The blazing fast build tool for Rust. ](https://github.com/dimensionhq/fleet)
 - [FortuneSheet - A drop-in javascript spreadsheet library that provides rich features like Excel and Google Sheets ](https://github.com/ruilisi/fortune-sheet)
@@ -411,6 +440,8 @@
 - [Plyr - A simple HTML5, YouTube and Vimeo player](https://github.com/sampotts/plyr)
 - [Prism - Lightweight, robust, elegant syntax highlighting ](https://github.com/PrismJS/prism)
 - [PyScript - A meta project that aims to combine multiple open technologies into a framework that allows users to create sophisticated browser applications with Python ](https://github.com/pyscript/pyscript)
+- [Tippy.js](https://github.com/atomiks/tippyjs) - Tooltip, popover, dropdown, and menu library
+- [tldraw - A tiny little drawing app ](https://github.com/tldraw/tldraw)
 - [whatsapp-web.js - A WhatsApp client library for NodeJS that connects through the WhatsApp Web browser app ](https://github.com/pedroslopez/whatsapp-web.js)
 
 ##### Python
@@ -464,9 +495,10 @@
 
 ##### :penguin: Linux
 
-- [AppImagePool - A simple, modern AppImageHub Client, powered by flutter ](https://github.com/prateekmedia/appimagepool)
-- [Crontab UI - Easy and safe way to manage your crontab file ](https://github.com/alseambusher/crontab-ui)
-- [SysMonTask - Linux system monitor with the compactness and usefulness of windows task manager to allow higher control and monitoring ](https://github.com/KrispyCamel4u/SysMonTask)
+- [AppImagePool](https://github.com/prateekmedia/appimagepool) - A simple, modern AppImageHub Client, powered by flutter
+- [Crontab UI ](https://github.com/alseambusher/crontab-ui) - Easy and safe way to manage your crontab file
+- [SysMonTask](https://github.com/KrispyCamel4u/SysMonTask) - Linux system monitor with the compactness and usefulness of windows task manager to allow higher control and monitoring
+- [Vitals](https://github.com/corecoding/Vitals) - A glimpse into your computer's temperature, voltage, fan speed, memory usage and CPU load
 
 ##### :apple: MacOS
 
@@ -477,6 +509,7 @@
 - [Maestral - Open-source Dropbox client for macOS and Linux ](https://github.com/SamSchott/maestral)
 - [MonitorControl - Control your external monitor brightness & volume on your Mac ](https://github.com/MonitorControl/MonitorControl)
 - [PD Runner - A VM launcher for Parallels Desktop ](https://github.com/lihaoyun6/PD-Runner)
+- [Rectangle - Move and resize windows on macOS with keyboard shortcuts and snap areas ](https://github.com/rxhanson/Rectangle)
 - [scrcpy - Display and control your Android device ](https://github.com/Genymobile/scrcpy)
 - [Stats - macOS system monitor in your menu bar ](https://github.com/exelban/stats)
 - [TopNotch - Makes the notch disappear like a :ninja: ](https://topnotch.app/)
@@ -484,25 +517,28 @@
 
 ##### :iphone: Mobile
 
-- [Blokada - The official repo for Blokada for Android and iOS ](https://github.com/blokadaorg/blokada)
-- [Bromite - Bromite a Chromium fork with ad blocking and privacy enhancements; take back your browser!](https://github.com/bromite/bromite)
-- [dns66 - DNS-based Host Blocker (and lightweight ad blocker) for Android ](https://github.com/julian-klode/dns66)
-- [FairEmail - Fully featured, open source, privacy friendly email app for Android ](https://github.com/M66B/FairEmail)
-- [florisboard - An open-source keyboard for Android which respects your privacy ](https://github.com/florisboard/florisboard)
-- [Fossapps - Create Your own Fossapps Package from a wide range of Free and Open Source Apps ](https://github.com/wacko1805/Fossapps-creator)
-- [microG Project - A free-as-in-freedom re-implementation of Google’s proprietary Android user space apps and libraries ](https://microg.org/)
-- [NewPipe - A libre lightweight streaming front-end for Android ](https://github.com/TeamNewPipe/NewPipe)
-- [NewPipe SponsorBlock - A fork of NewPipe with SponsorBlock functionality ](https://github.com/polymorphicshade/NewPipe)
-- [NowInAndroid - A fully functional Android app built entirely with Kotlin and Jetpack Compose ](https://github.com/android/nowinandroid)
-- [openboard - 100% FOSS keyboard, based on AOSP ](https://github.com/dslul/openboard)
-- [opengapps - The main repository of the Open GApps Project ](https://github.com/opengapps/opengapps)
-- [Pinball - Google I/O 2022 Pinball game built with Flutter and Firebase ](https://github.com/flutter/pinball)
-- [Pokedex - Android Pokedex demo ](https://github.com/skydoves/Pokedex)
-- [Tachiyomi - Free and open source manga reader for Android ](https://github.com/tachiyomiorg/tachiyomi)
+- [Blokada](https://github.com/blokadaorg/blokada) - The official repo for Blokada for Android and iOS
+- [Bromite](https://github.com/bromite/bromite) - Bromite a Chromium fork with ad blocking and privacy enhancements; take back your browser!
+- [dns66](https://github.com/julian-klode/dns66) - DNS-based Host Blocker (and lightweight ad blocker) for Android
+- [FairEmail](https://github.com/M66B/FairEmail) - Fully featured, open source, privacy friendly email app for Android
+- [florisboard](https://github.com/florisboard/florisboard) - An open-source keyboard for Android which respects your privacy
+- [Fossapps](https://github.com/wacko1805/Fossapps-creator) - Create Your own Fossapps Package from a wide range of Free and Open Source Apps
+- [Infinity For Reddit](https://github.com/Docile-Alligator/Infinity-For-Reddit) - A Reddit client on Android written in Java
+- [microG Project](https://microg.org/) - A free-as-in-freedom re-implementation of Google’s proprietary Android user space apps and libraries
+- [NewPipe](https://github.com/TeamNewPipe/NewPipe) - A libre lightweight streaming front-end for Android
+- [NewPipe](https://github.com/polymorphicshade/NewPipe) SponsorBlock - A fork of NewPipe with SponsorBlock functionality
+- [NowInAndroid](https://github.com/android/nowinandroid) - A fully functional Android app built entirely with Kotlin and Jetpack Compose
+- [openboard](https://github.com/dslul/openboard) - 100% FOSS keyboard, based on AOSP
+- [opengapps](https://github.com/opengapps/opengapps) - The main repository of the Open GApps Project
+- [Pinball](https://github.com/flutter/pinball) - Google I/O 2022 Pinball game built with Flutter and Firebase
+- [Pokedex](https://github.com/skydoves/Pokedex) - Android Pokedex demo
+- [Tachiyomi](https://github.com/tachiyomiorg/tachiyomi) - Free and open source manga reader for Android
+- [Wonderous](https://github.com/gskinnerTeam/flutter-wonderous-app) - A showcase app for the Flutter SDK. Wonderous will educate and entertain as you uncover information about some of the most famous structures in the world.
 
 ##### :window: Windows
 
 - [Fan Control - This is the release repository for Fan Control, a highly customizable fan controlling software for Windows. ](https://github.com/Rem0o/FanControl.Releases)
+- [Keyviz](https://github.com/mulaRahul/keyviz) - A free and open-source tool to visualize your keystrokes keyboard in real-time
 - [Picotorrent - A tiny, hackable BitTorrent client ](https://github.com/picotorrent/picotorrent)
 - [Winfetch - :hammer_and_wrench: A command-line system information utility written in PowerShell. Like Neofetch, but for Windows](https://github.com/kiedtl/winfetch)
 
@@ -512,6 +548,7 @@
 - [Flameshot - Powerful yet simple to use screenshot software :desktop_computer: :camera_flash: ](https://github.com/flameshot-org/flameshot)
 - [Glances - A top/htop alternative for GNU/Linux, BSD, Mac OS and Windows operating systems ](https://github.com/nicolargo/glances)
 - [Koodo Reader - A modern ebook manager and reader with sync and backup capacities for Windows, macOS, Linux and Web ](https://github.com/troyeguo/koodo-reader)
+- [massCode - A free and open source code snippets manager for developers ](https://github.com/massCodeIO/massCode)
 - [NotepadNext - A cross-platform, reimplementation of Notepad++ ](https://github.com/dail8859/NotepadNext)
 - [Spacedrive - A open source cross-platform file explorer, powered by a virtual distributed filesystem written in Rust. ](https://github.com/spacedriveapp/spacedrive)
 - [Universal Android Debloater GUI - Cross-platform GUI written in Rust using ADB to debloat non-rooted android devices. Improve your privacy, the security and battery life of your device ](https://github.com/0x192/universal-android-debloater)
@@ -529,6 +566,7 @@
 ### Others, miscellaneous,...
 
 - [50 incredible web development tools you need to know ](https://www.creativebloq.com/features/web-dev-tools)
+- [Baileys](https://github.com/adiwajshing/Baileys) - Lightweight full-featured WhatsApp Web + Multi-Device API
 - [Best-websites-a-programmer-should-visit ](https://github.com/sdmg15/Best-websites-a-programmer-should-visit)
 - [Clone Wars - 100+ open-source clones of popular sites like Airbnb, Amazon, Instagram, Netflix, Tiktok, Spotify, Whatsapp, Youtube etc. See source code, demo links, tech stack, github stars ](https://github.com/GorvGoyl/Clone-Wars)
 - [FrontEndCollection - Notes for Front-end Software Engineers. Covers common data structure and algorithms, basic web concepts, HTML & CSS & Javascript ](https://github.com/cheatsheet1999/FrontEndCollection)
@@ -551,9 +589,10 @@
 
 ### Portfolio
 
-- [Dopefolio - :fire: Portfolio Template for Developers :rocket: ](https://github.com/rammcodes/Dopefolio)
+- [Dopefolio](https://github.com/rammcodes/Dopefolio) - :fire: Portfolio Template for Developers :rocket:
 - [Leerob's portfolio ](https://github.com/leerob/leerob.io)
 - [Reactive Resume ](https://github.com/AmruthPillai/Reactive-Resume)
+- [Renovamen's portfolio](https://github.com/Renovamen/playground-macos) - My portfolio website simulating macOS's GUI, developed with React and UnoCSS
 
 ### Qemu, VM,...
 

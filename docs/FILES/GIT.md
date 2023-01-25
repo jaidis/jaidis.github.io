@@ -78,6 +78,27 @@ Para visualizar la configuración asociada a un repo
 git config --list
 ```
 
+Para cambiar de rama
+
+```bash
+git checkout <newbranch>
+git checkout develop
+```
+
+> Variante con `switch`
+>
+> ```bash
+> git switch <newbranch>
+> git switch develop
+> ```
+
+Para cambiar de rama pero sin guardar previamente los cambios realizados en la anterior rama
+
+```bash
+git switch --discard-changes <newbranch>
+git switch --discard-changes develop
+```
+
 Para crear una rama a partir del commit actual
 
 ```bash
@@ -85,12 +106,26 @@ git checkout -b <newbranch>
 git checkout -b feature-M001
 ```
 
+> Variante con `switch`
+>
+> ```bash
+> git switch -c <newbranch>
+> git switch -c feature-M001
+> ```
+
 Para crear una rama vacía
 
 ```bash
 git checkout --orphan <branch>
 git checkout --orphan new-docs
 ```
+
+> Variante con `switch`
+>
+> ```bash
+> git switch --orphan <branch>
+> git switch --orphan new-docs
+> ```
 
 Para borrar una rama en local
 
@@ -243,6 +278,13 @@ git checkout <primera-rama> && git merge <segunda-rama>
 git checkout mmunoz && git merge mmunoz-tests
 ```
 
+Cuando tenemos 2 ramas que parten del mismo punto, la segunda rama añade nuevos cambios y deseamos guardar dichos cambios en la primera rama pero en un _sólo commit_, es necesario cambiar a la primera rama, después hacer un merge de la segunda rama con el modificador `--squash` y por último es realizar un commit
+
+```bash
+git checkout <primera-rama> && git merge --squash <segunda-rama> && git commit -m "My Message"
+git checkout mmunoz && git merge --squash mmunoz-tests && git commit -m "Squashed merge"
+```
+
 Cuando tenemos una rama con un archivo más actualizado en origen y en local se ha modificado el mismo archivo, pero no queremos conservar los cambios del archivo en local
 
 ```bash
@@ -250,7 +292,7 @@ git checkout <filename>
 git checkout FLUTTER.md
 ```
 
-Para comparar un commint con un Tag con otra rama, se especifica el TAG con la rama a comparar
+Para comparar un commit con un Tag con otra rama, se especifica el TAG con la rama a comparar
 
 ```bash
 git diff --stat <tag> <branch>
@@ -289,6 +331,67 @@ git remote remove <origin>
 git remote remove origin-aws
 ```
 
+Para contar el total de commits de una rama
+
+```bash
+git rev-list --count HEAD
+```
+
+Para contar el total de commits de una rama hasta el commit actual
+
+```bash
+git rev-list --count develop..HEAD
+```
+
+Muestra el total de commits por cada usuario
+
+```bash
+git shortlog -s -n
+```
+
+## Git Flow
+
+`Git Flow` se basa en la creación y uso de ramas específicas para cada etapa del desarrollo de un proyecto
+
+Para iniciar un repositorio local y establecer la estructura de ramas de Git Flow, creando las ramas develop, main y una serie de ramas auxiliares para el manejo de releases, hotfixes y features
+
+```bash
+git flow init
+```
+
+<details>
+  <summary>Mostrar</summary>
+
+```bash
+Initialized empty Git repository in ~/project/.git/
+No branches exist yet. Base branches must be created now.
+Branch name for production releases: [main]
+Branch name for "next release" development: [develop]
+
+How to name your supporting branch prefixes?
+Feature branches? [feature/]
+Release branches? [release/]
+Hotfix branches? [hotfix/]
+Support branches? [support/]
+Version tag prefix? []
+```
+
+</details>
+
+>
+
+Para crear una nueva rama para el desarrollo de una nueva característica, basándose en la rama develop
+
+```bash
+git flow feature start feature_branch
+```
+
+Para finalizar el desarrollo de una característica, fusionando los cambios en la rama develop y eliminando la rama
+
+```bash
+git flow feature finish feature_branch
+```
+
 ## Git LFS
 
 La extensión LFS permite gestionar mejor los archivos grandes de un repositorio, guardando punteros a dichos archivos. Esta extensión esta soportada en sitios como `Github`
@@ -319,18 +422,111 @@ Nota: El servicio de Github limitada los archivos que superen los `100 MB` y se 
 
 > GitHub blocks pushes that exceed 100 MB
 
+## Git Submodule
+
+El comando `submodule` permite clonar un repositorio dentro de otro repositorio, de esta forma podemos tener un repo de forma privada que contenga información que no sea relevante para todo el público pero que esté disponible para consultar desde otro repo
+
+A groso modo, con submodule podemos tener un link a otro repo dentro de nuestro repo principal
+
+Para mostrar los submódulos dentro de un repo
+
+```bash
+git submodule
+```
+
+Clonar repo en carpeta
+
+```bash
+git submodule add <repo-origin> <folder>
+git submodule add https://github.com/jaidis/repo docs/repo
+```
+
+A continuación se guardan los cambios en el repo principal
+
+```bash
+git add . && git commit -m "Añadido submodulo X"
+```
+
+Cuando se clona un repo que contiene un `submodule` es necesario iniciar el/los submódulo/s con el comando `init`
+
+```bash
+git submodule init
+```
+
+Para descargar la información relacionada de esos subḿodulos
+
+```bash
+git submodule update
+```
+
+Para eliminar un submódulo dentro de un repo
+
+```bash
+git rm --cached <mysubmodule>
+```
+
+### Formas de actualizar los `submodule`
+
+#### Opción A
+
+De forma individual, se realiza un `git pull origin`
+
+Cuando esté toda la información actualizada se realiza un commit con los cambios traidos por el resto de submódulos
+
+#### Opción B
+
+De forma individual, se realiza un `git fetch` (para ver los nuevos cambios) junto con un `git merge origin/main`
+
+Cuando esté toda la información actualizada se realiza un commit con los cambios traidos por el resto de submódulos
+
+#### Opción C (recomendada)
+
+Para actualizar todos los submódulos de golpe (y confiar en los cambios que contengan) podemos utilizar el comando `git submodule update --remote --recursive`
+
+Cuando esté toda la información actualizada se realiza un commit con los cambios traidos por el resto de submódulos
+
+#### Opción de los cobardes `--recurse-submodules`
+
+Con el parámetro `--recurse-submodules` nos permite clonar y sincronizar los repos que contengan `submodule` sin tener que utilizar comandos extras
+
+```bash
+git clone --recurse-submodules
+git pull --recurse-submodules
+```
+
+## Scripts
+
+Para clonar todas las ramas del remoto, partiendo desde master
+
+```sh
+#!/bin/bash
+for branch in $(git branch --all | grep '^\s*remotes' | egrep --invert-match '(:?HEAD|master)$'); do
+    git branch --track "${branch##*/}" "$branch"
+done
+```
+
+Otra variante
+
+```sh
+#!/bin/bash
+git branch -a | grep -v HEAD | perl -ne 'chomp($_); s|^\*?\s*||; if (m|(.+)/(.+)| && not $d{$2}) {print qq(git branch --track $2 $1/$2\n)} else {$d{$_}=1}'
+```
+
 ## Enlaces
 
 - [Git and Git Flow Cheat Sheet ](https://github.com/arslanbilal/git-cheat-sheet)
+- [Gitflow Workflow ](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 - [GitHub - Actions virtual environments ](https://github.com/actions/virtual-environments)
 - [GitHub - Beautify GitHub Profile ](https://github.com/rzashakeri/beautify-github-profile)
 - [GitHub - custom domain for your GitHub Pages site ](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)
 - [GitHub - supported grammars ](https://github.com/github/linguist/tree/master/vendor)
 - [GitHub - supported grammars - list ](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)
+- [Youtube - Tutorial de Git (Makigas) ](https://www.youtube.com/playlist?list=PLTd5ehIj0goMCnj6V5NdzSIHBgrIXckGU)
 
-## GUI
+### GUI
 
-- [Guitar - Git GUI Client ](https://github.com/soramimi/Guitar)
+- [Gittyup](https://github.com/Murmele/Gittyup) - Understand your Git history!
+- [Guitar](https://github.com/soramimi/Guitar) - Git GUI Client
 
 ### Servicios en la nube 🌩
 

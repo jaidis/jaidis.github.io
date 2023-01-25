@@ -265,6 +265,9 @@
 - [Flutter Riverpod - StateNotifierProvider ( Part 7 ) ](https://www.youtube.com/watch?v=2kP-2t3_taE)
 - [How do avoid markNeedsBuilder() error using Flutter_Riverpod ](https://stackoverflow.com/q/66321199)
 - [list_detail_mvc_riverpod template ](https://github.com/brianegan/new_flutter_template/tree/main/evaluations%2Flist_detail_mvc_riverpod)
+- [Calculadora - Flutter_bloc pre v8 ](https://github.com/Klerith/flutter-calculator/tree/v0.0.2)
+- [Calculadora - GetX ](https://github.com/Klerith/flutter-calculadora-getx)
+- [Flutter_bloc post v8 ](https://github.com/Klerith/flutter-adv-estados)
 
 ### Tools: Appwrite
 

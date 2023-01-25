@@ -92,9 +92,14 @@ alias flutter-clean="flutter clean && rm -rf .dart_tool/ pubspec.lock android/ap
 alias flutter-ci="flutter-clean && flutter-install"
 alias flutter-install="flutter pub get && cd ios/ && pod install && cd .."
 alias flutter-r="flutter run --verbose" # Arranca el proyecto de Flutter mostrando información en consola
+alias http-server="python -m http.server 3000 -b localhost -d"
 alias limpia-actualiza-instala="sudo apt autoremove && sudo apt clean && sudo apt update && sudo apt upgrade -y" # Limpia la cache, actualiza los repos e instala los paquetes nuevos
+alias mvn-install="mvn clean install -DskipTests -Pdev -e"
+alias mvn-release="mvn clean install -DskipTests -Prelease -e"
 alias musica="sudo chmod 777 -R docker-data/music/" # Cambiar los permisos a 777 de la carpeta Music en raspberry
 alias nexus="emulator @Nexus5X" # Lanzar emulador android
+alias npml="npm i --legacy-peer-deps"
+alias npmrs="npm run start"
 alias pi="ssh pi@192.168.100.2" # Conectar a raspberry mediante ssh
 alias portainer="docker container stop portainer && docker container rm -f portainer && docker image rm -f portainer/portainer-ce:latest && docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest" # Actualiza el container de portainer a la última versión disponible
 alias reinicia="sudo shutdown -r now" # Envía la petición para reiniciar la raspberry
