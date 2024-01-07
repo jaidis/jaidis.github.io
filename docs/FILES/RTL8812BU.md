@@ -17,7 +17,7 @@ git clone https://github.com/cilynx/rtl88x2bu && cd rtl*
 Generar una variable de entorno con la versión del paquete actual
 
 ```bash
-VER=$(sed -n 's/\PACKAGE_VERSION="\(.\*\)"/\1/p' dkms.conf)
+VER=$(sed -n 's/\PACKAGE_VERSION="\(.*\)"/\1/p' dkms.conf)
 ```
 
 Copiar los archivos en el Sistema Operativo

@@ -34,6 +34,7 @@
 
 ### Bash, shell,...
 
+- [Alacritty](https://github.com/alacritty/alacritty) - A cross-platform, OpenGL terminal emulator
 - [Aturin](https://github.com/ellie/atuin) - :turtle: Magical shell history
 - [bat](https://github.com/sharkdp/bat)- A cat clone with syntax highlighting and Git integration
 - [fig](https://github.com/withfig/autocomplete) - Adds autocomplete to your macos terminal
@@ -61,6 +62,7 @@
 ### Cheat Sheet
 
 - [Cheatsheets](https://github.com/cheat/cheatsheets) - Community-sourced cheatsheets
+- [Christian's "Cheat-Sheets"](https://github.com/ChristianLempa/cheat-sheets)
 - [Devhints](https://github.com/rstacruz/cheatsheets) - TL;DR for developer documentation, a ridiculous collection of cheatsheets
 - [fontawesome v4.7.0 ](https://htmlcheatsheet.com/)
 - [fontawesome v5 ](https://fontawesome.com/v5/cheatsheet)
@@ -163,17 +165,18 @@
 
 ### Database
 
-- [CockroachDB - cloud-native distributed SQL database ](https://github.com/cockroachdb/cockroach)
-- [immudb - immutable database based on zero trust, SQL and Key-Value, tamperproof, data change history ](https://github.com/codenotary/immudb)
-- [Neon - The serverless open source alternative to AWS Aurora Postgres ](https://github.com/neondatabase/neon)
-- [MangoDB - A truly Open Source MongoDB alternative ](https://github.com/MangoDB-io/MangoDB)
-- [NocoDB - Open Source Airtable Alternative - turns any MySQL, Postgres, SQLite into a spreadsheet with REST APIs ](https://github.com/nocodb/nocodb)
-- [PlanetScale - is the only serverless database platform you can start in seconds and scale indefinitely ](https://planetscale.com/)
-- [QuestDB - An open source SQL database designed to process time series data, faster ](https://github.com/questdb/questdb)
-- [Realm - A mobile database: a replacement for SQLite & ORMs. ](https://github.com/realm/realm-dart)
-- [SpiceDB - A Zanzibar-inspired database that stores, computes, and validates application permissions ](https://github.com/authzed/spicedb)
+- [CockroachDB](https://github.com/cockroachdb/cockroach) - cloud-native distributed SQL database
+- [immudb](https://github.com/codenotary/immudb) - immutable database based on zero trust, SQL and Key-Value, tamperproof, data change history
+- [LibSQL](https://github.com/libsql/libsql) - A fork of SQLite that is both Open Source, and Open Contributions
+- [Neon](https://github.com/neondatabase/neon) - The serverless open source alternative to AWS Aurora Postgres
+- [MangoDB](https://github.com/MangoDB-io/MangoDB) - A truly Open Source MongoDB alternative
+- [NocoDB](https://github.com/nocodb/nocodb) - Open Source Airtable Alternative - turns any MySQL, Postgres, SQLite into a spreadsheet with REST APIs
+- [PlanetScale](https://planetscale.com/) - is the only serverless database platform you can start in seconds and scale indefinitely
+- [QuestDB](https://github.com/questdb/questdb) - An open source SQL database designed to process time series data, faster
+- [Realm](https://github.com/realm/realm-dart) - A mobile database: a replacement for SQLite & ORMs.
+- [SpiceDB](https://github.com/authzed/spicedb) - A Zanzibar-inspired database that stores, computes, and validates application permissions
 - [SurrealDB](https://github.com/surrealdb/surrealdb) - A scalable, distributed, collaborative, document-graph database, for the realtime web
-- [WatermelonDB - watermelon Reactive & asynchronous database for powerful React and React Native apps zap ](https://github.com/Nozbe/WatermelonDB)
+- [WatermelonDB](https://github.com/Nozbe/WatermelonDB) - watermelon Reactive & asynchronous database for powerful React and React Native apps zap
 
 ### Design, prototyping,...
 
@@ -270,6 +273,7 @@
 - [Fresh](https://github.com/denoland/fresh) - The next-gen web framework
 - [frontity](https://frontity.org/) - The React framework for WordPress
 - [gatsby](https://github.com/gatsbyjs/gatsby/) - Build blazing fast, modern apps and websites with React
+- [gluon](https://github.com/gluon-framework/gluon) - A new framework for creating desktop apps from websites, using system installed browsers and NodeJS
 - [grapesjs ](https://grapesjs.com/)
 - [preactjs](https://preactjs.com/) - Fast 3kB alternative to React with the same modern API
 - [reactjs ](https://reactjs.org/)
@@ -359,6 +363,7 @@
 - [CustomTkinter -A modern and customizable python UI-library based on Tkinter ](https://github.com/TomSchimansky/CustomTkinter)
 - [PySimpleGUI ](https://github.com/PySimpleGUI/PySimpleGUI)
 - [Python-GUI-examples ](https://github.com/swharden/Python-GUI-examples)
+- [Textual ](https://github.com/textualize/textual)
 - [Textual ](https://github.com/willmcgugan/textual)
 
 ##### Rust
@@ -544,16 +549,18 @@
 
 ##### Universal
 
-- [bpytop - Linux/OSX/FreeBSD resource monitor ](https://github.com/aristocratos/bpytop)
-- [Flameshot - Powerful yet simple to use screenshot software :desktop_computer: :camera_flash: ](https://github.com/flameshot-org/flameshot)
-- [Glances - A top/htop alternative for GNU/Linux, BSD, Mac OS and Windows operating systems ](https://github.com/nicolargo/glances)
-- [Koodo Reader - A modern ebook manager and reader with sync and backup capacities for Windows, macOS, Linux and Web ](https://github.com/troyeguo/koodo-reader)
-- [massCode - A free and open source code snippets manager for developers ](https://github.com/massCodeIO/massCode)
-- [NotepadNext - A cross-platform, reimplementation of Notepad++ ](https://github.com/dail8859/NotepadNext)
-- [Spacedrive - A open source cross-platform file explorer, powered by a virtual distributed filesystem written in Rust. ](https://github.com/spacedriveapp/spacedrive)
-- [Universal Android Debloater GUI - Cross-platform GUI written in Rust using ADB to debloat non-rooted android devices. Improve your privacy, the security and battery life of your device ](https://github.com/0x192/universal-android-debloater)
-- [Video-subtitle-extractor (vse) - A GUI tool for extracting hard-coded subtitle (hardsub) from videos and generating srt files. ](https://github.com/YaoFANGUK/video-subtitle-extractor)
-- [Xplorer - A customizable, modern file manager ](https://github.com/kimlimjustin/xplorer)
+- [bpytop](https://github.com/aristocratos/bpytop) - Linux/OSX/FreeBSD resource monitor
+- [Fastfetch](https://github.com/LinusDierheimer/fastfetch) - Like neofetch, but much faster because written in C
+- [Flameshot](https://github.com/flameshot-org/flameshot) - Powerful yet simple to use screenshot software :desktop_computer: :camera_flash:
+- [Glances](https://github.com/nicolargo/glances) - A top/htop alternative for GNU/Linux, BSD, Mac OS and Windows operating systems
+- [KeepassXC](https://github.com/keepassxreboot/keepassxc) - A cross-platform community-driven port of the Windows application “Keepass Password Safe”
+- [Koodo Reader](https://github.com/troyeguo/koodo-reader) - A modern ebook manager and reader with sync and backup capacities for Windows, macOS, Linux and Web
+- [massCode](https://github.com/massCodeIO/massCode) - A free and open source code snippets manager for developers
+- [NotepadNext](https://github.com/dail8859/NotepadNext) - A cross-platform, reimplementation of Notepad++
+- [Spacedrive](https://github.com/spacedriveapp/spacedrive) - A open source cross-platform file explorer, powered by a virtual distributed filesystem written in Rust.
+- [Universal Android Debloater GUI](https://github.com/0x192/universal-android-debloater) - Cross-platform GUI written in Rust using ADB to debloat non-rooted android devices. Improve your privacy, the security and battery life of your device
+- [Video-subtitle-extractor (vse)](https://github.com/YaoFANGUK/video-subtitle-extractor) - A GUI tool for extracting hard-coded subtitle (hardsub) from videos and generating srt files.
+- [Xplorer](https://github.com/kimlimjustin/xplorer) - A customizable, modern file manager
 
 ### Open Source Webs
 
@@ -561,7 +568,9 @@
 
 ### OS (Operating system)
 
-- [WinesapOS - Game with Linux anywhere, no installation required! ](https://github.com/LukeShortCloud/winesapOS)
+- [EmuOS](https://github.com/Emupedia/EmuOS) - (Emulated Operating System) is used as a Frontend for Emupedia projects
+- [GroovyArcade](https://github.com/substring/os) - Arch Linux based OS primarily targetting best CRT MAME experience
+- [WinesapOS](https://github.com/LukeShortCloud/winesapOS) - Game with Linux anywhere, no installation required!
 
 ### Others, miscellaneous,...
 
@@ -707,5 +716,13 @@
 ### Template
 
 - [dummy ](dummy)
+
+-->
+
+<!--
+
+### Review
+
+https://www.genbeta.com/web/15-sitios-web-utiles-para-visitar-casi-a-diario-guardar-tus-favoritos
 
 -->

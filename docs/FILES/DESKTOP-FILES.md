@@ -195,6 +195,34 @@ Keywords=text;editor;tabs;highlighting;code;multiple;files;pluggable;notepad;
 
 </details>
 
+### Ventoy
+
+**Archivo de configuración para que aparecezca en el menú**
+
+Ruta del archivo
+
+```bash
+sudo xed /usr/share/applications/Ventoy.desktop
+```
+
+<details>
+  <summary>Mostrar</summary>
+
+```bash
+[Desktop Entry]
+Encoding=UTF-8
+Name=Ventoy Gui
+Comment=Ventoy Gui
+Exec=/opt/ventoy/VentoyGUI.x86_64
+Icon=/opt/ventoy/WebUI/favicon.ico
+Categories=Utility
+Type=Application
+Terminal=false
+Name[es_ES]=Ventoy Gui
+```
+
+</details>
+
 ### VSCode
 
 **Archivo de configuración para que aparecezca en el submenú de programación/desarrollo**

@@ -19,7 +19,13 @@ sudo apt install apt-transport-https ca-certificates ciso curl dkms git git-lfs 
 ##### Instalar programas más utilizados
 
 ```bash
-sudo apt install bleachbit brasero ddccontrol ddccontrol-db gddccontrol gimp i2c-tools picard solaar soundconverter synaptic vlc  -y
+sudo apt install bat bleachbit brasero ddccontrol ddccontrol-db gddccontrol gimp i2c-tools mediainfo-gui picard solaar soundconverter sox synaptic vlc -y
+```
+
+##### Desinstalar programas que no uso en Linux Mint
+
+```bash
+sudo apt remove --purge hexchat-common hypnotix rhythmbox rhythmbox-data timeshift thunderbird transmission-common -y && sudo apt autoremove
 ```
 
 ##### Añadir repo de qBittorrent e instalarlo
@@ -29,26 +35,37 @@ sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable
 sudo apt update && sudo apt install qbittorrent -y
 ```
 
-##### Instalar NODE en su version LTS
+##### Instalar NODE en su version LTS (20.x.x)
 
 ```bash
-curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
+NODE_MAJOR=20
+echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_$NODE_MAJOR.x nodistro main" | sudo tee /etc/apt/sources.list.d/nodesource.list
 sudo apt update && sudo apt install nodejs -y
 ```
+
+[Repositorio a Github](https://github.com/nodesource/distributions)
 
 ##### Añadir repo de MKVToolNix e instalarlo
 
 ```bash
 sudo wget -O /usr/share/keyrings/gpg-pub-moritzbunkus.gpg https://mkvtoolnix.download/gpg-pub-moritzbunkus.gpg
-sudo touch /etc/apt/sources.list.d/mkvtoolnix.download.list
-sudo nano /etc/apt/sources.list.d/mkvtoolnix.download.list
+sudo touch /etc/apt/sources.list.d/mkvtoolnix.download.list && sudo xed /etc/apt/sources.list.d/mkvtoolnix.download.list
+sudo apt update && sudo apt install mkvtoolnix mkvtoolnix-gui -y
 ```
 
-_Pegar el contenido al fichero creado anteriormente (Ubuntu 20.04 LTS)_
+##### Añadir repo de Picard e instalarlo
 
 ```bash
-deb [arch=amd64 signed-by=/usr/share/keyrings/gpg-pub-moritzbunkus.gpg] https://mkvtoolnix.download/ubuntu/ focal main
-deb-src [arch=amd64 signed-by=/usr/share/keyrings/gpg-pub-moritzbunkus.gpg] https://mkvtoolnix.download/ubuntu/ focal main
+sudo add-apt-repository ppa:musicbrainz-developers/stable
+sudo apt update && sudo apt install picard -y
+```
+
+_Pegar el contenido al fichero creado anteriormente (Ubuntu 22.04 LTS)_
+
+```bash
+deb [arch=amd64 signed-by=/usr/share/keyrings/gpg-pub-moritzbunkus.gpg] https://mkvtoolnix.download/ubuntu/ jammy main
+deb-src [arch=amd64 signed-by=/usr/share/keyrings/gpg-pub-moritzbunkus.gpg] https://mkvtoolnix.download/ubuntu/ jammy main
 ```
 
 _Por último actualizar la lista de paquetes e instalar el programa_
@@ -58,6 +75,13 @@ sudo apt update && sudo apt install mkvtoolnix mkvtoolnix-gui -y
 ```
 
 [Web oficial MKVToolNix](https://mkvtoolnix.download/downloads.html#ubuntu)
+
+##### Añadir repo de MusicBrainz e instalarlo
+
+```bash
+sudo add-apt-repository ppa:musicbrainz-developers/stable
+sudo apt update && sudo apt install picard -y
+```
 
 ## Alias
 
@@ -79,9 +103,12 @@ alias android-clean="./gradlew clean" # Borra todos los archivos innecesarios de
 alias android-refresh-dependencies="./gradlew --refresh-dependencies" # Refresca las dependecias de gradle del proyecto de Android
 alias android-release="cd android && ./gradlew assembleRelease --full-stacktrace && cd .." # Genera la versión Release del proyecto de Android
 alias apaga="sudo shutdown -h now" # Envía la petición para apagar la raspberry
+alias checksfv="cksfv -i -g" # Comprueba los ficheros incluidos del fichero .sfv
+alias chx="sudo chmod +x" # Añade el permiso de ejecución
 alias clonar="scrcpy -b5M -m1024 -S -t" # Clona la pantalla de un dispositivo Android
 alias clonar-note3="scrcpy -b5M -m1024 -S -t -s 86f076" # Clona la pantalla del Xiaomi Note 3 Pro
 alias clonar-xperia="scrcpy -b5M -m1024 -S -t -s BX903JEKYE" # Clona la pantalla del Sony Xperia Z
+alias distro="cat /etc/*-release" # Muestra información de la distribuición actual
 alias dockers="docker ps --format 'table {{.Names}}\t{{.Ports}}' |  sed 's|NAMES||g' |  sed 's|PORTS||g' | sort" # Filtrar contenedores de docker mostrando nombre y puertos activos
 alias espacio="df -h" # Muestra el espacio libre
 alias flutter-ba="flutter build apk --verbose"
@@ -92,18 +119,46 @@ alias flutter-clean="flutter clean && rm -rf .dart_tool/ pubspec.lock android/ap
 alias flutter-ci="flutter-clean && flutter-install"
 alias flutter-install="flutter pub get && cd ios/ && pod install && cd .."
 alias flutter-r="flutter run --verbose" # Arranca el proyecto de Flutter mostrando información en consola
+alias gmm="git pull origin && git checkout --orphan temp && git add . && git commit -m 'First commit' && git branch -d main && git checkout -b main && git branch -d temp && git push origin --set-upstream main --force"
 alias http-server="python -m http.server 3000 -b localhost -d"
 alias limpia-actualiza-instala="sudo apt autoremove && sudo apt clean && sudo apt update && sudo apt upgrade -y" # Limpia la cache, actualiza los repos e instala los paquetes nuevos
+alias limpieza="sudo bleachbit && bleachbit && sudo apt update"
+alias myip='curl http://ipecho.net/plain; echo'
 alias mvn-install="mvn clean install -DskipTests -Pdev -e"
 alias mvn-release="mvn clean install -DskipTests -Prelease -e"
 alias musica="sudo chmod 777 -R docker-data/music/" # Cambiar los permisos a 777 de la carpeta Music en raspberry
 alias nexus="emulator @Nexus5X" # Lanzar emulador android
 alias npml="npm i --legacy-peer-deps"
 alias npmrs="npm run start"
-alias pi="ssh pi@192.168.100.2" # Conectar a raspberry mediante ssh
+alias pi="ssh pi@192.168.1.2" # Conectar a raspberry mediante ssh
+alias phs="python3 -m http.server 8888"
 alias portainer="docker container stop portainer && docker container rm -f portainer && docker image rm -f portainer/portainer-ce:latest && docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest" # Actualiza el container de portainer a la última versión disponible
 alias reinicia="sudo shutdown -r now" # Envía la petición para reiniciar la raspberry
+alias reload='source ~/.zshrc'
 alias unzip-bundle='_unzip-bundle() { java -jar ~/.android/bundletool.jar build-apks --bundle="$1" --output="$2".apks --mode=universal; mv "$2".apks "$2".zip; echo "Done"}; _unzip-bundle'
+```
+
+## Funciones
+
+```bash
+resample_flac(){
+    mkdir resampled
+    for flac in *.flac
+    do sox -S "${flac}" -r 44100 -b 16 ./resampled/"${flac}"
+    done
+}
+
+ca_master(){
+    for branch in $(git branch --all | grep '^\s*remotes' | egrep --invert-match '(:?HEAD|master)$')
+    do git branch --track "${branch##*/}" "$branch"
+    done
+}
+
+ca_main(){
+    for branch in $(git branch --all | grep '^\s*remotes' | egrep --invert-match '(:?HEAD|main)$')
+    do git branch --track "${branch##*/}" "$branch"
+    done
+}
 ```
 
 ## Comandos
@@ -349,6 +404,13 @@ python -m SimpleHTTPServer 8008
 ```
 
 > Tip: tanto **http.server** como **SimpleHTTPServer** utilizan por defecto el puerto **8000**
+
+##### Convert FLAC files from 24/48 bit to 16 bit
+
+```bash
+sudo apt-get install sox
+mkdir resampled && for flac in *.flac; do sox -S "${flac}" -r 44100 -b 16 ./resampled/"${flac}"; done
+```
 
 ##### Mostrar el UUID de todas las particiones
 

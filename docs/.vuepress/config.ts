@@ -23,6 +23,7 @@ let links: any = [
   "OH-MY-ZSH",
   "OTHERS",
   "PI",
+  "PSP",
   "PSVITA",
   "RN",
   "RN-LINKS",

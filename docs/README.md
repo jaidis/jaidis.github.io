@@ -25,6 +25,7 @@ Cajón desastre en formato Markdown con enlaces y otras configuraciones en gener
 | MACOS                   | [Link](FILES/MACOS.md)            |
 | Oh My Zsh               | [Link](FILES/OH-MY-ZSH.md)        |
 | Otros                   | [Link](FILES/OTHERS.md)           |
+| PSP                     | [Link](FILES/PSP.md)              |
 | PS Vita                 | [Link](FILES/PSVITA.md)           |
 | Rasperry Pi 4           | [Link](FILES/PI.md)               |
 | React Native            | [Link](FILES/RN.md)               |

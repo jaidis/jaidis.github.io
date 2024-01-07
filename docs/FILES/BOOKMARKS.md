@@ -9,35 +9,44 @@
 - [redlinesp ](http://redlinesp.org/newrlsp/)
 - [union fansub ](https://foro.unionfansub.com/)
 
+### Coches :wrench:
+
+- [Binary Electronic Solution](https://binaryelectronic.com/)
+- [menigar](https://menigar.com)
+
 ### Descargas :arrow_double_down: en Español :es:
 
-- [descargasdd ](https://descargasdd.net/forum.php)
-- [exdd ](https://www.exdd.net/)
-- [pelisplushd ](https://pelisplushd.net/)
+- [descargasdd ](https://descargasdd.org/forum.php)
+- [exdd ](https://exdd.foroactivo.com/)
+- [pelisplushd ](https://ww3.pelisplus.to/)
 
 ### Descargas :arrow_double_down: Internacionales
 
+- [ddlfree ](https://ddlfree.net/)
 - [ddlvalley ](https://www.ddlvalley.me/)
 - [hdencode ](https://hdencode.org/)
 - [MaxRelease ](http://max-rls.com/)
+- [m2v.ru ](https://85.234.112.254/)
 - [rapidmoviez ](https://www.rmz.cr/)
 - [rlsbb ](https://rlsbb.ru)
 - [rlstop ](https://rlstop.net/)
 - [scenesource ](https://www.scnsrc.me/)
+- [scnlog ](https://scnlog.me/)
 - [zippysharesearch ](https://zippysharesearch.info/)
 
 ### Descargas :arrow_double_down: generador de Premium links
 
-- [leechall ](https://leechall.com/)
-- [uploadedpremiumlink ](https://www.uploadedpremiumlink.net/)
-- [cocoleech ](https://cocoleech.com/)
-- [deepbrid ](https://www.deepbrid.com/service)
-- [neodebrid ](https://neodebrid.com/downloader)
-- [jetleech ](https://jetleech.net/)
-- [premiumleech ](https://premiumleech.eu/)
-- [leech ninja ](https://leech.ninja/)
+- [:euro: cocoleech ](https://cocoleech.com/)
+- [:euro: deepbrid ](https://www.deepbrid.com/service)
 - [hungryleech ](https://hungryleech.com/)
-- [freerapidleechlist ](https://freerapidleechlist.com/)
+- [jetleech ](https://jetleech.net/)
+- [leechall ](https://leechall.com/)
+- [leechpremium](https://leechpremium.link/)
+- [leechspace](https://leech.space/)
+- [leech ninja ](https://leech.ninja/)
+- [:euro: neodebrid ](https://neodebrid.com/downloader)
+- [premiumleech ](https://premiumleech.eu/)
+- [uploadedpremiumlink ](https://www.uploadedpremiumlink.net/)
 - [vietget ](http://www.vietget.net/)
 
 ### DIY (Do It Yourself)
@@ -102,7 +111,8 @@
 - [skidrowreloaded :magnet: :arrow_double_down: ](https://www.skidrowreloaded.com/)
 - [fitgirl-repacks :magnet: :arrow_double_down: ](https://www.fitgirl-repacks.site/)
 - [gamestorrents :magnet: ](https://www.gamestorrents.fm/)
-- [:question: gamestorrents :magnet: ](https://www.gamestorrents.nz/)
+- [gog-games :arrow_double_down:](https://gog-games.to/)
+- [freelinuxpcgames :magnet:](https://freelinuxpcgames.com/)
 - [ovagames :arrow_double_down: ](https://www.ovagames.com/)
 - [rgmechanics :arrow_double_down: ](https://www.rgmechanics.net/)
 - [fpgtorrents :magnet: :arrow_double_down: ](https://www.fpgtorrents.net/)
@@ -179,7 +189,7 @@
 
 ### Linux :penguin: Sistemas Operativos
 
-- [CasaOS - A simple, easy-to-use, elegant open-source Home Cloud system ](https://github.com/IceWhaleTech/CasaOS)
+- [CasaOS ](https://github.com/IceWhaleTech/CasaOS) - A simple, easy-to-use, elegant open-source Home Cloud system
 - [devuan ](https://www.devuan.org/get-devuan)
 - [osboxes ](https://www.osboxes.org/)
 - [SerenityOS ](https://github.com/serenityos/serenity)
@@ -215,6 +225,7 @@
 - [watchthedj.com ](https://watchthedj.com/djs/purple-disco-machine)
 - [1001tracklists.com ](https://www.1001tracklists.com/dj/purplediscomachine/index.html)
 - [edmliveset.com ](https://www.edmliveset.com/artist/Purple-Disco-Machine/)
+- [gamdl - apple account required ](https://github.com/glomatico/gamdl)
 
 ### Paquetería (webs, comparadores, tracking,...)
 
@@ -253,19 +264,31 @@
 - [r/lepin ](https://www.reddit.com/r/lepin/wiki/index)
 - [r/VitaPiracy ](https://www.reddit.com/r/VitaPiracy/)
 
+### Sistemas Operativos :window: :penguin:
+
+- [Live 11](https://www.tomshardware.com/news/windows-11-live-disk-live11-released)
+- [Medicat USB ](https://medicatusb.com/) - Medicat is a toolkit that helps compile a selection of the latest computer diagnostic and recovery tools into an easy to use toolkit.
+- [MiniOs ](https://www.dprojects.org/minios)
+
 ### Streaming :tv: TV, Musica, Deportes,...
 
 - [acestream ](https://www.futbolgratis.workers.dev/)
 - [clubbersradio ](http://myradiostream.com/station/flashplayer.php?s=s31&p=22720)
 - [clubbersradio mobile ](http://myradiostream.com/mobile/clubbersradio)
+- [danix1610 ](https://danix1610.com/dazn1.php)
 - [deezer ](https://www.deezer.com/es/)
+- [deportesymas ](https://deportesymas.com.es/)
 - [emisora ](https://emisora.org.es/)
+- [futbol.nu ](https://futbol.nu/)
 - [iptv ](https://github.com/iptv-org/iptv)
 - [Photocall ](https://photocall.tv/)
 - [radio.garden ](https://radio.garden)
+- [rbtv77 ](https://www.rbtv77.com/)
 - [sportsonline ](http://sportsonline.to/)
+- [sportsurge ](https://sportsurge.to/)
 - [spotify ](https://open.spotify.com/)
 - [streamwoop ](https://streamwoop.net/agenda)
+- [telerium.me ](https://telerium.me/)
 - [totalsportek ](https://www.totalsportek.com/)
 
 ### Streaming :movie_camera: Peliculas, series,...
@@ -291,7 +314,8 @@
 
 ### Torrents :magnet: Internacionales
 
-- [Unblocked ](https://unblockit.llc/)
+- [Unblockit ](https://unblockit.mov/)
+- [Unblockit Reddit](https://www.reddit.com/r/Unblockit/)
 - [1337x ](https://1337x.to/)
 - [rarbg ](https://rarbgmirror.org/)
 - [KickassTorrents ](https://katcr.to)
@@ -301,6 +325,7 @@
 - [YTS YIFY ](https://yts.rs/)
 - [TorrentGalaxy ](https://torrentgalaxy.to/)
 - [alt-torrent ](http://www.alt-torrent.com)
+- [btdig ](https://btdig.com/)
 - [torrentparadise ](https://torrentparadise.pm/)
 - [yify-torrent ](https://yify-torrent.cc/)
 - [torrent9 ](https://torrent9.to/)
@@ -312,22 +337,35 @@
 - [bittorrent.am ](https://torrentz.to/)
 - [torrentbytes -> private ](http://www.torrentbytes.net)
 - [cgpeers -> private ](https://cgpeers.to/index.php)
+- [psarips ](https://psa.wf/)
 
 ### Torrents :magnet: en Español :es:
 
-- [atomixhq ](https://atomixhq.club/)
-- [divxtotal ](https://www.divxtotal.re/)
+- [atomohd ](https://v2.atomohd.skin/)
+- [divxtotal ](https://www.divxtotal.win/)
+- [dontorrent ](https://donproxies.com/#proxy)
 - [elitehd ](http://www.elitehd.li/)
 - [elite-torrent ](https://www1.elite-torrent.org/)
-- [grantorrent ](https://grantorrent.ch/)
-- [mejortorrent ](https://mejortorrent.nz/)
-- [zonatorrent ](https://zonatorrent.tv)
+- [grantorrent ](https://grantorrent.bz/)
+- [homecine ](https://homecine.to/)
+- [mejortorrent ](https://mejortorrent.se/)
+- [naranjatorrent ](https://naranjatorrent.com/)
+- [pelistorrent](https://www.pelitorrent.com/)
+- [wolfmax4k](https://wolfmax4k.com/)
+- [zonatorrent ](https://zonatorrent.in)
 
 ### VPN
 
 - [windscribe ](https://windscribe.com/)
 
 ### Warez :pirate_flag:
+
+#### Info, sites, wiki...
+
+- [Champagne.dev wiki ](https://champagne.pages.dev/)
+- [Firehawk52 Guide - Saving Digital Legacy](https://rentry.org/firehawk52)
+
+#### Descargas
 
 - [artistapirata ](https://www.artistapirata.com/)
 - [awdescargas ](https://www.awdescargas.com/)
@@ -339,14 +377,13 @@
 - [forowarez ](https://forowarez.co/forums/programas-software-windows.2/)
 - [intercambiosvirtuales ](http://www.intercambiosvirtuales.org/)
 - [kolompc ](https://kolompc.com/)
-- [MiniOs ](https://www.dprojects.org/minios)
 - [megawarez ](https://www.megawarez.org/)
 - [programasvirtualespc ](https://www.programasvirtualespc.net/)
 - [PCprogramas -> registro ](https://www.pcprogramasymas.net/)
 - [SoftArchive ](https://sanet.st/)
 - [zdescargas ](https://www.zdescargas.org/)
 
-### Warez :pirate_flag: Android :iphone:
+#### Android :iphone:
 
 - [androidapkdata 👍🏽 ](https://androidapkdata.net/emulator/)
 - [andropalace ](https://www.andropalace.org/)
@@ -359,11 +396,11 @@
 - [pdalife - ru ](https://pdalife.ru/)
 - [revdl ](https://www.revdl.com/)
 
-### Warez :pirate_flag: Desarrollo ⚙️
+#### Desarrollo ⚙️
 
 - [TutsNodes ](https://tutsnode.com/category/development/mobile-development/)
 
-### Warez :pirate_flag: MacOS :apple:
+#### MacOS :apple:
 
 - [appked ](https://www.macbed.com/)
 - [macapps ](https://macapps.link/)
@@ -372,10 +409,12 @@
 
 ### Windows :window: customizations tools
 
-- [Files - A modern file manager that pushes the boundaries of the platform ](https://github.com/files-community/Files)
-- [MediaCreationTool - Universal MCT wrapper script for all Windows 10/11 versions from 1507 to 21H2! ](https://github.com/AveYo/MediaCreationTool.bat)
-- [Optimizer - The finest Windows Optimizer ](https://github.com/hellzerg/optimizer)
-- [ThisIsWin11 - The real PowerToys for Windows 11 ](https://github.com/builtbybel/ThisIsWin11)
+- [Files](https://github.com/files-community/Files) - A modern file manager that pushes the boundaries of the platform
+- [MediaCreationTool](https://github.com/AveYo/MediaCreationTool.bat) - Universal MCT wrapper script for all Windows 10/11 versions from 1507 to 21H2!
+- [Microsoft Activation Scripts ](https://github.com/massgravel/Microsoft-Activation-Scripts)
+- [Optimizer](https://github.com/hellzerg/optimizer) - The finest Windows Optimizer
+- [ThisIsWin11](https://github.com/builtbybel/ThisIsWin11) - The real PowerToys for Windows 11
+- [Windows Repair Toolbox](https://windows-repair-toolbox.com/) - (Almost) everything you need to repair Windows problems in one small handy tool
 
 ### Windows :window: WSA (Windows Subsystem for Android) :iphone:
 

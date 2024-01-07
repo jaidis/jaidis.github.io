@@ -91,3 +91,40 @@ menuentry 'Android - BlissOS AG10 2020-10-27' —class android {
     initrd /android-2020-10-27/initrd.img
 }
 ```
+
+<details>
+  <summary>Original Info</summary>
+
+```
+https://thematrix.dev/install-android-on-surface-pro-6/
+
+Install GParted.
+Prepare an empty partition for Android.
+Prepare an empty partition for Android user-data, if you prefer,
+so your accounts, settings, installed applications, would be kept
+when you update Android in the future.
+
+Select "install" on the menu.
+Choose the partition prepared, choose "ext4" as its format.
+Do not install grub. We will handle it manually later.
+Install Android as R/W.
+Afterall, reboot.
+
+Find out the partition UUID of Android and user-data.
+sudo blkid
+
+menuentry 'Android' —class android {
+search —file —no-floppy —fs-uuid —set=root $ANDROID_UUID
+    linux /android-8.1-r1/kernel root=/dev/ram0 SRC=/android-8.1-r1 androidboot.selinux=permissive androidboot.hardware=android_x86_64 video=1920x1080 DATA=UUID=$USERDATA_UUID
+initrd /android-8.1-r1/initrd.img
+}
+
+https://forum.xda-developers.com/t/guide-triple-boot-full-rooted-android-x86-with-ubuntu-and-windows-without-usb.3092913/
+
+set root='(hd0,1)'
+
+https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/
+
+```
+
+</details>
