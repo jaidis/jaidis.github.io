@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as o,a}from"./app-ig00oMQU.js";const n={},s=a("p",null,"404 Not Found",-1),c=[s];function l(_,r){return e(),o("div",null,c)}const d=t(n,[["render",l],["__file","404.html.vue"]]),h=JSON.parse('{"path":"/404.html","title":"","lang":"es-ES","frontmatter":{"layout":"NotFound"},"headers":[],"git":{},"filePathRelative":null}');export{d as comp,h as data};

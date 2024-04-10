@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es-ES">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="generator" content="VuePress 2.0.0-rc.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.9" />
     <style>
       :root {
         --c-bg: #fff;
@@ -11,24 +11,27 @@
       html.dark {
         --c-bg: #22272e;
       }
-      html, body {
+      html,
+      body {
         background-color: var(--c-bg);
       }
     </style>
     <script>
-      const userMode = localStorage.getItem('vuepress-color-scheme');
-			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
-				document.documentElement.classList.toggle('dark', true);
-			}
+      const userMode = localStorage.getItem('vuepress-color-scheme')
+      const systemDarkMode =
+        window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches
+      if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+        document.documentElement.classList.toggle('dark', true)
+      }
     </script>
     <title>Notas</title><meta name="description" content="Documentación de todas mis notas para futuras consultas">
-    <link rel="preload" href="/assets/style-OtcjStSv.css" as="style"><link rel="stylesheet" href="/assets/style-OtcjStSv.css">
-    <link rel="modulepreload" href="/assets/app-ZOF6ibMC.js"><link rel="modulepreload" href="/assets/404.html-ALe7BmTM.js"><link rel="modulepreload" href="/assets/404.html-zmbm_7Vt.js">
-    <link rel="prefetch" href="/assets/index.html-9kI7OmQv.js" as="script"><link rel="prefetch" href="/assets/ADB.html-Mc4qMhsN.js" as="script"><link rel="prefetch" href="/assets/BOOKMARKS-DEV.html-4C1TDw-d.js" as="script"><link rel="prefetch" href="/assets/BOOKMARKS.html-lzj3JGUY.js" as="script"><link rel="prefetch" href="/assets/DESKTOP-FILES.html-e00xYpE5.js" as="script"><link rel="prefetch" href="/assets/DOCKER-COMPOSE.html-cJp6M7by.js" as="script"><link rel="prefetch" href="/assets/DOCKER.html-jAUAK0tj.js" as="script"><link rel="prefetch" href="/assets/FLUTTER-CODES.html-J700Wbv1.js" as="script"><link rel="prefetch" href="/assets/FLUTTER-LINKS.html-6Mh46s6z.js" as="script"><link rel="prefetch" href="/assets/FLUTTER-PACKAGES.html-UCh59_2Z.js" as="script"><link rel="prefetch" href="/assets/FLUTTER.html-E7MotEJ2.js" as="script"><link rel="prefetch" href="/assets/FSTAB.html-D_9cLN0j.js" as="script"><link rel="prefetch" href="/assets/GIT.html-RbDelCnJ.js" as="script"><link rel="prefetch" href="/assets/GITHUB-EMOJIS.html-tgnm0VXB.js" as="script"><link rel="prefetch" href="/assets/GPG-SSH.html-GVb2pOla.js" as="script"><link rel="prefetch" href="/assets/GRUB.html-2f6hpKPx.js" as="script"><link rel="prefetch" href="/assets/LEGO.html-3PYm-XBX.js" as="script"><link rel="prefetch" href="/assets/LINUX.html-FIYgioPY.js" as="script"><link rel="prefetch" href="/assets/MACOS.html-wTE9Z6ZF.js" as="script"><link rel="prefetch" href="/assets/OH-MY-ZSH.html-d8qEYbJq.js" as="script"><link rel="prefetch" href="/assets/OTHERS.html-1Bu9sADE.js" as="script"><link rel="prefetch" href="/assets/PI.html-xzPxjy5g.js" as="script"><link rel="prefetch" href="/assets/PSP.html-oVdaLjiJ.js" as="script"><link rel="prefetch" href="/assets/PSVITA.html-VZ293ZqW.js" as="script"><link rel="prefetch" href="/assets/RN-LINKS.html-Y1u4BS3u.js" as="script"><link rel="prefetch" href="/assets/RN-PACKAGES.html-aJvZU9sN.js" as="script"><link rel="prefetch" href="/assets/RN.html-X-0SfIzB.js" as="script"><link rel="prefetch" href="/assets/RTL8812AU.html-1HQ4FbbC.js" as="script"><link rel="prefetch" href="/assets/RTL8812BU.html-WO_B7aZm.js" as="script"><link rel="prefetch" href="/assets/VSCODE.html-D427YHqe.js" as="script"><link rel="prefetch" href="/assets/WINDOWS.html-PhOEmRw3.js" as="script"><link rel="prefetch" href="/assets/index.html-haWT8sRn.js" as="script"><link rel="prefetch" href="/assets/ADB.html-tQdvyFYF.js" as="script"><link rel="prefetch" href="/assets/BOOKMARKS-DEV.html-sHM0IYma.js" as="script"><link rel="prefetch" href="/assets/BOOKMARKS.html-DfWqhxLo.js" as="script"><link rel="prefetch" href="/assets/DESKTOP-FILES.html-q1mVS1NN.js" as="script"><link rel="prefetch" href="/assets/DOCKER-COMPOSE.html-oIrgc2Aq.js" as="script"><link rel="prefetch" href="/assets/DOCKER.html-NgUHBSR3.js" as="script"><link rel="prefetch" href="/assets/FLUTTER-CODES.html-gVBSNr6h.js" as="script"><link rel="prefetch" href="/assets/FLUTTER-LINKS.html-t4WGcGor.js" as="script"><link rel="prefetch" href="/assets/FLUTTER-PACKAGES.html-O_Z--SiG.js" as="script"><link rel="prefetch" href="/assets/FLUTTER.html-xNLVApIS.js" as="script"><link rel="prefetch" href="/assets/FSTAB.html-D_2ljCq3.js" as="script"><link rel="prefetch" href="/assets/GIT.html-H7GAcIH1.js" as="script"><link rel="prefetch" href="/assets/GITHUB-EMOJIS.html--7JfCz04.js" as="script"><link rel="prefetch" href="/assets/GPG-SSH.html-woaV4MiY.js" as="script"><link rel="prefetch" href="/assets/GRUB.html-D6iHYePQ.js" as="script"><link rel="prefetch" href="/assets/LEGO.html-v2S1DVI2.js" as="script"><link rel="prefetch" href="/assets/LINUX.html-wFmVKzJN.js" as="script"><link rel="prefetch" href="/assets/MACOS.html-BgJgQSD5.js" as="script"><link rel="prefetch" href="/assets/OH-MY-ZSH.html-M6XY0oWN.js" as="script"><link rel="prefetch" href="/assets/OTHERS.html-2ZvPrIVt.js" as="script"><link rel="prefetch" href="/assets/PI.html-91wpI4zO.js" as="script"><link rel="prefetch" href="/assets/PSP.html-RrppMSmV.js" as="script"><link rel="prefetch" href="/assets/PSVITA.html-sjUSNc_g.js" as="script"><link rel="prefetch" href="/assets/RN-LINKS.html-hnYRjYNU.js" as="script"><link rel="prefetch" href="/assets/RN-PACKAGES.html-TCzSuqMW.js" as="script"><link rel="prefetch" href="/assets/RN.html-UobUyypY.js" as="script"><link rel="prefetch" href="/assets/RTL8812AU.html-JfNN0HOh.js" as="script"><link rel="prefetch" href="/assets/RTL8812BU.html-RDFaKciV.js" as="script"><link rel="prefetch" href="/assets/VSCODE.html-9SzHj4CF.js" as="script"><link rel="prefetch" href="/assets/WINDOWS.html-_g8CJgQu.js" as="script">
+    <link rel="preload" href="/assets/style-BqfQaEJH.css" as="style"><link rel="stylesheet" href="/assets/style-BqfQaEJH.css">
+    <link rel="modulepreload" href="/assets/app-ig00oMQU.js"><link rel="modulepreload" href="/assets/404.html-CvaQIcL3.js">
+    <link rel="prefetch" href="/assets/index.html-BgKVas_L.js" as="script"><link rel="prefetch" href="/assets/ADB.html-kl6a1if8.js" as="script"><link rel="prefetch" href="/assets/BOOKMARKS-DEV.html-ChH-VwhZ.js" as="script"><link rel="prefetch" href="/assets/BOOKMARKS.html-DxM9zD87.js" as="script"><link rel="prefetch" href="/assets/DESKTOP-FILES.html-Hb26k7aP.js" as="script"><link rel="prefetch" href="/assets/DOCKER-COMPOSE.html-DF4dBJVN.js" as="script"><link rel="prefetch" href="/assets/DOCKER.html-CMkp8ciN.js" as="script"><link rel="prefetch" href="/assets/FLUTTER-CODES.html-Yj2ivBSA.js" as="script"><link rel="prefetch" href="/assets/FLUTTER-LINKS.html-DTDCgUB1.js" as="script"><link rel="prefetch" href="/assets/FLUTTER-PACKAGES.html-C65Uqhp_.js" as="script"><link rel="prefetch" href="/assets/FLUTTER.html-D68hjW_C.js" as="script"><link rel="prefetch" href="/assets/FSTAB.html-np3azdu5.js" as="script"><link rel="prefetch" href="/assets/GIT.html-BisrweaX.js" as="script"><link rel="prefetch" href="/assets/GITHUB-EMOJIS.html-CGVuVV91.js" as="script"><link rel="prefetch" href="/assets/GPG-SSH.html-DpP3Sl6E.js" as="script"><link rel="prefetch" href="/assets/GRUB.html-BfIHUJCw.js" as="script"><link rel="prefetch" href="/assets/LEGO.html-D_vMRLab.js" as="script"><link rel="prefetch" href="/assets/LINUX.html-Cb_6yYRI.js" as="script"><link rel="prefetch" href="/assets/MACOS.html-CoRacfne.js" as="script"><link rel="prefetch" href="/assets/OH-MY-ZSH.html-Dvq29ULq.js" as="script"><link rel="prefetch" href="/assets/OTHERS.html-DP2JIEUH.js" as="script"><link rel="prefetch" href="/assets/PI.html-CXM-Wbsj.js" as="script"><link rel="prefetch" href="/assets/PSP.html-Cyf-sK-z.js" as="script"><link rel="prefetch" href="/assets/PSVITA.html-VSzFV_yq.js" as="script"><link rel="prefetch" href="/assets/RN-LINKS.html--0YRmXVY.js" as="script"><link rel="prefetch" href="/assets/RN-PACKAGES.html-ChGUwZXF.js" as="script"><link rel="prefetch" href="/assets/RN.html-CLyu6-YT.js" as="script"><link rel="prefetch" href="/assets/RTL8812AU.html-NCsoUnwN.js" as="script"><link rel="prefetch" href="/assets/RTL8812BU.html-Cncv83xm.js" as="script"><link rel="prefetch" href="/assets/VSCODE.html-q04CKnpv.js" as="script"><link rel="prefetch" href="/assets/WINDOWS.html-C1ydj1HO.js" as="script">
   </head>
   <body>
-    <div id="app"><!--[--><div class="theme-container"><main class="page"><div class="theme-default-content"><h1>404</h1><blockquote>How did we get here?</blockquote><a href="/" class="">Take me home</a></div></main></div><!----><!--]--></div>
-    <script type="module" src="/assets/app-ZOF6ibMC.js" defer></script>
+    <div id="app"><!--[--><div class="theme-container"><main class="page"><div class="theme-default-content"><h1>404</h1><blockquote>Looks like we&#39;ve got some broken links.</blockquote><a class="route-link" href="/">Take me home</a></div></main></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/assets/app-ig00oMQU.js" defer></script>
   </body>
 </html>
