@@ -304,6 +304,7 @@
 - [Arco Design - A comprehensive React UI components library ](https://github.com/arco-design/arco-design)
 - [Blueprint - A React-based UI toolkit for the web ](https://github.com/palantir/blueprint)
 - [Bulletproof React 🛡️ ⚛️ ](https://github.com/alan2207/bulletproof-react)
+- [Chirpy Jekyll Theme](https://github.com/cotes2020/jekyll-theme-chirpy) - A minimal, responsive, and feature-rich Jekyll theme for technical writing.
 - [Element Plus - 🎉 A Vue.js 3 UI Library made by Element team ](https://github.com/element-plus/element-plus)
 - [HooBank](https://github.com/adrianhajdin/project_hoobank) - Modern UI/UX website using React.js & Tailwind CSS
 - [Mantine - React components library with native dark theme support ](https://github.com/mantinedev/mantine)
@@ -490,6 +491,7 @@
 - [Focalboard - A open source, self-hosted alternative to Trello, Notion, and Asana ](https://github.com/mattermost/focalboard)
 - [GitNoter - An open source, markdown-based, self-hosted note taking webapp ](https://github.com/git-noter/gitnoter)
 - [Logseq - A privacy-first, open-source platform for knowledge management and collaboration ](https://github.com/logseq/logseq)
+- [TierMaker](https://tiermaker.com/)
 
 ### Open Source Apps
 
@@ -542,10 +544,11 @@
 
 ##### :window: Windows
 
-- [Fan Control - This is the release repository for Fan Control, a highly customizable fan controlling software for Windows. ](https://github.com/Rem0o/FanControl.Releases)
+- [Fan Control](https://github.com/Rem0o/FanControl.Releases) - This is the release repository for Fan Control, a highly customizable fan controlling software for Windows.
 - [Keyviz](https://github.com/mulaRahul/keyviz) - A free and open-source tool to visualize your keystrokes keyboard in real-time
-- [Picotorrent - A tiny, hackable BitTorrent client ](https://github.com/picotorrent/picotorrent)
-- [Winfetch - :hammer_and_wrench: A command-line system information utility written in PowerShell. Like Neofetch, but for Windows](https://github.com/kiedtl/winfetch)
+- [Picotorrent](https://github.com/picotorrent/picotorrent) - A tiny, hackable BitTorrent client
+- [Scoop](https://github.com/ScoopInstaller/Scoop) - A command-line installer for Windows
+- [Winfetch](https://github.com/kiedtl/winfetch) - :hammer_and_wrench: A command-line system information utility written in PowerShell. Like Neofetch, but for Windows
 
 ##### Universal
 

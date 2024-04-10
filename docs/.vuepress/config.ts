@@ -1,6 +1,7 @@
-import { defineUserConfig, defaultTheme, viteBundler } from "vuepress";
-
-import { copyCodePlugin } from "vuepress-plugin-copy-code2";
+import { viteBundler } from "@vuepress/bundler-vite";
+import { copyCodePlugin } from "@vuepress/plugin-copy-code";
+import { defaultTheme } from "@vuepress/theme-default";
+import { defineUserConfig } from "vuepress";
 
 let links: any = [
   "ADB",
@@ -83,8 +84,8 @@ export default defineUserConfig({
     copyCodePlugin({
       locales: {
         "/": {
-          copy: "Copiado correctamente 🎉",
-          hint: "Copiar código",
+          copy: "Copiar código",
+          copied: "Copiado correctamente 🎉",
         },
       },
     }),

@@ -19,7 +19,7 @@ sudo apt install apt-transport-https ca-certificates ciso curl dkms git git-lfs 
 ##### Instalar programas más utilizados
 
 ```bash
-sudo apt install bat bleachbit brasero ddccontrol ddccontrol-db gddccontrol gimp i2c-tools mediainfo-gui picard solaar soundconverter sox synaptic vlc -y
+sudo apt install bat bleachbit brasero ddccontrol ddccontrol-db gddccontrol gimp i2c-tools mediainfo-gui picard solaar soundconverter sox synaptic unar unrar vlc -y
 ```
 
 ##### Desinstalar programas que no uso en Linux Mint
@@ -141,11 +141,9 @@ alias unzip-bundle='_unzip-bundle() { java -jar ~/.android/bundletool.jar build-
 ## Funciones
 
 ```bash
-resample_flac(){
-    mkdir resampled
-    for flac in *.flac
-    do sox -S "${flac}" -r 44100 -b 16 ./resampled/"${flac}"
-    done
+7z_create(){
+    current_folder=${PWD##*/}
+    7zzs a -t7z $current_folder.7z * -r -mhe=on -mmt=on -mx=9
 }
 
 ca_master(){
@@ -157,6 +155,25 @@ ca_master(){
 ca_main(){
     for branch in $(git branch --all | grep '^\s*remotes' | egrep --invert-match '(:?HEAD|main)$')
     do git branch --track "${branch##*/}" "$branch"
+    done
+}
+
+resample_flac(){
+    mkdir resampled
+    for flac in *.flac
+    do sox -S "${flac}" -r 44100 -b 16 ./resampled/"${flac}"
+    done
+}
+
+unar_zip(){
+    for zip in *.zip
+    do unar -f -D "${zip}"
+    done
+}
+
+winrar(){
+    for rar in *.rar
+    do unrar x "${rar}"
     done
 }
 ```

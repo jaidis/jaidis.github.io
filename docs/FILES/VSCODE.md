@@ -156,6 +156,7 @@
 | [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=visualstudioexptteam.vscodeintellicode)         |
 | [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)                              |
 | [vscode-pdf](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf)                                                |
+| [vscode-vibrancy-continued](https://marketplace.visualstudio.com/items?itemName=illixion.vscode-vibrancy-continued)             |
 | [XML Format](https://marketplace.visualstudio.com/items?itemName=mikeburgh.xml-format)                                          |
 
 ### Keyboard Shortcuts

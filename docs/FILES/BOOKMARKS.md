@@ -139,6 +139,7 @@
 - [nopaystation](https://nopaystation.com/) - PSX, PSP, PS3, PSVita
 - [Planetemu -> Mame](https://www.planetemu.net/machine/mame)
 - [Projeto Launchbox](https://archive.org/details/@ronifoca) - MD, SNES, PSX
+- [The Mini Cake TV](http://theminicaketv.free.fr/bios.html) - BIOS
 - [WoWroMs](https://wowroms.com/en/) - Mame, PSX, PSP, NDS,...
 
 ### Kodi :tv:
@@ -226,6 +227,7 @@
 - [1001tracklists.com ](https://www.1001tracklists.com/dj/purplediscomachine/index.html)
 - [edmliveset.com ](https://www.edmliveset.com/artist/Purple-Disco-Machine/)
 - [gamdl - apple account required ](https://github.com/glomatico/gamdl)
+- [BeatOn ](https://github.com/jaylex32/BeatOn)
 
 ### Paquetería (webs, comparadores, tracking,...)
 
@@ -273,11 +275,11 @@
 ### Streaming :tv: TV, Musica, Deportes,...
 
 - [acestream ](https://www.futbolgratis.workers.dev/)
+- [burnoutf1 ](https://burnoutf1.com/)
 - [clubbersradio ](http://myradiostream.com/station/flashplayer.php?s=s31&p=22720)
 - [clubbersradio mobile ](http://myradiostream.com/mobile/clubbersradio)
-- [danix1610 ](https://danix1610.com/dazn1.php)
+- [danix1610 ](https://danix1610.com/player.php?id=DAZN_1_ES)
 - [deezer ](https://www.deezer.com/es/)
-- [deportesymas ](https://deportesymas.com.es/)
 - [emisora ](https://emisora.org.es/)
 - [futbol.nu ](https://futbol.nu/)
 - [iptv ](https://github.com/iptv-org/iptv)
@@ -409,11 +411,12 @@
 
 ### Windows :window: customizations tools
 
+- [Bloatynosy](https://github.com/builtbybel/Bloatynosy) - The real Windows 11 PowerToys
+- [Chris Titus Tech's Windows Utility ](https://github.com/ChrisTitusTech/winutil)
 - [Files](https://github.com/files-community/Files) - A modern file manager that pushes the boundaries of the platform
 - [MediaCreationTool](https://github.com/AveYo/MediaCreationTool.bat) - Universal MCT wrapper script for all Windows 10/11 versions from 1507 to 21H2!
 - [Microsoft Activation Scripts ](https://github.com/massgravel/Microsoft-Activation-Scripts)
 - [Optimizer](https://github.com/hellzerg/optimizer) - The finest Windows Optimizer
-- [ThisIsWin11](https://github.com/builtbybel/ThisIsWin11) - The real PowerToys for Windows 11
 - [Windows Repair Toolbox](https://windows-repair-toolbox.com/) - (Almost) everything you need to repair Windows problems in one small handy tool
 
 ### Windows :window: WSA (Windows Subsystem for Android) :iphone:
