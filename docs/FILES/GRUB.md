@@ -2,6 +2,29 @@
 
 Archivos de configuración GRUB para añadir nuevos sistemas operativos al fichero GRUB de la distrubución instalada
 
+## Mostrar menu
+
+A veces, al realizar una instalación del grub, no detecta que hay mas SO instalados y no se ve el menu de grub, para ello editamos `/etc/default/grub` y modificamos las siguientes líneas:
+
+```bash
+GRUB_TIMEOUT_STYLE=menu
+GRUB_TIMEOUT=5
+```
+
+Hacemos un `sudo update-grub` y ya se muestra de nuevo el menú
+
+## UEFI
+
+En caso de instalar una distro linux en modo UEFI, podemos añadir entradas adicionales para reiniciar o apagar el equipo, para ello es necesario modificar el fichero `30_uefi-firmware`
+
+```bash
+menuentry "Reboot" --class reboot { reboot }
+menuentry "Poweroff" --class shutdown { halt }
+menuentry '$LABEL' \$menuentry_id_option 'uefi-firmware' {
+	fwsetup
+}
+```
+
 ## Batocera
 
 Es necesario crear 2 particiones consecutivas
@@ -78,22 +101,89 @@ menuentry "LibreElec" {
 
 Es necesario crear 1 particion
 
-- Partición 1 de tipo `EXT4` y etiqueta `ANDROID` (8GB valdría)
+- Partición 1 de tipo `EXT4` y etiqueta `ANDROID` (8GB valdría), creamos una carpeta `DATA` para que se genere el árbol de directorios para el SO
 
 ##### Archivo de configuración `40_custom`
 
 ```bash
-menuentry 'Android - BlissOS AG10 2020-10-27' —class android {
-    #search —file —no-floppy —fs-uuid —set=root "c222b1cc-44d3-45bd-8a92-4b20b8b31778"
-    set root=(hd0,9)
-    linux /android-2020-10-27/kernel root=/dev/ram0 SRC=/android-2020-10-27 androidboot.selinux=permissive androidboot.hardware=android_x86_64 video=1920x1080
-#DATA=UUID=d2d40333-a15f-44cb-b628-84f053ee9a39
-    initrd /android-2020-10-27/initrd.img
+menuentry "BlissOS v16 AG13 2024-02-20" {
+    set SOURCE_NAME="2024-02-20"
+    search --set=root --file /$SOURCE_NAME/kernel
+    linux /$SOURCE_NAME/kernel FFMPEG_CODEC=1 FFMPEG_PREFER_C2=1 quiet root=/dev/ram0 SRC=/$SOURCE_NAME
+    initrd /$SOURCE_NAME/initrd.img
 }
 ```
 
 <details>
-  <summary>Original Info</summary>
+
+<summary>Original info from BlissOs</summary>
+
+# Manual Install on Linux
+
+## Installation
+
+Create a directory at / as /blissos
+
+1. Extract `initrd.img`, `ramdisk.img`, `kernel` and system.\* from your desired blissOS ISO into the /blissos directory. `ramdisk.img` can be ignored for Android 10 and newer as it is already merged into the system (system-as-root).
+2. Make a directory called `/blissos/data`. This will only work for ext4 filesystems, for NTFS and other filesystems or if you are having bootloop you need data.img, can be created with make_ext4fs.
+3. Create a new grub entry with this the following code:&#x20;
+
+```
+menuentry "BlissOS (Default) w/ FFMPEG" {
+    set SOURCE_NAME="blissos"
+    search --set=root --file /$SOURCE_NAME/kernel
+    linux /$SOURCE_NAME/kernel FFMPEG_CODEC=1 FFMPEG_PREFER_C2=1 quiet root=/dev/ram0 SRC=/$SOURCE_NAME
+    initrd /$SOURCE_NAME/initrd.img
+}
+
+menuentry "BlissOS (Intel) w/ FFMPEG" {
+    set SOURCE_NAME="blissos"
+    search --set=root --file /$SOURCE_NAME/kernel
+    linux /$SOURCE_NAME/kernel HWC=drm_minigbm_celadon GRALLOC=minigbm FFMPEG_CODEC=1 FFMPEG_PREFER_C2=1 quiet root=/dev/ram0 SRC=/$SOURCE_NAME
+    initrd /$SOURCE_NAME/initrd.img
+}
+
+menuentry "BlissOS PC-Mode (Default) w/ FFMPEG" {
+    set SOURCE_NAME="blissos"
+    search --set=root --file /$SOURCE_NAME/kernel
+    linux /$SOURCE_NAME/kernel  quiet root=/dev/ram0 SRC=/$SOURCE_NAME
+    initrd /$SOURCE_NAME/initrd.img
+}
+
+menuentry "BlissOS PC-Mode (Intel) w/ FFMPEG" {
+    set SOURCE_NAME="blissos"
+    search --set=root --file /$SOURCE_NAME/kernel
+    linux /$SOURCE_NAME/kernel PC_MODE=1 HWC=drm_minigbm_celadon GRALLOC=minigbm FFMPEG_CODEC=1 FFMPEG_PREFER_C2=1 quiet root=/dev/ram0 SRC=/$SOURCE_NAME
+    initrd /$SOURCE_NAME/initrd.img
+}
+```
+
+### **Example for making a 8gb image:**&#x20;
+
+```
+dd if=/dev/zero of=data.img bs=1 count=0 seek=8G
+sudo mkfs.ext4 -F data.img
+```
+
+Alternatively, one can use `truncate`
+
+```
+truncate -s 8G data.img
+mkfs.ext4 -F -b 4096 -L "/data" data.img
+```
+
+Here are some additional tips for installing BlissOS on Linux:
+
+- Do not try to install Bliss OS on exotic linux filesystems such ZFS, XFS, BtrFS, currently not every filesystem has built-in support in the Bliss OS kernel, ext4 is supported. If you install it on an unsupported filesystem, it will be stuck at `Detecting Android-x86...`. You will probably have to compile your own kernel and use a modified initrd.img to boot from other filesystems.
+- If you want read-write /system or being able to make changes to the system, simply extract system.img from system.img using a tool that support Zstandard compressed squashFS images. It can also be mounted.
+- For `data.img`, it would be good to repair/check filesystem regularly using command `e2fsck -f data.img`.
+
+**!!ATTENTION!!** Bliss OS 14.3 and below versions also support Jaxparrow's Android-x86 Installer for Linux. Source can be found here: [https://github.com/jaxparrow07/Androidx86-Installer-Linux](https://github.com/jaxparrow07/Androidx86-Installer-Linux)&#x20;
+
+</details>
+
+<details>
+  <summary>Old way</summary>
 
 ```
 https://thematrix.dev/install-android-on-surface-pro-6/
@@ -113,10 +203,12 @@ Afterall, reboot.
 Find out the partition UUID of Android and user-data.
 sudo blkid
 
-menuentry 'Android' —class android {
-search —file —no-floppy —fs-uuid —set=root $ANDROID_UUID
-    linux /android-8.1-r1/kernel root=/dev/ram0 SRC=/android-8.1-r1 androidboot.selinux=permissive androidboot.hardware=android_x86_64 video=1920x1080 DATA=UUID=$USERDATA_UUID
-initrd /android-8.1-r1/initrd.img
+menuentry 'Android - BlissOS AG10 2020-10-27' —class android {
+    #search —file —no-floppy —fs-uuid —set=root $ANDROID_UUID
+    set root=(hd0,9)
+    linux /android-2020-10-27/kernel root=/dev/ram0 SRC=/android-2020-10-27 androidboot.selinux=permissive androidboot.hardware=android_x86_64 video=1920x1080
+#DATA=UUID=$USERDATA_UUID
+    initrd /android-2020-10-27/initrd.img
 }
 
 https://forum.xda-developers.com/t/guide-triple-boot-full-rooted-android-x86-with-ubuntu-and-windows-without-usb.3092913/

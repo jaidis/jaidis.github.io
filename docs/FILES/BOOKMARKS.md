@@ -110,9 +110,10 @@
 - [igg-games.com :arrow_double_down: ](https://igg-games.com/)
 - [skidrowreloaded :magnet: :arrow_double_down: ](https://www.skidrowreloaded.com/)
 - [fitgirl-repacks :magnet: :arrow_double_down: ](https://www.fitgirl-repacks.site/)
+- [freelinuxpcgames :magnet:](https://freelinuxpcgames.com/)
 - [gamestorrents :magnet: ](https://www.gamestorrents.fm/)
 - [gog-games :arrow_double_down:](https://gog-games.to/)
-- [freelinuxpcgames :magnet:](https://freelinuxpcgames.com/)
+- [Native Linux Games. Y@Ldysse :magnet: :arrow_double_down: ](https://archive.org/details/native-linux-games-collection)
 - [ovagames :arrow_double_down: ](https://www.ovagames.com/)
 - [rgmechanics :arrow_double_down: ](https://www.rgmechanics.net/)
 - [fpgtorrents :magnet: :arrow_double_down: ](https://www.fpgtorrents.net/)
@@ -274,33 +275,38 @@
 
 ### Streaming :tv: TV, Musica, Deportes,...
 
-- [acestream ](https://www.futbolgratis.workers.dev/)
+- [acestream ](https://viendoelfutbolporlaface.pages.dev/)
+- [alwaysdomain01.online ](https://alwaysdomain01.online/cobo.html?id=DAZN_1_ES)
 - [burnoutf1 ](https://burnoutf1.com/)
 - [clubbersradio ](http://myradiostream.com/station/flashplayer.php?s=s31&p=22720)
 - [clubbersradio mobile ](http://myradiostream.com/mobile/clubbersradio)
 - [danix1610 ](https://danix1610.com/player.php?id=DAZN_1_ES)
 - [deezer ](https://www.deezer.com/es/)
 - [emisora ](https://emisora.org.es/)
-- [futbol.nu ](https://futbol.nu/)
+- [f1box.me ](https://f1box.me/dazn-formula-1-dazn-f1-live/stream-1)
+- [futbol.nu ](https://ar.futbol.nu/)
+- [flipax.es ](https://jepsikuydo5.foroactivo.com/h1-agenda)
 - [iptv ](https://github.com/iptv-org/iptv)
 - [Photocall ](https://photocall.tv/)
 - [radio.garden ](https://radio.garden)
 - [rbtv77 ](https://www.rbtv77.com/)
-- [sportsonline ](http://sportsonline.to/)
+- [sportsonline ](http://sportsonline.gl/)
 - [sportsurge ](https://sportsurge.to/)
 - [spotify ](https://open.spotify.com/)
-- [streamwoop ](https://streamwoop.net/agenda)
+- [sporttuna ](https://sporttuna.com/)
 - [telerium.me ](https://telerium.me/)
 - [totalsportek ](https://www.totalsportek.com/)
+- [tudeportetvhd ](https://tudeportetvhd.com/soprano.html?id=DAZN_1_ES)
 
 ### Streaming :movie_camera: Peliculas, series,...
 
-- [cuevana3 ](https://cuevana3.io/)
-- [entrepeliculasyseries ](https://entrepeliculasyseries.io/)
-- [repelisplus ](https://www.repelisplus.io/)
-- [seriescube ](https://seriescube.pw/)
+- [cuevana3 ](https://cuevana3.phd/)
+- [entrepeliculasyseries ](https://entrepeliculasyseries.nz/)
+- [gnulaseries ](https://gnulaseries.nu/)
+- [repelisplus ](https://www.repelisplus.lat/)
 - [seriesreys ](https://seriesreys.blogspot.com/)
-- [vumoo ](https://vumoo.life/)
+- [tuseries ](https://www.tuseries.cc/)
+- [vumoo ](https://vumoo.site/)
 
 ### Tecnología :computer_mouse:
 
@@ -344,6 +350,7 @@
 ### Torrents :magnet: en Español :es:
 
 - [atomohd ](https://v2.atomohd.skin/)
+- [descargamix ](https://descargamix.net)
 - [divxtotal ](https://www.divxtotal.win/)
 - [dontorrent ](https://donproxies.com/#proxy)
 - [elitehd ](http://www.elitehd.li/)
@@ -353,6 +360,7 @@
 - [mejortorrent ](https://mejortorrent.se/)
 - [naranjatorrent ](https://naranjatorrent.com/)
 - [pelistorrent](https://www.pelitorrent.com/)
+- [sinsitio ](https://www.sinsitio.site/)
 - [wolfmax4k](https://wolfmax4k.com/)
 - [zonatorrent ](https://zonatorrent.in)
 
@@ -389,10 +397,9 @@
 
 - [androidapkdata 👍🏽 ](https://androidapkdata.net/emulator/)
 - [andropalace ](https://www.andropalace.org/)
-- [apkingdom ](https://www.apkingdom.es/)
 - [apkmb ](https://apkmb.com/)
 - [apkvision ](https://apkvision.com/games/)
-- [mundoperfecto ](https://www.mundoperfecto.net/)
+- [mundoperfecto ](https://www.mundoperfecto.io/)
 - [oceanofapk ](https://oceanofapk.com/)
 - [pdalife ](https://pdalife.com/)
 - [pdalife - ru ](https://pdalife.ru/)
@@ -413,6 +420,7 @@
 
 - [Bloatynosy](https://github.com/builtbybel/Bloatynosy) - The real Windows 11 PowerToys
 - [Chris Titus Tech's Windows Utility ](https://github.com/ChrisTitusTech/winutil)
+- [Explorer Patcher](https://github.com/valinet/ExplorerPatcher) - Restore Windows 10 menu in Windows 11
 - [Files](https://github.com/files-community/Files) - A modern file manager that pushes the boundaries of the platform
 - [MediaCreationTool](https://github.com/AveYo/MediaCreationTool.bat) - Universal MCT wrapper script for all Windows 10/11 versions from 1507 to 21H2!
 - [Microsoft Activation Scripts ](https://github.com/massgravel/Microsoft-Activation-Scripts)

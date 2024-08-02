@@ -51,21 +51,13 @@ sudo apt update && sudo apt install nodejs -y
 ```bash
 sudo wget -O /usr/share/keyrings/gpg-pub-moritzbunkus.gpg https://mkvtoolnix.download/gpg-pub-moritzbunkus.gpg
 sudo touch /etc/apt/sources.list.d/mkvtoolnix.download.list && sudo xed /etc/apt/sources.list.d/mkvtoolnix.download.list
-sudo apt update && sudo apt install mkvtoolnix mkvtoolnix-gui -y
-```
-
-##### Añadir repo de Picard e instalarlo
-
-```bash
-sudo add-apt-repository ppa:musicbrainz-developers/stable
-sudo apt update && sudo apt install picard -y
 ```
 
 _Pegar el contenido al fichero creado anteriormente (Ubuntu 22.04 LTS)_
 
 ```bash
-deb [arch=amd64 signed-by=/usr/share/keyrings/gpg-pub-moritzbunkus.gpg] https://mkvtoolnix.download/ubuntu/ jammy main
-deb-src [arch=amd64 signed-by=/usr/share/keyrings/gpg-pub-moritzbunkus.gpg] https://mkvtoolnix.download/ubuntu/ jammy main
+deb [arch=amd64 signed-by=/usr/share/keyrings/gpg-pub-moritzbunkus.gpg] https://mkvtoolnix.download/ubuntu/ noble main
+deb-src [arch=amd64 signed-by=/usr/share/keyrings/gpg-pub-moritzbunkus.gpg] https://mkvtoolnix.download/ubuntu/ noble main
 ```
 
 _Por último actualizar la lista de paquetes e instalar el programa_
@@ -76,12 +68,21 @@ sudo apt update && sudo apt install mkvtoolnix mkvtoolnix-gui -y
 
 [Web oficial MKVToolNix](https://mkvtoolnix.download/downloads.html#ubuntu)
 
-##### Añadir repo de MusicBrainz e instalarlo
+##### Añadir repo de MusicBrainz Picard e instalarlo
 
 ```bash
 sudo add-apt-repository ppa:musicbrainz-developers/stable
 sudo apt update && sudo apt install picard -y
 ```
+
+##### Añadir repo de Waydroid e instalarlo
+
+```bash
+curl https://repo.waydro.id | sudo bash
+sudo apt install waydroid -y
+```
+
+[Waydroid docs](https://docs.waydro.id/)
 
 ## Alias
 

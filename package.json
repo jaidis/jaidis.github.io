@@ -1,6 +1,6 @@
 {
   "name": "jaidis.github.io",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Documentation of all my notes for future reference",
   "scripts": {
     "docs:dev": "vuepress dev docs",
@@ -18,9 +18,9 @@
   },
   "homepage": "https://github.com/jaidis/jaidis.github.io",
   "devDependencies": {
-    "vuepress": "2.0.0-rc.9",
-    "@vuepress/bundler-vite": "2.0.0-rc.9",
-    "@vuepress/plugin-copy-code": "2.0.0-rc.24",
-    "@vuepress/theme-default": "2.0.0-rc.24"
+    "vuepress": "2.0.0-rc.14",
+    "@vuepress/bundler-vite": "2.0.0-rc.14",
+    "@vuepress/plugin-copy-code": "2.0.0-rc.40",
+    "@vuepress/theme-default": "2.0.0-rc.40"
   }
 }

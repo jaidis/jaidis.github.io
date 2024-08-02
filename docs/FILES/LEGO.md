@@ -4,14 +4,17 @@
 
 - [besbasdesign ](https://rebrickable.com/users/besbasdesign/mocs/)
 - [brickphisto ](https://rebrickable.com/users/brickphisto/mocs/)
+- [Endo91 ](https://rebrickable.com/users/Endo91/mocs/)
 - [Firefabric ](https://rebrickable.com/users/firefabric/mocs/)
 - [Linse ](https://rebrickable.com/users/Linse/mocs/)
+- [NV Carmocs](https://rebrickable.com/users/NV%20Carmocs/mocs/)
 - [owstin](https://rebrickable.com/users/owstin/mocs/)
 - [PierreBrunsvig ](https://rebrickable.com/users/pierrebrunsvig/mocs/)
 - [Pistatsia ](https://rebrickable.com/users/pistatsia/mocs/)
 - [RollingBricks ](https://rebrickable.com/users/rollingbricks/mocs/)
 - [SpeedHunCreations ](https://rebrickable.com/users/SpeedHunCreations/mocs/)
 - [syzygy87 ](https://rebrickable.com/users/syzygy87/mocs/)
+- [ZetoVince ](https://rebrickable.com/users/ZetoVince/mocs/)
 
 ## MOCs
 
@@ -19,6 +22,7 @@
 - [10265 Ford Mustang Shelby GT500 / CR / GT / Bullitt 1967-68 Multipack ](https://rebrickable.com/mocs/MOC-109403/NikolayFX/ford-mustang-shelby-gt500-cr-gt-bullitt-1967-68-multipack/)
 - [10271 MG MGB ](https://rebrickable.com/mocs/MOC-98534/Roy%20vd%20M./10271-mg-mgb/)
 - [10304 Chevrolet El Camino ](https://rebrickable.com/mocs/MOC-157152/Kirvet/10304-chevrolet-el-camino/)
+- [10304 Datsun Fairlady 240Z ](https://rebrickable.com/mocs/MOC-185397/firas_legocars/10304-datsun-fairlady-240z/)
 - [1:18 Audi 90 IMSA GTO ](https://rebrickable.com/mocs/MOC-173282)
 - [1928 Ford Model A Hot Rod](https://rebrickable.com/mocs/MOC-173022)
 - [1969 Camaro Z/28 Speed Champions](https://rebrickable.com/mocs/MOC-176222)
@@ -31,6 +35,7 @@
 - [Custom T1 Caravan - Trailer 2-axle ](https://www.custombricks.de/CUSTOM-Instructions/City-Instructions/Caravan-Trailer-2-axle.html)
 - [Double Axle Caravan for T1 bus 10220 ](https://rebrickable.com/mocs/MOC-19924/Bricksworld/moc-download-boc-cad-digital-building-manual-double-axle-caravan-for-t1-bus-10220/)
 - [Deluxe Race or Rally Trailer ](https://rebrickable.com/mocs/MOC-155076/JMPmodels/deluxe-race-or-rally-trailer/)
+- [Exotic Car Transporter (Speed Champions) ](https://rebrickable.com/mocs/MOC-180088/BrickMOCery/exotic-car-transporter/)
 - [Ferrari 250 GTO ](https://rebrickable.com/mocs/MOC-72593/Rastacoco/ferrari-250-gto-1962/)
 - [Ferrari F40 Speed Champions MOC ](https://rebrickable.com/mocs/MOC-104559/Alex_Qwerty/ferrari-f40/)
 - [Further Tales of the Space Age ](https://rebrickable.com/mocs/MOC-170937)
@@ -45,6 +50,7 @@
 - [Shenron (Dragon Ball) ](https://rebrickable.com/mocs/MOC-100859)
 - [Speed Champions 8 wide trailer ](https://rebrickable.com/mocs/MOC-52489/Juri_lego/trailer/)
 - [Speed Champions trailer ](https://rebrickable.com/mocs/MOC-54487/jonnywachter/speed-champions-trailer/)
+- [Speed Champions trailer - Optimus Prime Trailer](https://rebrickable.com/mocs/MOC-142840/J.Mods.Bricks/speed-champions-trailer)
 - [Tales of Gotham ](https://rebrickable.com/mocs/MOC-160517)
 - [Volkswagen T2 Car Hauler ](https://rebrickable.com/mocs/MOC-164695)
 

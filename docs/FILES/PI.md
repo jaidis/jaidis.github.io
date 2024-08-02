@@ -22,7 +22,7 @@ sudo apt install apt-transport-https ca-certificates curl git gnupg htop lsb-rel
 sudo dphys-swapfile swapoff && sudo dphys-swapfile uninstall && sudo update-rc.d dphys-swapfile remove && sudo apt purge dphys-swapfile
 ```
 
-##### Establecer IP estática para eth0, para ello necesitamos modificar el fichero `dhcpcd.conf`
+##### Establecer IP estática para eth0 (versiones de debian 11 o inferiores), para ello necesitamos modificar el fichero `dhcpcd.conf`
 
 ```bash
 sudo nano /etc/dhcpcd.conf
@@ -35,6 +35,36 @@ interface eth0
 static ip_address=192.168.100.2/24
 static routers=192.168.100.1
 static domain_name_servers=1.1.1.1 8.8.8.8
+```
+
+##### Establecer IP estática para eth0 mediante `Network Manager`
+
+```bash
+nmcli device status
+```
+
+<details>
+  <summary>Mostrar</summary>
+
+```bash
+DEVICE         TYPE      STATE                   CONNECTION
+eth0           ethernet  connected               Wired connection 1
+lo             loopback  connected (externally)  lo
+wlan0          wifi      disconnected            --
+```
+
+</details>
+
+_Modificamos la interfaz del puerto Ethernet_
+
+```bash
+sudo nmtui edit "Wired connection 1"
+```
+
+_En el asistente, nos vamos a `IPv4 CONFIGURATION`, cambiamos de `<Automatic>` a `<Manual>`, seleccionamos `<Show>` para mostrar el resto de parámetros, configuramos IP, puerta de enlace y DNS. Por último reiniciamos el servicio de `NetworkManager`_
+
+```bash
+sudo systemctl restart NetworkManager
 ```
 
 ##### Desbloquear el puerto 53 (si lo vamos a utilizar por ejemplo junto con Pi-hole), para ello tenemos que modificar el fichero `resolved.conf`. El primer paso es para el servicio de `resolved`, verificar que está parado y modificar el fichero de configuración
