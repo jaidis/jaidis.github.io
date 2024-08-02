@@ -1,0 +1,1 @@
+import{_ as t,c as e,o,a}from"./app-BklVy-s1.js";const n={},s=a("p",null,"404 Not Found",-1),c=[s];function l(_,r){return o(),e("div",null,c)}const d=t(n,[["render",l],["__file","404.html.vue"]]),h=JSON.parse('{"path":"/404.html","title":"","lang":"es-ES","frontmatter":{"layout":"NotFound"},"headers":[],"git":{},"filePathRelative":null}');export{d as comp,h as data};

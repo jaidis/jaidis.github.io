@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-7d67ae02","path":"/FILES/FSTAB.html","title":"FSTAB","lang":"es-ES","frontmatter":{},"headers":[],"git":{"updatedTime":1649755148000,"contributors":[{"name":"Manuel Muñoz","email":"manmunlop@gmail.com","commits":1}]},"filePathRelative":"FILES/FSTAB.md"}');export{e as data};

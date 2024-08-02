@@ -3,14 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="generator" content="VuePress 2.0.0-rc.9" />
+    <meta name="generator" content="VuePress 2.0.0-rc.14" />
     <style>
       :root {
         --c-bg: #fff;
       }
+
       html.dark {
         --c-bg: #22272e;
       }
+
       html,
       body {
         background-color: var(--c-bg);
@@ -21,388 +23,392 @@
       const systemDarkMode =
         window.matchMedia &&
         window.matchMedia('(prefers-color-scheme: dark)').matches
-      if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+
+      if (userMode === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (userMode === 'dark' || systemDarkMode) {
         document.documentElement.classList.toggle('dark', true)
+        document.documentElement.dataset.theme = 'dark'
       }
     </script>
     <title>Docker Compose | Notas</title><meta name="description" content="Documentación de todas mis notas para futuras consultas">
-    <link rel="preload" href="/assets/style-BqfQaEJH.css" as="style"><link rel="stylesheet" href="/assets/style-BqfQaEJH.css">
-    <link rel="modulepreload" href="/assets/app-ig00oMQU.js"><link rel="modulepreload" href="/assets/DOCKER-COMPOSE.html-DF4dBJVN.js">
-    <link rel="prefetch" href="/assets/index.html-BgKVas_L.js" as="script"><link rel="prefetch" href="/assets/ADB.html-kl6a1if8.js" as="script"><link rel="prefetch" href="/assets/BOOKMARKS-DEV.html-ChH-VwhZ.js" as="script"><link rel="prefetch" href="/assets/BOOKMARKS.html-DxM9zD87.js" as="script"><link rel="prefetch" href="/assets/DESKTOP-FILES.html-Hb26k7aP.js" as="script"><link rel="prefetch" href="/assets/DOCKER.html-CMkp8ciN.js" as="script"><link rel="prefetch" href="/assets/FLUTTER-CODES.html-Yj2ivBSA.js" as="script"><link rel="prefetch" href="/assets/FLUTTER-LINKS.html-DTDCgUB1.js" as="script"><link rel="prefetch" href="/assets/FLUTTER-PACKAGES.html-C65Uqhp_.js" as="script"><link rel="prefetch" href="/assets/FLUTTER.html-D68hjW_C.js" as="script"><link rel="prefetch" href="/assets/FSTAB.html-np3azdu5.js" as="script"><link rel="prefetch" href="/assets/GIT.html-BisrweaX.js" as="script"><link rel="prefetch" href="/assets/GITHUB-EMOJIS.html-CGVuVV91.js" as="script"><link rel="prefetch" href="/assets/GPG-SSH.html-DpP3Sl6E.js" as="script"><link rel="prefetch" href="/assets/GRUB.html-BfIHUJCw.js" as="script"><link rel="prefetch" href="/assets/LEGO.html-D_vMRLab.js" as="script"><link rel="prefetch" href="/assets/LINUX.html-Cb_6yYRI.js" as="script"><link rel="prefetch" href="/assets/MACOS.html-CoRacfne.js" as="script"><link rel="prefetch" href="/assets/OH-MY-ZSH.html-Dvq29ULq.js" as="script"><link rel="prefetch" href="/assets/OTHERS.html-DP2JIEUH.js" as="script"><link rel="prefetch" href="/assets/PI.html-CXM-Wbsj.js" as="script"><link rel="prefetch" href="/assets/PSP.html-Cyf-sK-z.js" as="script"><link rel="prefetch" href="/assets/PSVITA.html-VSzFV_yq.js" as="script"><link rel="prefetch" href="/assets/RN-LINKS.html--0YRmXVY.js" as="script"><link rel="prefetch" href="/assets/RN-PACKAGES.html-ChGUwZXF.js" as="script"><link rel="prefetch" href="/assets/RN.html-CLyu6-YT.js" as="script"><link rel="prefetch" href="/assets/RTL8812AU.html-NCsoUnwN.js" as="script"><link rel="prefetch" href="/assets/RTL8812BU.html-Cncv83xm.js" as="script"><link rel="prefetch" href="/assets/VSCODE.html-q04CKnpv.js" as="script"><link rel="prefetch" href="/assets/WINDOWS.html-C1ydj1HO.js" as="script"><link rel="prefetch" href="/assets/404.html-CvaQIcL3.js" as="script">
+    <link rel="preload" href="/assets/style-B79ZEWqG.css" as="style"><link rel="stylesheet" href="/assets/style-B79ZEWqG.css">
+    <link rel="modulepreload" href="/assets/app-BklVy-s1.js"><link rel="modulepreload" href="/assets/DOCKER-COMPOSE.html-CuFb6jk_.js">
+    <link rel="prefetch" href="/assets/index.html-CeypwfAB.js" as="script"><link rel="prefetch" href="/assets/ADB.html-Bo5QN1g6.js" as="script"><link rel="prefetch" href="/assets/BOOKMARKS-DEV.html-9MlCuIBI.js" as="script"><link rel="prefetch" href="/assets/BOOKMARKS.html-CIoQt9WQ.js" as="script"><link rel="prefetch" href="/assets/DESKTOP-FILES.html-DbBPIH3a.js" as="script"><link rel="prefetch" href="/assets/DOCKER.html-C576cipP.js" as="script"><link rel="prefetch" href="/assets/FLUTTER-CODES.html-BpnvJRnR.js" as="script"><link rel="prefetch" href="/assets/FLUTTER-LINKS.html-oCkwi2CR.js" as="script"><link rel="prefetch" href="/assets/FLUTTER-PACKAGES.html-BCy5PZ7k.js" as="script"><link rel="prefetch" href="/assets/FLUTTER.html-CMsutyvc.js" as="script"><link rel="prefetch" href="/assets/FSTAB.html-Bb5h_Uhm.js" as="script"><link rel="prefetch" href="/assets/GIT.html-BXwjIE7a.js" as="script"><link rel="prefetch" href="/assets/GITHUB-EMOJIS.html-aO3-T2j7.js" as="script"><link rel="prefetch" href="/assets/GPG-SSH.html-BqyXGffN.js" as="script"><link rel="prefetch" href="/assets/GRUB.html-BzQc_igY.js" as="script"><link rel="prefetch" href="/assets/LEGO.html-bBG2Mi4v.js" as="script"><link rel="prefetch" href="/assets/LINUX.html-kXuLlDPF.js" as="script"><link rel="prefetch" href="/assets/MACOS.html-BWRYDmKw.js" as="script"><link rel="prefetch" href="/assets/OH-MY-ZSH.html-DbbYN8kB.js" as="script"><link rel="prefetch" href="/assets/OTHERS.html-CSYsItv4.js" as="script"><link rel="prefetch" href="/assets/PI.html-B3uyqMev.js" as="script"><link rel="prefetch" href="/assets/PSP.html-DJ3iDlAH.js" as="script"><link rel="prefetch" href="/assets/PSVITA.html-D2-W46g2.js" as="script"><link rel="prefetch" href="/assets/RN-LINKS.html-Bmgc4uTw.js" as="script"><link rel="prefetch" href="/assets/RN-PACKAGES.html-Cm5Yead4.js" as="script"><link rel="prefetch" href="/assets/RN.html-CLFnFoGd.js" as="script"><link rel="prefetch" href="/assets/RTL8812AU.html-CuwNxDjn.js" as="script"><link rel="prefetch" href="/assets/RTL8812BU.html-CyDVp04n.js" as="script"><link rel="prefetch" href="/assets/VSCODE.html-Dr7N-m6G.js" as="script"><link rel="prefetch" href="/assets/WINDOWS.html-DdP5qedW.js" as="script"><link rel="prefetch" href="/assets/404.html-6Wj7-cH8.js" as="script">
   </head>
   <body>
-    <div id="app"><!--[--><div class="theme-container"><!--[--><header class="navbar"><div class="toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a class="route-link" href="/"><img class="logo" src="https://vuejs.org/images/logo.png" alt="Notas"><span class="site-name can-hide" aria-hidden="true">Notas</span></a></span><div class="navbar-items-wrapper" style=""><!--[--><!--]--><!----><!--[--><!--]--><button class="toggle-color-mode-button" title="toggle color mode"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="sidebar-mask"></div><!--[--><aside class="sidebar"><!----><!--[--><!--]--><ul class="sidebar-items"><!--[--><li><p tabindex="0" class="sidebar-item sidebar-heading">Notas <!----></p><ul style="" class="sidebar-item-children"><!--[--><li><a class="route-link sidebar-item" href="/ADB.html" aria-label="ADB.html"><!--[--><!--[--><!--]--> ADB.html <!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link sidebar-item" href="/BOOKMARKS-DEV.html" aria-label="BOOKMARKS-DEV.html"><!--[--><!--[--><!--]--> BOOKMARKS-DEV.html <!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link sidebar-item" href="/DESKTOP-FILES.html" aria-label="DESKTOP-FILES.html"><!--[--><!--[--><!--]--> DESKTOP-FILES.html <!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link sidebar-item" href="/DOCKER.html" aria-label="DOCKER.html"><!--[--><!--[--><!--]--> DOCKER.html <!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link sidebar-item" href="/DOCKER-COMPOSE.html" aria-label="DOCKER-COMPOSE.html"><!--[--><!--[--><!--]--> DOCKER-COMPOSE.html <!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link sidebar-item" href="/FLUTTER.html" aria-label="FLUTTER.html"><!--[--><!--[--><!--]--> FLUTTER.html <!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link sidebar-item" href="/FLUTTER-CODES.html" aria-label="FLUTTER-CODES.html"><!--[--><!--[--><!--]--> FLUTTER-CODES.html <!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link sidebar-item" href="/FLUTTER-LINKS.html" aria-label="FLUTTER-LINKS.html"><!--[--><!--[--><!--]--> FLUTTER-LINKS.html <!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link sidebar-item" href="/FLUTTER-PACKAGES.html" aria-label="FLUTTER-PACKAGES.html"><!--[--><!--[--><!--]--> FLUTTER-PACKAGES.html <!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link sidebar-item" href="/FSTAB.html" aria-label="FSTAB.html"><!--[--><!--[--><!--]--> FSTAB.html <!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link sidebar-item" href="/GIT.html" aria-label="GIT.html"><!--[--><!--[--><!--]--> GIT.html <!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link sidebar-item" href="/GITHUB-EMOJIS.html" aria-label="GITHUB-EMOJIS.html"><!--[--><!--[--><!--]--> GITHUB-EMOJIS.html <!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link sidebar-item" href="/GPG-SSH.html" aria-label="GPG-SSH.html"><!--[--><!--[--><!--]--> GPG-SSH.html <!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link sidebar-item" href="/GRUB.html" aria-label="GRUB.html"><!--[--><!--[--><!--]--> GRUB.html <!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link sidebar-item" href="/LEGO.html" aria-label="LEGO.html"><!--[--><!--[--><!--]--> LEGO.html <!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link sidebar-item" href="/LINUX.html" aria-label="LINUX.html"><!--[--><!--[--><!--]--> LINUX.html <!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link sidebar-item" href="/MACOS.html" aria-label="MACOS.html"><!--[--><!--[--><!--]--> MACOS.html <!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link sidebar-item" href="/OH-MY-ZSH.html" aria-label="OH-MY-ZSH.html"><!--[--><!--[--><!--]--> OH-MY-ZSH.html <!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link sidebar-item" href="/OTHERS.html" aria-label="OTHERS.html"><!--[--><!--[--><!--]--> OTHERS.html <!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link sidebar-item" href="/PI.html" aria-label="PI.html"><!--[--><!--[--><!--]--> PI.html <!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link sidebar-item" href="/PSP.html" aria-label="PSP.html"><!--[--><!--[--><!--]--> PSP.html <!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link sidebar-item" href="/PSVITA.html" aria-label="PSVITA.html"><!--[--><!--[--><!--]--> PSVITA.html <!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link sidebar-item" href="/RN.html" aria-label="RN.html"><!--[--><!--[--><!--]--> RN.html <!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link sidebar-item" href="/RN-LINKS.html" aria-label="RN-LINKS.html"><!--[--><!--[--><!--]--> RN-LINKS.html <!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link sidebar-item" href="/RN-PACKAGES.html" aria-label="RN-PACKAGES.html"><!--[--><!--[--><!--]--> RN-PACKAGES.html <!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link sidebar-item" href="/RTL8812AU.html" aria-label="RTL8812AU.html"><!--[--><!--[--><!--]--> RTL8812AU.html <!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link sidebar-item" href="/RTL8812BU.html" aria-label="RTL8812BU.html"><!--[--><!--[--><!--]--> RTL8812BU.html <!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link sidebar-item" href="/VSCODE.html" aria-label="VSCODE.html"><!--[--><!--[--><!--]--> VSCODE.html <!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link sidebar-item" href="/WINDOWS.html" aria-label="WINDOWS.html"><!--[--><!--[--><!--]--> WINDOWS.html <!--[--><!--]--><!--]--></a><!----></li><!--]--></ul></li><!--]--></ul><!--[--><!--]--></aside><!--]--><!--[--><main class="page"><!--[--><!--]--><div class="theme-default-content"><!--[--><!--]--><div><h1 id="docker-compose" tabindex="-1"><a class="header-anchor" href="#docker-compose"><span>Docker Compose</span></a></h1><h2 id="container-templates-almost-all-raspberry-compatible" tabindex="-1"><a class="header-anchor" href="#container-templates-almost-all-raspberry-compatible"><span>Container templates (almost all raspberry compatible)</span></a></h2><h5 id="adguard" tabindex="-1"><a class="header-anchor" href="#adguard"><span>Adguard</span></a></h5><div class="language-yaml line-numbers-mode" data-ext="yml" data-title="yml"><pre class="language-yaml"><code><span class="token punctuation">---</span>
-<span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span>
-<span class="token key atrule">services</span><span class="token punctuation">:</span>
-  <span class="token key atrule">adguardhome</span><span class="token punctuation">:</span>
-    <span class="token key atrule">image</span><span class="token punctuation">:</span> adguard/adguardhome<span class="token punctuation">:</span>armhf<span class="token punctuation">-</span>latest
-    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> adguardhome
-    <span class="token key atrule">network_mode</span><span class="token punctuation">:</span> bridge
-    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> 53<span class="token punctuation">:</span>53/tcp
-      <span class="token punctuation">-</span> 53<span class="token punctuation">:</span>53/udp
-      <span class="token punctuation">-</span> 67<span class="token punctuation">:</span>67/tcp
-      <span class="token punctuation">-</span> 67<span class="token punctuation">:</span>67/udp
-      <span class="token punctuation">-</span> 853<span class="token punctuation">:</span>853/tcp
-      <span class="token punctuation">-</span> 3000<span class="token punctuation">:</span>3000/tcp
-    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>config/adguardhome<span class="token punctuation">:</span>/opt/adguardhome/conf
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/adguardhome<span class="token punctuation">:</span>/opt/adguardhome/work
-    <span class="token key atrule">environment</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> PUID=1000
-      <span class="token punctuation">-</span> PGID=1000
-      <span class="token punctuation">-</span> TZ=Europe/Madrid
-    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="dashmachine" tabindex="-1"><a class="header-anchor" href="#dashmachine"><span>dashmachine</span></a></h5><div class="language-yaml line-numbers-mode" data-ext="yml" data-title="yml"><pre class="language-yaml"><code><span class="token punctuation">---</span>
-<span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span>
-<span class="token key atrule">services</span><span class="token punctuation">:</span>
-  <span class="token key atrule">adguardhome</span><span class="token punctuation">:</span>
-    <span class="token key atrule">image</span><span class="token punctuation">:</span> adguard/adguardhome<span class="token punctuation">:</span>armhf<span class="token punctuation">-</span>latest
-    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> adguardhome
-    <span class="token key atrule">network_mode</span><span class="token punctuation">:</span> bridge
-    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> 53<span class="token punctuation">:</span>53/tcp
-      <span class="token punctuation">-</span> 53<span class="token punctuation">:</span>53/udp
-      <span class="token punctuation">-</span> 67<span class="token punctuation">:</span>67/tcp
-      <span class="token punctuation">-</span> 67<span class="token punctuation">:</span>67/udp
-      <span class="token punctuation">-</span> 853<span class="token punctuation">:</span>853/tcp
-      <span class="token punctuation">-</span> 3000<span class="token punctuation">:</span>3000/tcp
-    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>config/adguardhome<span class="token punctuation">:</span>/opt/adguardhome/conf
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/adguardhome<span class="token punctuation">:</span>/opt/adguardhome/work
-    <span class="token key atrule">environment</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> PUID=1000
-      <span class="token punctuation">-</span> PGID=1000
-      <span class="token punctuation">-</span> TZ=Europe/Madrid
-    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="deemix" tabindex="-1"><a class="header-anchor" href="#deemix"><span>deemix</span></a></h5><div class="language-yaml line-numbers-mode" data-ext="yml" data-title="yml"><pre class="language-yaml"><code><span class="token punctuation">---</span>
-<span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span>
-<span class="token key atrule">services</span><span class="token punctuation">:</span>
-  <span class="token key atrule">adguardhome</span><span class="token punctuation">:</span>
-    <span class="token key atrule">image</span><span class="token punctuation">:</span> registry.gitlab.com/bockiii/deemix<span class="token punctuation">-</span>docker
-    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> deemix
-    <span class="token key atrule">network_mode</span><span class="token punctuation">:</span> bridge
-    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> 6595<span class="token punctuation">:</span>6595/tcp
-    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>config/deemix<span class="token punctuation">:</span>/config
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/deemix<span class="token punctuation">:</span>/downloads
-    <span class="token key atrule">environment</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> PUID=1000
-      <span class="token punctuation">-</span> PGID=1000
-      <span class="token punctuation">-</span> TZ=Europe/Madrid
-      <span class="token punctuation">-</span> UMASK_SET=022
-      <span class="token punctuation">-</span> ARL=29c8ccd9c159a446d3715261fec17fd2c5cb63946342a678aa788023940ff9d2fc7e82ec55f176e60a5545bc997b712663e7e19a8f410d2e7fa282e67ced66ffb669d3bdc66bcae9cd457d3071a47aca9a79f35075808c9416669cc9ff71132e <span class="token comment">#Put your ARL cookie code here</span>
-    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="dillinger" tabindex="-1"><a class="header-anchor" href="#dillinger"><span>dillinger</span></a></h5><div class="language-yaml line-numbers-mode" data-ext="yml" data-title="yml"><pre class="language-yaml"><code><span class="token punctuation">---</span>
-<span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span>
-<span class="token key atrule">services</span><span class="token punctuation">:</span>
-  <span class="token key atrule">dillinger</span><span class="token punctuation">:</span>
-    <span class="token key atrule">image</span><span class="token punctuation">:</span> linuxserver/dillinger<span class="token punctuation">:</span>arm32v7<span class="token punctuation">-</span>latest
-    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> dillinger
-    <span class="token key atrule">environment</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> PUID=1000
-      <span class="token punctuation">-</span> PGID=1000
-      <span class="token punctuation">-</span> TZ=Europe/Madrid
-    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>config/dillinger<span class="token punctuation">:</span>/config
-    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> 8080<span class="token punctuation">:</span><span class="token number">8080</span>
-    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="filebrowser" tabindex="-1"><a class="header-anchor" href="#filebrowser"><span>FileBrowser</span></a></h5><div class="language-yaml line-numbers-mode" data-ext="yml" data-title="yml"><pre class="language-yaml"><code><span class="token punctuation">---</span>
-<span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span>
-<span class="token key atrule">services</span><span class="token punctuation">:</span>
-  <span class="token key atrule">filebrowser</span><span class="token punctuation">:</span>
-    <span class="token comment"># image: filebrowser/filebrowser:v2.21.1-armv7</span>
-    <span class="token key atrule">image</span><span class="token punctuation">:</span> filebrowser/filebrowser<span class="token punctuation">:</span>v2.21.1<span class="token punctuation">-</span>arm64
-    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> filebrowser
-    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>config/filebrowser/database.db<span class="token punctuation">:</span>/database.db
-      <span class="token punctuation">-</span> /home/pi<span class="token punctuation">:</span>/srv
-    <span class="token key atrule">environment</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> PUID=1000
-      <span class="token punctuation">-</span> PGID=1000
-      <span class="token punctuation">-</span> TZ=Europe/Madrid
-    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> 8888<span class="token punctuation">:</span><span class="token number">80</span>
-    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="gitea" tabindex="-1"><a class="header-anchor" href="#gitea"><span>gitea</span></a></h5><div class="language-yaml line-numbers-mode" data-ext="yml" data-title="yml"><pre class="language-yaml"><code><span class="token punctuation">---</span>
-<span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span>
-<span class="token key atrule">services</span><span class="token punctuation">:</span>
-  <span class="token key atrule">codimd</span><span class="token punctuation">:</span>
-    <span class="token key atrule">image</span><span class="token punctuation">:</span> kunde21/gitea<span class="token punctuation">-</span>arm<span class="token punctuation">:</span>v1.14.2<span class="token punctuation">-</span>armv7
-    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> gitea
-    <span class="token key atrule">environment</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> TZ=Europe/Madrid
-      <span class="token punctuation">-</span> PUID=1000
-      <span class="token punctuation">-</span> PGID=1000
-    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>config/gitea<span class="token punctuation">:</span>/data
-    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> 3333<span class="token punctuation">:</span><span class="token number">3000</span>
-      <span class="token punctuation">-</span> 3334<span class="token punctuation">:</span><span class="token number">22</span>
-    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="heimdall" tabindex="-1"><a class="header-anchor" href="#heimdall"><span>heimdall</span></a></h5><div class="language-yaml line-numbers-mode" data-ext="yml" data-title="yml"><pre class="language-yaml"><code><span class="token punctuation">---</span>
-<span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span>
-<span class="token key atrule">services</span><span class="token punctuation">:</span>
-  <span class="token key atrule">heimdall</span><span class="token punctuation">:</span>
-    <span class="token key atrule">image</span><span class="token punctuation">:</span> linuxserver/heimdall
-    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> heimdall
-    <span class="token key atrule">environment</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> PUID=1000
-      <span class="token punctuation">-</span> PGID=1000
-      <span class="token punctuation">-</span> TZ=Europe/Madrid
-    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>config/heimdall<span class="token punctuation">:</span>/config
-    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> 5005<span class="token punctuation">:</span><span class="token number">80</span>
-    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="jellyfin" tabindex="-1"><a class="header-anchor" href="#jellyfin"><span>Jellyfin</span></a></h5><div class="language-yaml line-numbers-mode" data-ext="yml" data-title="yml"><pre class="language-yaml"><code><span class="token punctuation">---</span>
-<span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span>
-<span class="token key atrule">services</span><span class="token punctuation">:</span>
-  <span class="token key atrule">jellyfin</span><span class="token punctuation">:</span>
-    <span class="token comment"># image: linuxserver/jellyfin:arm32v7-bionic-10.6.4-1-ls3</span>
-    <span class="token comment"># image: linuxserver/jellyfin:arm32v7-bionic</span>
-    <span class="token comment"># image: ghcr.io/linuxserver/jellyfin:arm32v7-latest</span>
-    <span class="token key atrule">image</span><span class="token punctuation">:</span> ghcr.io/linuxserver/jellyfin<span class="token punctuation">:</span>arm64v8<span class="token punctuation">-</span>latest
-    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> jellyfin
-    <span class="token key atrule">environment</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> PUID=1000
-      <span class="token punctuation">-</span> PGID=1000
-      <span class="token punctuation">-</span> TZ=Europe/Madrid
-      <span class="token comment">#- UMASK_SET=022 #optional</span>
-      <span class="token punctuation">-</span> UMASK=022 <span class="token comment">#optional</span>
-    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>config/jellyfin<span class="token punctuation">:</span>/config
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/music/Classical<span class="token punctuation">:</span>/data/classical
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/music/Chillout<span class="token punctuation">:</span>/data/chillout
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/music/Electronic<span class="token punctuation">:</span>/data/electronic
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/music/Funk<span class="token punctuation">:</span>/data/funk
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/music/HipHop<span class="token punctuation">:</span>/data/hiphop
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/music/Jazz<span class="token punctuation">:</span>/data/jazz
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/music/Others<span class="token punctuation">:</span>/data/others
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/music/Pop<span class="token punctuation">:</span>/data/pop
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/music/Reggae<span class="token punctuation">:</span>/data/reggae
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/music/Rock<span class="token punctuation">:</span>/data/rock
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/music/Soul<span class="token punctuation">:</span>/data/soul
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/music/Spanish<span class="token punctuation">:</span>/data/spanish
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/music/Swing<span class="token punctuation">:</span>/data/swing
-      <span class="token comment"># - /home/pi/docker-data/music/Playlists:/data/playlists</span>
-      <span class="token punctuation">-</span> /opt/vc/lib<span class="token punctuation">:</span>/opt/vc/lib
-    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> 8096<span class="token punctuation">:</span><span class="token number">8096</span>
-      <span class="token punctuation">-</span> 8920<span class="token punctuation">:</span><span class="token number">8920</span>
-    <span class="token comment">#devices:</span>
-    <span class="token comment">#  - /dev/vcsm:/dev/vcsm</span>
-    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="jsondiff" tabindex="-1"><a class="header-anchor" href="#jsondiff"><span>jsondiff</span></a></h5><div class="language-yaml line-numbers-mode" data-ext="yml" data-title="yml"><pre class="language-yaml"><code><span class="token punctuation">---</span>
-<span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span>
-<span class="token key atrule">services</span><span class="token punctuation">:</span>
-  <span class="token key atrule">adguardhome</span><span class="token punctuation">:</span>
-    <span class="token key atrule">image</span><span class="token punctuation">:</span> jaidis/jsondiff<span class="token punctuation">-</span>arm
-    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> jsondiff
-    <span class="token key atrule">network_mode</span><span class="token punctuation">:</span> bridge
-    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> 8890<span class="token punctuation">:</span>80/tcp
-    <span class="token key atrule">environment</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> PUID=1000
-      <span class="token punctuation">-</span> PGID=1000
-      <span class="token punctuation">-</span> TZ=Europe/Madrid
-    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="lidarr" tabindex="-1"><a class="header-anchor" href="#lidarr"><span>lidarr</span></a></h5><div class="language-yaml line-numbers-mode" data-ext="yml" data-title="yml"><pre class="language-yaml"><code><span class="token punctuation">---</span>
-<span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span>
-<span class="token key atrule">services</span><span class="token punctuation">:</span>
-  <span class="token key atrule">lidarr</span><span class="token punctuation">:</span>
-    <span class="token key atrule">image</span><span class="token punctuation">:</span> ghcr.io/linuxserver/lidarr<span class="token punctuation">:</span>arm32v7<span class="token punctuation">-</span>latest
-    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> lidarr
-    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> 8686<span class="token punctuation">:</span><span class="token number">8686</span>
-    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>config/lidarr<span class="token punctuation">:</span>/config
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/lidarr<span class="token punctuation">:</span>/music <span class="token comment">#optional</span>
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/lidarr<span class="token punctuation">:</span>/downloads <span class="token comment">#optional</span>
-    <span class="token key atrule">environment</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> PUID=1000
-      <span class="token punctuation">-</span> PGID=1000
-      <span class="token punctuation">-</span> TZ=Europe/Madrid
-      <span class="token punctuation">-</span> UMASK=000 <span class="token comment">#optional</span>
-    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="mariadb" tabindex="-1"><a class="header-anchor" href="#mariadb"><span>mariadb</span></a></h5><div class="language-yaml line-numbers-mode" data-ext="yml" data-title="yml"><pre class="language-yaml"><code><span class="token punctuation">---</span>
-<span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span>
-<span class="token key atrule">services</span><span class="token punctuation">:</span>
-  <span class="token key atrule">mariadb</span><span class="token punctuation">:</span>
-    <span class="token key atrule">image</span><span class="token punctuation">:</span> linuxserver/mariadb
-    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> mariadb
-    <span class="token key atrule">environment</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> PUID=1000
-      <span class="token punctuation">-</span> PGID=1000
-      <span class="token punctuation">-</span> TZ=Europe/Madrid
-      <span class="token punctuation">-</span> MYSQL_ROOT_PASSWORD=$PASSWORD$
-      <span class="token punctuation">-</span> MYSQL_USER=pi
-      <span class="token punctuation">-</span> MYSQL_PASSWORD=$PASSWORD$
-    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>config/mariadb<span class="token punctuation">:</span>/config
-    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> 3306<span class="token punctuation">:</span><span class="token number">3306</span>
-    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="netdata" tabindex="-1"><a class="header-anchor" href="#netdata"><span>netdata</span></a></h5><div class="language-yaml line-numbers-mode" data-ext="yml" data-title="yml"><pre class="language-yaml"><code><span class="token punctuation">---</span>
-<span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span>
-<span class="token key atrule">services</span><span class="token punctuation">:</span>
-  <span class="token key atrule">netdata</span><span class="token punctuation">:</span>
-    <span class="token key atrule">image</span><span class="token punctuation">:</span> netdata/netdata
-    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> netdata
-    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> 9001<span class="token punctuation">:</span><span class="token number">19999</span>
-    <span class="token key atrule">cap_add</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> SYS_PTRACE
-    <span class="token key atrule">security_opt</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> apparmor<span class="token punctuation">:</span>unconfined
-    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> /proc<span class="token punctuation">:</span>/host/proc<span class="token punctuation">:</span>ro
-      <span class="token punctuation">-</span> /sys<span class="token punctuation">:</span>/host/sys<span class="token punctuation">:</span>ro
-      <span class="token punctuation">-</span> /var/run/docker.sock<span class="token punctuation">:</span>/var/run/docker.sock<span class="token punctuation">:</span>ro
-    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="phpmyadmin" tabindex="-1"><a class="header-anchor" href="#phpmyadmin"><span>phpmyadmin</span></a></h5><div class="language-yaml line-numbers-mode" data-ext="yml" data-title="yml"><pre class="language-yaml"><code><span class="token punctuation">---</span>
-<span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span>
-<span class="token key atrule">services</span><span class="token punctuation">:</span>
-  <span class="token key atrule">phpmyadmin</span><span class="token punctuation">:</span>
-    <span class="token key atrule">image</span><span class="token punctuation">:</span> biarms/phpmyadmin
-    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> phpmyadmin
-    <span class="token key atrule">environment</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> PUID=1000
-      <span class="token punctuation">-</span> PGID=1000
-      <span class="token punctuation">-</span> TZ=Europe/Madrid
-      <span class="token punctuation">-</span> PMA_ARBITRARY=1
-      <span class="token punctuation">-</span> PMA_HOST=mariadb
-    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>config/phpmyadmin<span class="token punctuation">:</span>/sessions
-    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> 8081<span class="token punctuation">:</span><span class="token number">80</span>
-    <span class="token comment">#restart: always</span>
-    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped
-    <span class="token key atrule">external_links</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> mariadb
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="qbittorrent" tabindex="-1"><a class="header-anchor" href="#qbittorrent"><span>qbittorrent</span></a></h5><div class="language-yaml line-numbers-mode" data-ext="yml" data-title="yml"><pre class="language-yaml"><code><span class="token punctuation">---</span>
-<span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span>
-<span class="token key atrule">services</span><span class="token punctuation">:</span>
-  <span class="token key atrule">qbittorrent</span><span class="token punctuation">:</span>
-    <span class="token comment"># image: linuxserver/qbittorrent:arm32v7-latest</span>
-    <span class="token key atrule">image</span><span class="token punctuation">:</span> ghcr.io/linuxserver/qbittorrent<span class="token punctuation">:</span>arm32v7<span class="token punctuation">-</span>latest
-    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> qbittorrent
-    <span class="token key atrule">environment</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> PUID=1000
-      <span class="token punctuation">-</span> PGID=1000
-      <span class="token punctuation">-</span> TZ=Europe/Madrid
-      <span class="token comment">#- UMASK_SET=022</span>
-      <span class="token punctuation">-</span> WEBUI_PORT=8112
-    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>config/qbittorrent<span class="token punctuation">:</span>/config
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/qbittorrent<span class="token punctuation">:</span>/downloads
-    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> 6881<span class="token punctuation">:</span><span class="token number">6881</span>
-      <span class="token punctuation">-</span> 6881<span class="token punctuation">:</span>6881/udp
-      <span class="token punctuation">-</span> 8112<span class="token punctuation">:</span><span class="token number">8112</span>
-    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="stackedit" tabindex="-1"><a class="header-anchor" href="#stackedit"><span>stackedit</span></a></h5><div class="language-yaml line-numbers-mode" data-ext="yml" data-title="yml"><pre class="language-yaml"><code><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span>
-<span class="token key atrule">services</span><span class="token punctuation">:</span>
-  <span class="token key atrule">stackedit</span><span class="token punctuation">:</span>
-    <span class="token key atrule">image</span><span class="token punctuation">:</span> jaidis/stackedit<span class="token punctuation">-</span>arm
-    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> stackedit
-    <span class="token key atrule">environment</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> LISTENING_PORT=8008
-      <span class="token punctuation">-</span> ROOT_URL=/
-      <span class="token punctuation">-</span> NODE_ENV=production
-      <span class="token punctuation">-</span> USER_BUCKET_NAME=stackedit<span class="token punctuation">-</span>users
-      <span class="token punctuation">-</span> PAYPAL_RECEIVER_EMAIL=
-      <span class="token punctuation">-</span> DROPBOX_APP_KEY=
-      <span class="token punctuation">-</span> DROPBOX_APP_KEY_FULL=
-      <span class="token punctuation">-</span> GITHUB_CLIENT_ID=
-      <span class="token punctuation">-</span> GITHUB_CLIENT_SECRET=
-      <span class="token punctuation">-</span> GOOGLE_CLIENT_ID=
-      <span class="token punctuation">-</span> GOOGLE_API_KEY=
-      <span class="token punctuation">-</span> WORDPRESS_CLIENT_ID=
-      <span class="token punctuation">-</span> PUID=1000
-      <span class="token punctuation">-</span> PGID=1000
-      <span class="token punctuation">-</span> TZ=Europe/Madrid
-    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> 8008<span class="token punctuation">:</span>8008/tcp
-    <span class="token key atrule">network_mode</span><span class="token punctuation">:</span> bridge
-    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="taisun" tabindex="-1"><a class="header-anchor" href="#taisun"><span>taisun</span></a></h5><div class="language-yaml line-numbers-mode" data-ext="yml" data-title="yml"><pre class="language-yaml"><code><span class="token punctuation">---</span>
-<span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span>
-<span class="token key atrule">services</span><span class="token punctuation">:</span>
-  <span class="token key atrule">taisun</span><span class="token punctuation">:</span>
-    <span class="token key atrule">image</span><span class="token punctuation">:</span> linuxserver/taisun
-    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> taisun
-    <span class="token key atrule">network_mode</span><span class="token punctuation">:</span> bridge
-    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> /var/run/docker.sock<span class="token punctuation">:</span>/var/run/docker.sock
-    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> 4000<span class="token punctuation">:</span><span class="token number">3000</span>
-    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="vscode" tabindex="-1"><a class="header-anchor" href="#vscode"><span>vscode</span></a></h5><div class="language-yaml line-numbers-mode" data-ext="yml" data-title="yml"><pre class="language-yaml"><code><span class="token punctuation">---</span>
-<span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span>
-<span class="token key atrule">services</span><span class="token punctuation">:</span>
-  <span class="token key atrule">code-server</span><span class="token punctuation">:</span>
-    <span class="token key atrule">image</span><span class="token punctuation">:</span> lscr.io/linuxserver/code<span class="token punctuation">-</span>server<span class="token punctuation">:</span>latest
-    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> code<span class="token punctuation">-</span>server
-    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> 8448<span class="token punctuation">:</span><span class="token number">8443</span>
-    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>config/vscode<span class="token punctuation">:</span>/config
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data<span class="token punctuation">:</span>/home/pi/docker
-    <span class="token key atrule">environment</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> PUID=1000
-      <span class="token punctuation">-</span> PGID=1000
-      <span class="token punctuation">-</span> TZ=Europe/Madrid
-      <span class="token punctuation">-</span> PASSWORD=$PASSWORD$
-      <span class="token punctuation">-</span> SUDO_PASSWORD=$PASSWORD$
-    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="wordpress" tabindex="-1"><a class="header-anchor" href="#wordpress"><span>wordpress</span></a></h5><div class="language-yaml line-numbers-mode" data-ext="yml" data-title="yml"><pre class="language-yaml"><code><span class="token punctuation">---</span>
-<span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span>
-<span class="token key atrule">services</span><span class="token punctuation">:</span>
-  <span class="token key atrule">wordpress</span><span class="token punctuation">:</span>
-    <span class="token key atrule">image</span><span class="token punctuation">:</span> wordpress<span class="token punctuation">:</span>latest
-    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> wordpress
-    <span class="token key atrule">environment</span><span class="token punctuation">:</span>
-      <span class="token key atrule">WORDPRESS_DB_HOST</span><span class="token punctuation">:</span> mariadb
-      <span class="token key atrule">WORDPRESS_DB_USER</span><span class="token punctuation">:</span> root
-      <span class="token key atrule">WORDPRESS_DB_PASSWORD</span><span class="token punctuation">:</span> $PASSWORD$
-      <span class="token key atrule">WORDPRESS_DB_NAME</span><span class="token punctuation">:</span> wp
-      <span class="token key atrule">PUID</span><span class="token punctuation">:</span> <span class="token number">1000</span>
-      <span class="token key atrule">PGID</span><span class="token punctuation">:</span> <span class="token number">1000</span>
-      <span class="token key atrule">TZ</span><span class="token punctuation">:</span> Europe/Madrid
-    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/wordpress<span class="token punctuation">:</span>/var/www/html
-    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> 8899<span class="token punctuation">:</span><span class="token number">80</span>
-    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped
-    <span class="token key atrule">external_links</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> mariadb
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="yayserver" tabindex="-1"><a class="header-anchor" href="#yayserver"><span>yayserver</span></a></h5><div class="language-yaml line-numbers-mode" data-ext="yml" data-title="yml"><pre class="language-yaml"><code><span class="token punctuation">---</span>
-<span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span>
-<span class="token key atrule">services</span><span class="token punctuation">:</span>
-  <span class="token key atrule">yayserver</span><span class="token punctuation">:</span>
-    <span class="token key atrule">image</span><span class="token punctuation">:</span> jaidis/php<span class="token punctuation">-</span>7.4.29<span class="token punctuation">-</span>apache2<span class="token punctuation">-</span>pdo<span class="token punctuation">-</span>mysqli<span class="token punctuation">:</span>bullseye<span class="token punctuation">-</span>arm64v8
-    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> yayserver
-    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/yayserver<span class="token punctuation">:</span>/var/www/html
-    <span class="token key atrule">environment</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> PUID=1000
-      <span class="token punctuation">-</span> PGID=1000
-      <span class="token punctuation">-</span> TZ=Europe/Madrid
-    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> 8900<span class="token punctuation">:</span><span class="token number">80</span>
-    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped
-    <span class="token key atrule">external_links</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> mariadb
-    <span class="token key atrule">networks</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> linked
-
-<span class="token key atrule">networks</span><span class="token punctuation">:</span>
-  <span class="token key atrule">linked</span><span class="token punctuation">:</span>
-    <span class="token key atrule">external</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div><!--[--><!--]--></div><footer class="vp-page-meta"><!----><div class="vp-meta-item git-info"><div class="vp-meta-item last-updated"><span class="meta-item-label">Last Updated: </span><!----></div><div class="vp-meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: manmunlop@gmail.com">Manuel Muñoz</span><!----><!--]--><!--]--></span></div></div></footer><!----><!--[--><!--]--></main><!--]--></div><!--[--><!----><!--]--><!--]--></div>
-    <script type="module" src="/assets/app-ig00oMQU.js" defer></script>
+    <div id="app"><!--[--><div class="vp-theme-container external-link-icon"><!--[--><header class="vp-navbar"><div class="vp-toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a class="route-link" href="/"><img class="vp-site-logo" src="https://vuejs.org/images/logo.png" alt="Notas"><span class="vp-site-name vp-hide-mobile" aria-hidden="true">Notas</span></a></span><div class="vp-navbar-items-wrapper" style=""><!--[--><!--]--><!----><!--[--><!--]--><button class="vp-toggle-color-mode-button" title="toggle color mode"><svg class="light-icon" viewbox="0 0 32 32" style=""><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg class="dark-icon" viewbox="0 0 32 32" style="display:none;"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="vp-sidebar-mask"></div><!--[--><aside class="vp-sidebar"><!----><!--[--><!--]--><ul class="vp-sidebar-items"><!--[--><li><p tabindex="0" class="vp-sidebar-item vp-sidebar-heading active">Notas <!----></p><ul style="" class="vp-sidebar-children"><!--[--><li><a class="route-link auto-link vp-sidebar-item" href="/FILES/ADB.html" aria-label="ADB"><!---->ADB<!----></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/FILES/BOOKMARKS-DEV.html" aria-label="Bookmarks, marcadores, favoritos,..."><!---->Bookmarks, marcadores, favoritos,...<!----></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/FILES/DESKTOP-FILES.html" aria-label="Desktop files (linux)"><!---->Desktop files (linux)<!----></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/FILES/DOCKER.html" aria-label="Docker"><!---->Docker<!----></a><!----></li><li><a class="route-link route-link-active auto-link vp-sidebar-item active" href="/FILES/DOCKER-COMPOSE.html" aria-label="Docker Compose"><!---->Docker Compose<!----></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/FILES/FLUTTER.html" aria-label="Flutter"><!---->Flutter<!----></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/FILES/FLUTTER-CODES.html" aria-label="Flutter Code Snippets"><!---->Flutter Code Snippets<!----></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/FILES/FLUTTER-LINKS.html" aria-label="Flutter Links"><!---->Flutter Links<!----></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/FILES/FLUTTER-PACKAGES.html" aria-label="Flutter Packages"><!---->Flutter Packages<!----></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/FILES/FSTAB.html" aria-label="FSTAB"><!---->FSTAB<!----></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/FILES/GIT.html" aria-label="Git"><!---->Git<!----></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/FILES/GITHUB-EMOJIS.html" aria-label="Github Emojis"><!---->Github Emojis<!----></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/FILES/GPG-SSH.html" aria-label="GPG"><!---->GPG<!----></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/FILES/GRUB.html" aria-label="Grub"><!---->Grub<!----></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/FILES/LEGO.html" aria-label="Lego"><!---->Lego<!----></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/FILES/LINUX.html" aria-label="Linux"><!---->Linux<!----></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/FILES/MACOS.html" aria-label="MACOS"><!---->MACOS<!----></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/FILES/OH-MY-ZSH.html" aria-label="Oh My ZSH!"><!---->Oh My ZSH!<!----></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/FILES/OTHERS.html" aria-label="Miscelánea"><!---->Miscelánea<!----></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/FILES/PI.html" aria-label="Raspberry Pi"><!---->Raspberry Pi<!----></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/FILES/PSP.html" aria-label="PSP"><!---->PSP<!----></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/FILES/PSVITA.html" aria-label="PSVITA"><!---->PSVITA<!----></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/FILES/RN.html" aria-label="React Native"><!---->React Native<!----></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/FILES/RN-LINKS.html" aria-label="React Native Links"><!---->React Native Links<!----></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/FILES/RN-PACKAGES.html" aria-label="React Native Packages"><!---->React Native Packages<!----></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/FILES/RTL8812AU.html" aria-label="TP-Link Archer T2U Plus"><!---->TP-Link Archer T2U Plus<!----></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/FILES/RTL8812BU.html" aria-label="TP-Link Archer T3U Plus"><!---->TP-Link Archer T3U Plus<!----></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/FILES/VSCODE.html" aria-label="Visual Studio Code"><!---->Visual Studio Code<!----></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/FILES/WINDOWS.html" aria-label="Windows"><!---->Windows<!----></a><!----></li><!--]--></ul></li><!--]--></ul><!--[--><!--]--></aside><!--]--><!--[--><main class="vp-page"><!--[--><!--]--><div class="theme-default-content"><!--[--><!--]--><div><h1 id="docker-compose" tabindex="-1"><a class="header-anchor" href="#docker-compose"><span>Docker Compose</span></a></h1><h2 id="container-templates-almost-all-raspberry-compatible" tabindex="-1"><a class="header-anchor" href="#container-templates-almost-all-raspberry-compatible"><span>Container templates (almost all raspberry compatible)</span></a></h2><h5 id="adguard" tabindex="-1"><a class="header-anchor" href="#adguard"><span>Adguard</span></a></h5><div class="language-yaml line-numbers-mode" data-highlighter="prismjs" data-ext="yml" data-title="yml"><pre><code><span class="line"><span class="token punctuation">---</span></span>
+<span class="line"><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span></span>
+<span class="line"><span class="token key atrule">services</span><span class="token punctuation">:</span></span>
+<span class="line">  <span class="token key atrule">adguardhome</span><span class="token punctuation">:</span></span>
+<span class="line">    <span class="token key atrule">image</span><span class="token punctuation">:</span> adguard/adguardhome<span class="token punctuation">:</span>armhf<span class="token punctuation">-</span>latest</span>
+<span class="line">    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> adguardhome</span>
+<span class="line">    <span class="token key atrule">network_mode</span><span class="token punctuation">:</span> bridge</span>
+<span class="line">    <span class="token key atrule">ports</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> 53<span class="token punctuation">:</span>53/tcp</span>
+<span class="line">      <span class="token punctuation">-</span> 53<span class="token punctuation">:</span>53/udp</span>
+<span class="line">      <span class="token punctuation">-</span> 67<span class="token punctuation">:</span>67/tcp</span>
+<span class="line">      <span class="token punctuation">-</span> 67<span class="token punctuation">:</span>67/udp</span>
+<span class="line">      <span class="token punctuation">-</span> 853<span class="token punctuation">:</span>853/tcp</span>
+<span class="line">      <span class="token punctuation">-</span> 3000<span class="token punctuation">:</span>3000/tcp</span>
+<span class="line">    <span class="token key atrule">volumes</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>config/adguardhome<span class="token punctuation">:</span>/opt/adguardhome/conf</span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/adguardhome<span class="token punctuation">:</span>/opt/adguardhome/work</span>
+<span class="line">    <span class="token key atrule">environment</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> PUID=1000</span>
+<span class="line">      <span class="token punctuation">-</span> PGID=1000</span>
+<span class="line">      <span class="token punctuation">-</span> TZ=Europe/Madrid</span>
+<span class="line">    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="dashmachine" tabindex="-1"><a class="header-anchor" href="#dashmachine"><span>dashmachine</span></a></h5><div class="language-yaml line-numbers-mode" data-highlighter="prismjs" data-ext="yml" data-title="yml"><pre><code><span class="line"><span class="token punctuation">---</span></span>
+<span class="line"><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span></span>
+<span class="line"><span class="token key atrule">services</span><span class="token punctuation">:</span></span>
+<span class="line">  <span class="token key atrule">adguardhome</span><span class="token punctuation">:</span></span>
+<span class="line">    <span class="token key atrule">image</span><span class="token punctuation">:</span> adguard/adguardhome<span class="token punctuation">:</span>armhf<span class="token punctuation">-</span>latest</span>
+<span class="line">    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> adguardhome</span>
+<span class="line">    <span class="token key atrule">network_mode</span><span class="token punctuation">:</span> bridge</span>
+<span class="line">    <span class="token key atrule">ports</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> 53<span class="token punctuation">:</span>53/tcp</span>
+<span class="line">      <span class="token punctuation">-</span> 53<span class="token punctuation">:</span>53/udp</span>
+<span class="line">      <span class="token punctuation">-</span> 67<span class="token punctuation">:</span>67/tcp</span>
+<span class="line">      <span class="token punctuation">-</span> 67<span class="token punctuation">:</span>67/udp</span>
+<span class="line">      <span class="token punctuation">-</span> 853<span class="token punctuation">:</span>853/tcp</span>
+<span class="line">      <span class="token punctuation">-</span> 3000<span class="token punctuation">:</span>3000/tcp</span>
+<span class="line">    <span class="token key atrule">volumes</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>config/adguardhome<span class="token punctuation">:</span>/opt/adguardhome/conf</span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/adguardhome<span class="token punctuation">:</span>/opt/adguardhome/work</span>
+<span class="line">    <span class="token key atrule">environment</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> PUID=1000</span>
+<span class="line">      <span class="token punctuation">-</span> PGID=1000</span>
+<span class="line">      <span class="token punctuation">-</span> TZ=Europe/Madrid</span>
+<span class="line">    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="deemix" tabindex="-1"><a class="header-anchor" href="#deemix"><span>deemix</span></a></h5><div class="language-yaml line-numbers-mode" data-highlighter="prismjs" data-ext="yml" data-title="yml"><pre><code><span class="line"><span class="token punctuation">---</span></span>
+<span class="line"><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span></span>
+<span class="line"><span class="token key atrule">services</span><span class="token punctuation">:</span></span>
+<span class="line">  <span class="token key atrule">adguardhome</span><span class="token punctuation">:</span></span>
+<span class="line">    <span class="token key atrule">image</span><span class="token punctuation">:</span> registry.gitlab.com/bockiii/deemix<span class="token punctuation">-</span>docker</span>
+<span class="line">    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> deemix</span>
+<span class="line">    <span class="token key atrule">network_mode</span><span class="token punctuation">:</span> bridge</span>
+<span class="line">    <span class="token key atrule">ports</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> 6595<span class="token punctuation">:</span>6595/tcp</span>
+<span class="line">    <span class="token key atrule">volumes</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>config/deemix<span class="token punctuation">:</span>/config</span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/deemix<span class="token punctuation">:</span>/downloads</span>
+<span class="line">    <span class="token key atrule">environment</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> PUID=1000</span>
+<span class="line">      <span class="token punctuation">-</span> PGID=1000</span>
+<span class="line">      <span class="token punctuation">-</span> TZ=Europe/Madrid</span>
+<span class="line">      <span class="token punctuation">-</span> UMASK_SET=022</span>
+<span class="line">      <span class="token punctuation">-</span> ARL=29c8ccd9c159a446d3715261fec17fd2c5cb63946342a678aa788023940ff9d2fc7e82ec55f176e60a5545bc997b712663e7e19a8f410d2e7fa282e67ced66ffb669d3bdc66bcae9cd457d3071a47aca9a79f35075808c9416669cc9ff71132e <span class="token comment">#Put your ARL cookie code here</span></span>
+<span class="line">    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="dillinger" tabindex="-1"><a class="header-anchor" href="#dillinger"><span>dillinger</span></a></h5><div class="language-yaml line-numbers-mode" data-highlighter="prismjs" data-ext="yml" data-title="yml"><pre><code><span class="line"><span class="token punctuation">---</span></span>
+<span class="line"><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span></span>
+<span class="line"><span class="token key atrule">services</span><span class="token punctuation">:</span></span>
+<span class="line">  <span class="token key atrule">dillinger</span><span class="token punctuation">:</span></span>
+<span class="line">    <span class="token key atrule">image</span><span class="token punctuation">:</span> linuxserver/dillinger<span class="token punctuation">:</span>arm32v7<span class="token punctuation">-</span>latest</span>
+<span class="line">    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> dillinger</span>
+<span class="line">    <span class="token key atrule">environment</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> PUID=1000</span>
+<span class="line">      <span class="token punctuation">-</span> PGID=1000</span>
+<span class="line">      <span class="token punctuation">-</span> TZ=Europe/Madrid</span>
+<span class="line">    <span class="token key atrule">volumes</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>config/dillinger<span class="token punctuation">:</span>/config</span>
+<span class="line">    <span class="token key atrule">ports</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> 8080<span class="token punctuation">:</span><span class="token number">8080</span></span>
+<span class="line">    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="filebrowser" tabindex="-1"><a class="header-anchor" href="#filebrowser"><span>FileBrowser</span></a></h5><div class="language-yaml line-numbers-mode" data-highlighter="prismjs" data-ext="yml" data-title="yml"><pre><code><span class="line"><span class="token punctuation">---</span></span>
+<span class="line"><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span></span>
+<span class="line"><span class="token key atrule">services</span><span class="token punctuation">:</span></span>
+<span class="line">  <span class="token key atrule">filebrowser</span><span class="token punctuation">:</span></span>
+<span class="line">    <span class="token comment"># image: filebrowser/filebrowser:v2.21.1-armv7</span></span>
+<span class="line">    <span class="token key atrule">image</span><span class="token punctuation">:</span> filebrowser/filebrowser<span class="token punctuation">:</span>v2.21.1<span class="token punctuation">-</span>arm64</span>
+<span class="line">    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> filebrowser</span>
+<span class="line">    <span class="token key atrule">volumes</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>config/filebrowser/database.db<span class="token punctuation">:</span>/database.db</span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi<span class="token punctuation">:</span>/srv</span>
+<span class="line">    <span class="token key atrule">environment</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> PUID=1000</span>
+<span class="line">      <span class="token punctuation">-</span> PGID=1000</span>
+<span class="line">      <span class="token punctuation">-</span> TZ=Europe/Madrid</span>
+<span class="line">    <span class="token key atrule">ports</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> 8888<span class="token punctuation">:</span><span class="token number">80</span></span>
+<span class="line">    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="gitea" tabindex="-1"><a class="header-anchor" href="#gitea"><span>gitea</span></a></h5><div class="language-yaml line-numbers-mode" data-highlighter="prismjs" data-ext="yml" data-title="yml"><pre><code><span class="line"><span class="token punctuation">---</span></span>
+<span class="line"><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span></span>
+<span class="line"><span class="token key atrule">services</span><span class="token punctuation">:</span></span>
+<span class="line">  <span class="token key atrule">codimd</span><span class="token punctuation">:</span></span>
+<span class="line">    <span class="token key atrule">image</span><span class="token punctuation">:</span> kunde21/gitea<span class="token punctuation">-</span>arm<span class="token punctuation">:</span>v1.14.2<span class="token punctuation">-</span>armv7</span>
+<span class="line">    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> gitea</span>
+<span class="line">    <span class="token key atrule">environment</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> TZ=Europe/Madrid</span>
+<span class="line">      <span class="token punctuation">-</span> PUID=1000</span>
+<span class="line">      <span class="token punctuation">-</span> PGID=1000</span>
+<span class="line">    <span class="token key atrule">volumes</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>config/gitea<span class="token punctuation">:</span>/data</span>
+<span class="line">    <span class="token key atrule">ports</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> 3333<span class="token punctuation">:</span><span class="token number">3000</span></span>
+<span class="line">      <span class="token punctuation">-</span> 3334<span class="token punctuation">:</span><span class="token number">22</span></span>
+<span class="line">    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="heimdall" tabindex="-1"><a class="header-anchor" href="#heimdall"><span>heimdall</span></a></h5><div class="language-yaml line-numbers-mode" data-highlighter="prismjs" data-ext="yml" data-title="yml"><pre><code><span class="line"><span class="token punctuation">---</span></span>
+<span class="line"><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span></span>
+<span class="line"><span class="token key atrule">services</span><span class="token punctuation">:</span></span>
+<span class="line">  <span class="token key atrule">heimdall</span><span class="token punctuation">:</span></span>
+<span class="line">    <span class="token key atrule">image</span><span class="token punctuation">:</span> linuxserver/heimdall</span>
+<span class="line">    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> heimdall</span>
+<span class="line">    <span class="token key atrule">environment</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> PUID=1000</span>
+<span class="line">      <span class="token punctuation">-</span> PGID=1000</span>
+<span class="line">      <span class="token punctuation">-</span> TZ=Europe/Madrid</span>
+<span class="line">    <span class="token key atrule">volumes</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>config/heimdall<span class="token punctuation">:</span>/config</span>
+<span class="line">    <span class="token key atrule">ports</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> 5005<span class="token punctuation">:</span><span class="token number">80</span></span>
+<span class="line">    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="jellyfin" tabindex="-1"><a class="header-anchor" href="#jellyfin"><span>Jellyfin</span></a></h5><div class="language-yaml line-numbers-mode" data-highlighter="prismjs" data-ext="yml" data-title="yml"><pre><code><span class="line"><span class="token punctuation">---</span></span>
+<span class="line"><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span></span>
+<span class="line"><span class="token key atrule">services</span><span class="token punctuation">:</span></span>
+<span class="line">  <span class="token key atrule">jellyfin</span><span class="token punctuation">:</span></span>
+<span class="line">    <span class="token comment"># image: linuxserver/jellyfin:arm32v7-bionic-10.6.4-1-ls3</span></span>
+<span class="line">    <span class="token comment"># image: linuxserver/jellyfin:arm32v7-bionic</span></span>
+<span class="line">    <span class="token comment"># image: ghcr.io/linuxserver/jellyfin:arm32v7-latest</span></span>
+<span class="line">    <span class="token key atrule">image</span><span class="token punctuation">:</span> ghcr.io/linuxserver/jellyfin<span class="token punctuation">:</span>arm64v8<span class="token punctuation">-</span>latest</span>
+<span class="line">    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> jellyfin</span>
+<span class="line">    <span class="token key atrule">environment</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> PUID=1000</span>
+<span class="line">      <span class="token punctuation">-</span> PGID=1000</span>
+<span class="line">      <span class="token punctuation">-</span> TZ=Europe/Madrid</span>
+<span class="line">      <span class="token comment">#- UMASK_SET=022 #optional</span></span>
+<span class="line">      <span class="token punctuation">-</span> UMASK=022 <span class="token comment">#optional</span></span>
+<span class="line">    <span class="token key atrule">volumes</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>config/jellyfin<span class="token punctuation">:</span>/config</span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/music/Classical<span class="token punctuation">:</span>/data/classical</span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/music/Chillout<span class="token punctuation">:</span>/data/chillout</span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/music/Electronic<span class="token punctuation">:</span>/data/electronic</span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/music/Funk<span class="token punctuation">:</span>/data/funk</span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/music/HipHop<span class="token punctuation">:</span>/data/hiphop</span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/music/Jazz<span class="token punctuation">:</span>/data/jazz</span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/music/Others<span class="token punctuation">:</span>/data/others</span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/music/Pop<span class="token punctuation">:</span>/data/pop</span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/music/Reggae<span class="token punctuation">:</span>/data/reggae</span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/music/Rock<span class="token punctuation">:</span>/data/rock</span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/music/Soul<span class="token punctuation">:</span>/data/soul</span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/music/Spanish<span class="token punctuation">:</span>/data/spanish</span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/music/Swing<span class="token punctuation">:</span>/data/swing</span>
+<span class="line">      <span class="token comment"># - /home/pi/docker-data/music/Playlists:/data/playlists</span></span>
+<span class="line">      <span class="token punctuation">-</span> /opt/vc/lib<span class="token punctuation">:</span>/opt/vc/lib</span>
+<span class="line">    <span class="token key atrule">ports</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> 8096<span class="token punctuation">:</span><span class="token number">8096</span></span>
+<span class="line">      <span class="token punctuation">-</span> 8920<span class="token punctuation">:</span><span class="token number">8920</span></span>
+<span class="line">    <span class="token comment">#devices:</span></span>
+<span class="line">    <span class="token comment">#  - /dev/vcsm:/dev/vcsm</span></span>
+<span class="line">    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="jsondiff" tabindex="-1"><a class="header-anchor" href="#jsondiff"><span>jsondiff</span></a></h5><div class="language-yaml line-numbers-mode" data-highlighter="prismjs" data-ext="yml" data-title="yml"><pre><code><span class="line"><span class="token punctuation">---</span></span>
+<span class="line"><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span></span>
+<span class="line"><span class="token key atrule">services</span><span class="token punctuation">:</span></span>
+<span class="line">  <span class="token key atrule">adguardhome</span><span class="token punctuation">:</span></span>
+<span class="line">    <span class="token key atrule">image</span><span class="token punctuation">:</span> jaidis/jsondiff<span class="token punctuation">-</span>arm</span>
+<span class="line">    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> jsondiff</span>
+<span class="line">    <span class="token key atrule">network_mode</span><span class="token punctuation">:</span> bridge</span>
+<span class="line">    <span class="token key atrule">ports</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> 8890<span class="token punctuation">:</span>80/tcp</span>
+<span class="line">    <span class="token key atrule">environment</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> PUID=1000</span>
+<span class="line">      <span class="token punctuation">-</span> PGID=1000</span>
+<span class="line">      <span class="token punctuation">-</span> TZ=Europe/Madrid</span>
+<span class="line">    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="lidarr" tabindex="-1"><a class="header-anchor" href="#lidarr"><span>lidarr</span></a></h5><div class="language-yaml line-numbers-mode" data-highlighter="prismjs" data-ext="yml" data-title="yml"><pre><code><span class="line"><span class="token punctuation">---</span></span>
+<span class="line"><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span></span>
+<span class="line"><span class="token key atrule">services</span><span class="token punctuation">:</span></span>
+<span class="line">  <span class="token key atrule">lidarr</span><span class="token punctuation">:</span></span>
+<span class="line">    <span class="token key atrule">image</span><span class="token punctuation">:</span> ghcr.io/linuxserver/lidarr<span class="token punctuation">:</span>arm32v7<span class="token punctuation">-</span>latest</span>
+<span class="line">    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> lidarr</span>
+<span class="line">    <span class="token key atrule">ports</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> 8686<span class="token punctuation">:</span><span class="token number">8686</span></span>
+<span class="line">    <span class="token key atrule">volumes</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>config/lidarr<span class="token punctuation">:</span>/config</span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/lidarr<span class="token punctuation">:</span>/music <span class="token comment">#optional</span></span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/lidarr<span class="token punctuation">:</span>/downloads <span class="token comment">#optional</span></span>
+<span class="line">    <span class="token key atrule">environment</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> PUID=1000</span>
+<span class="line">      <span class="token punctuation">-</span> PGID=1000</span>
+<span class="line">      <span class="token punctuation">-</span> TZ=Europe/Madrid</span>
+<span class="line">      <span class="token punctuation">-</span> UMASK=000 <span class="token comment">#optional</span></span>
+<span class="line">    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="mariadb" tabindex="-1"><a class="header-anchor" href="#mariadb"><span>mariadb</span></a></h5><div class="language-yaml line-numbers-mode" data-highlighter="prismjs" data-ext="yml" data-title="yml"><pre><code><span class="line"><span class="token punctuation">---</span></span>
+<span class="line"><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span></span>
+<span class="line"><span class="token key atrule">services</span><span class="token punctuation">:</span></span>
+<span class="line">  <span class="token key atrule">mariadb</span><span class="token punctuation">:</span></span>
+<span class="line">    <span class="token key atrule">image</span><span class="token punctuation">:</span> linuxserver/mariadb</span>
+<span class="line">    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> mariadb</span>
+<span class="line">    <span class="token key atrule">environment</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> PUID=1000</span>
+<span class="line">      <span class="token punctuation">-</span> PGID=1000</span>
+<span class="line">      <span class="token punctuation">-</span> TZ=Europe/Madrid</span>
+<span class="line">      <span class="token punctuation">-</span> MYSQL_ROOT_PASSWORD=$PASSWORD$</span>
+<span class="line">      <span class="token punctuation">-</span> MYSQL_USER=pi</span>
+<span class="line">      <span class="token punctuation">-</span> MYSQL_PASSWORD=$PASSWORD$</span>
+<span class="line">    <span class="token key atrule">volumes</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>config/mariadb<span class="token punctuation">:</span>/config</span>
+<span class="line">    <span class="token key atrule">ports</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> 3306<span class="token punctuation">:</span><span class="token number">3306</span></span>
+<span class="line">    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="netdata" tabindex="-1"><a class="header-anchor" href="#netdata"><span>netdata</span></a></h5><div class="language-yaml line-numbers-mode" data-highlighter="prismjs" data-ext="yml" data-title="yml"><pre><code><span class="line"><span class="token punctuation">---</span></span>
+<span class="line"><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span></span>
+<span class="line"><span class="token key atrule">services</span><span class="token punctuation">:</span></span>
+<span class="line">  <span class="token key atrule">netdata</span><span class="token punctuation">:</span></span>
+<span class="line">    <span class="token key atrule">image</span><span class="token punctuation">:</span> netdata/netdata</span>
+<span class="line">    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> netdata</span>
+<span class="line">    <span class="token key atrule">ports</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> 9001<span class="token punctuation">:</span><span class="token number">19999</span></span>
+<span class="line">    <span class="token key atrule">cap_add</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> SYS_PTRACE</span>
+<span class="line">    <span class="token key atrule">security_opt</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> apparmor<span class="token punctuation">:</span>unconfined</span>
+<span class="line">    <span class="token key atrule">volumes</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> /proc<span class="token punctuation">:</span>/host/proc<span class="token punctuation">:</span>ro</span>
+<span class="line">      <span class="token punctuation">-</span> /sys<span class="token punctuation">:</span>/host/sys<span class="token punctuation">:</span>ro</span>
+<span class="line">      <span class="token punctuation">-</span> /var/run/docker.sock<span class="token punctuation">:</span>/var/run/docker.sock<span class="token punctuation">:</span>ro</span>
+<span class="line">    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="phpmyadmin" tabindex="-1"><a class="header-anchor" href="#phpmyadmin"><span>phpmyadmin</span></a></h5><div class="language-yaml line-numbers-mode" data-highlighter="prismjs" data-ext="yml" data-title="yml"><pre><code><span class="line"><span class="token punctuation">---</span></span>
+<span class="line"><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span></span>
+<span class="line"><span class="token key atrule">services</span><span class="token punctuation">:</span></span>
+<span class="line">  <span class="token key atrule">phpmyadmin</span><span class="token punctuation">:</span></span>
+<span class="line">    <span class="token key atrule">image</span><span class="token punctuation">:</span> biarms/phpmyadmin</span>
+<span class="line">    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> phpmyadmin</span>
+<span class="line">    <span class="token key atrule">environment</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> PUID=1000</span>
+<span class="line">      <span class="token punctuation">-</span> PGID=1000</span>
+<span class="line">      <span class="token punctuation">-</span> TZ=Europe/Madrid</span>
+<span class="line">      <span class="token punctuation">-</span> PMA_ARBITRARY=1</span>
+<span class="line">      <span class="token punctuation">-</span> PMA_HOST=mariadb</span>
+<span class="line">    <span class="token key atrule">volumes</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>config/phpmyadmin<span class="token punctuation">:</span>/sessions</span>
+<span class="line">    <span class="token key atrule">ports</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> 8081<span class="token punctuation">:</span><span class="token number">80</span></span>
+<span class="line">    <span class="token comment">#restart: always</span></span>
+<span class="line">    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped</span>
+<span class="line">    <span class="token key atrule">external_links</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> mariadb</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="qbittorrent" tabindex="-1"><a class="header-anchor" href="#qbittorrent"><span>qbittorrent</span></a></h5><div class="language-yaml line-numbers-mode" data-highlighter="prismjs" data-ext="yml" data-title="yml"><pre><code><span class="line"><span class="token punctuation">---</span></span>
+<span class="line"><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span></span>
+<span class="line"><span class="token key atrule">services</span><span class="token punctuation">:</span></span>
+<span class="line">  <span class="token key atrule">qbittorrent</span><span class="token punctuation">:</span></span>
+<span class="line">    <span class="token comment"># image: linuxserver/qbittorrent:arm32v7-latest</span></span>
+<span class="line">    <span class="token key atrule">image</span><span class="token punctuation">:</span> ghcr.io/linuxserver/qbittorrent<span class="token punctuation">:</span>arm32v7<span class="token punctuation">-</span>latest</span>
+<span class="line">    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> qbittorrent</span>
+<span class="line">    <span class="token key atrule">environment</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> PUID=1000</span>
+<span class="line">      <span class="token punctuation">-</span> PGID=1000</span>
+<span class="line">      <span class="token punctuation">-</span> TZ=Europe/Madrid</span>
+<span class="line">      <span class="token comment">#- UMASK_SET=022</span></span>
+<span class="line">      <span class="token punctuation">-</span> WEBUI_PORT=8112</span>
+<span class="line">    <span class="token key atrule">volumes</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>config/qbittorrent<span class="token punctuation">:</span>/config</span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/qbittorrent<span class="token punctuation">:</span>/downloads</span>
+<span class="line">    <span class="token key atrule">ports</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> 6881<span class="token punctuation">:</span><span class="token number">6881</span></span>
+<span class="line">      <span class="token punctuation">-</span> 6881<span class="token punctuation">:</span>6881/udp</span>
+<span class="line">      <span class="token punctuation">-</span> 8112<span class="token punctuation">:</span><span class="token number">8112</span></span>
+<span class="line">    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="stackedit" tabindex="-1"><a class="header-anchor" href="#stackedit"><span>stackedit</span></a></h5><div class="language-yaml line-numbers-mode" data-highlighter="prismjs" data-ext="yml" data-title="yml"><pre><code><span class="line"><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span></span>
+<span class="line"><span class="token key atrule">services</span><span class="token punctuation">:</span></span>
+<span class="line">  <span class="token key atrule">stackedit</span><span class="token punctuation">:</span></span>
+<span class="line">    <span class="token key atrule">image</span><span class="token punctuation">:</span> jaidis/stackedit<span class="token punctuation">-</span>arm</span>
+<span class="line">    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> stackedit</span>
+<span class="line">    <span class="token key atrule">environment</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> LISTENING_PORT=8008</span>
+<span class="line">      <span class="token punctuation">-</span> ROOT_URL=/</span>
+<span class="line">      <span class="token punctuation">-</span> NODE_ENV=production</span>
+<span class="line">      <span class="token punctuation">-</span> USER_BUCKET_NAME=stackedit<span class="token punctuation">-</span>users</span>
+<span class="line">      <span class="token punctuation">-</span> PAYPAL_RECEIVER_EMAIL=</span>
+<span class="line">      <span class="token punctuation">-</span> DROPBOX_APP_KEY=</span>
+<span class="line">      <span class="token punctuation">-</span> DROPBOX_APP_KEY_FULL=</span>
+<span class="line">      <span class="token punctuation">-</span> GITHUB_CLIENT_ID=</span>
+<span class="line">      <span class="token punctuation">-</span> GITHUB_CLIENT_SECRET=</span>
+<span class="line">      <span class="token punctuation">-</span> GOOGLE_CLIENT_ID=</span>
+<span class="line">      <span class="token punctuation">-</span> GOOGLE_API_KEY=</span>
+<span class="line">      <span class="token punctuation">-</span> WORDPRESS_CLIENT_ID=</span>
+<span class="line">      <span class="token punctuation">-</span> PUID=1000</span>
+<span class="line">      <span class="token punctuation">-</span> PGID=1000</span>
+<span class="line">      <span class="token punctuation">-</span> TZ=Europe/Madrid</span>
+<span class="line">    <span class="token key atrule">ports</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> 8008<span class="token punctuation">:</span>8008/tcp</span>
+<span class="line">    <span class="token key atrule">network_mode</span><span class="token punctuation">:</span> bridge</span>
+<span class="line">    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="taisun" tabindex="-1"><a class="header-anchor" href="#taisun"><span>taisun</span></a></h5><div class="language-yaml line-numbers-mode" data-highlighter="prismjs" data-ext="yml" data-title="yml"><pre><code><span class="line"><span class="token punctuation">---</span></span>
+<span class="line"><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span></span>
+<span class="line"><span class="token key atrule">services</span><span class="token punctuation">:</span></span>
+<span class="line">  <span class="token key atrule">taisun</span><span class="token punctuation">:</span></span>
+<span class="line">    <span class="token key atrule">image</span><span class="token punctuation">:</span> linuxserver/taisun</span>
+<span class="line">    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> taisun</span>
+<span class="line">    <span class="token key atrule">network_mode</span><span class="token punctuation">:</span> bridge</span>
+<span class="line">    <span class="token key atrule">volumes</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> /var/run/docker.sock<span class="token punctuation">:</span>/var/run/docker.sock</span>
+<span class="line">    <span class="token key atrule">ports</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> 4000<span class="token punctuation">:</span><span class="token number">3000</span></span>
+<span class="line">    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="vscode" tabindex="-1"><a class="header-anchor" href="#vscode"><span>vscode</span></a></h5><div class="language-yaml line-numbers-mode" data-highlighter="prismjs" data-ext="yml" data-title="yml"><pre><code><span class="line"><span class="token punctuation">---</span></span>
+<span class="line"><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span></span>
+<span class="line"><span class="token key atrule">services</span><span class="token punctuation">:</span></span>
+<span class="line">  <span class="token key atrule">code-server</span><span class="token punctuation">:</span></span>
+<span class="line">    <span class="token key atrule">image</span><span class="token punctuation">:</span> lscr.io/linuxserver/code<span class="token punctuation">-</span>server<span class="token punctuation">:</span>latest</span>
+<span class="line">    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> code<span class="token punctuation">-</span>server</span>
+<span class="line">    <span class="token key atrule">ports</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> 8448<span class="token punctuation">:</span><span class="token number">8443</span></span>
+<span class="line">    <span class="token key atrule">volumes</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>config/vscode<span class="token punctuation">:</span>/config</span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data<span class="token punctuation">:</span>/home/pi/docker</span>
+<span class="line">    <span class="token key atrule">environment</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> PUID=1000</span>
+<span class="line">      <span class="token punctuation">-</span> PGID=1000</span>
+<span class="line">      <span class="token punctuation">-</span> TZ=Europe/Madrid</span>
+<span class="line">      <span class="token punctuation">-</span> PASSWORD=$PASSWORD$</span>
+<span class="line">      <span class="token punctuation">-</span> SUDO_PASSWORD=$PASSWORD$</span>
+<span class="line">    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="wordpress" tabindex="-1"><a class="header-anchor" href="#wordpress"><span>wordpress</span></a></h5><div class="language-yaml line-numbers-mode" data-highlighter="prismjs" data-ext="yml" data-title="yml"><pre><code><span class="line"><span class="token punctuation">---</span></span>
+<span class="line"><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span></span>
+<span class="line"><span class="token key atrule">services</span><span class="token punctuation">:</span></span>
+<span class="line">  <span class="token key atrule">wordpress</span><span class="token punctuation">:</span></span>
+<span class="line">    <span class="token key atrule">image</span><span class="token punctuation">:</span> wordpress<span class="token punctuation">:</span>latest</span>
+<span class="line">    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> wordpress</span>
+<span class="line">    <span class="token key atrule">environment</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token key atrule">WORDPRESS_DB_HOST</span><span class="token punctuation">:</span> mariadb</span>
+<span class="line">      <span class="token key atrule">WORDPRESS_DB_USER</span><span class="token punctuation">:</span> root</span>
+<span class="line">      <span class="token key atrule">WORDPRESS_DB_PASSWORD</span><span class="token punctuation">:</span> $PASSWORD$</span>
+<span class="line">      <span class="token key atrule">WORDPRESS_DB_NAME</span><span class="token punctuation">:</span> wp</span>
+<span class="line">      <span class="token key atrule">PUID</span><span class="token punctuation">:</span> <span class="token number">1000</span></span>
+<span class="line">      <span class="token key atrule">PGID</span><span class="token punctuation">:</span> <span class="token number">1000</span></span>
+<span class="line">      <span class="token key atrule">TZ</span><span class="token punctuation">:</span> Europe/Madrid</span>
+<span class="line">    <span class="token key atrule">volumes</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/wordpress<span class="token punctuation">:</span>/var/www/html</span>
+<span class="line">    <span class="token key atrule">ports</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> 8899<span class="token punctuation">:</span><span class="token number">80</span></span>
+<span class="line">    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped</span>
+<span class="line">    <span class="token key atrule">external_links</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> mariadb</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="yayserver" tabindex="-1"><a class="header-anchor" href="#yayserver"><span>yayserver</span></a></h5><div class="language-yaml line-numbers-mode" data-highlighter="prismjs" data-ext="yml" data-title="yml"><pre><code><span class="line"><span class="token punctuation">---</span></span>
+<span class="line"><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.0&quot;</span></span>
+<span class="line"><span class="token key atrule">services</span><span class="token punctuation">:</span></span>
+<span class="line">  <span class="token key atrule">yayserver</span><span class="token punctuation">:</span></span>
+<span class="line">    <span class="token key atrule">image</span><span class="token punctuation">:</span> jaidis/php<span class="token punctuation">-</span>7.4.29<span class="token punctuation">-</span>apache2<span class="token punctuation">-</span>pdo<span class="token punctuation">-</span>mysqli<span class="token punctuation">:</span>bullseye<span class="token punctuation">-</span>arm64v8</span>
+<span class="line">    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> yayserver</span>
+<span class="line">    <span class="token key atrule">volumes</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> /home/pi/docker<span class="token punctuation">-</span>data/yayserver<span class="token punctuation">:</span>/var/www/html</span>
+<span class="line">    <span class="token key atrule">environment</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> PUID=1000</span>
+<span class="line">      <span class="token punctuation">-</span> PGID=1000</span>
+<span class="line">      <span class="token punctuation">-</span> TZ=Europe/Madrid</span>
+<span class="line">    <span class="token key atrule">ports</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> 8900<span class="token punctuation">:</span><span class="token number">80</span></span>
+<span class="line">    <span class="token key atrule">restart</span><span class="token punctuation">:</span> unless<span class="token punctuation">-</span>stopped</span>
+<span class="line">    <span class="token key atrule">external_links</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> mariadb</span>
+<span class="line">    <span class="token key atrule">networks</span><span class="token punctuation">:</span></span>
+<span class="line">      <span class="token punctuation">-</span> linked</span>
+<span class="line"></span>
+<span class="line"><span class="token key atrule">networks</span><span class="token punctuation">:</span></span>
+<span class="line">  <span class="token key atrule">linked</span><span class="token punctuation">:</span></span>
+<span class="line">    <span class="token key atrule">external</span><span class="token punctuation">:</span> <span class="token boolean important">true</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div><!--[--><!--]--></div><footer class="vp-page-meta"><!----><div class="vp-meta-item git-info"><div class="vp-meta-item last-updated"><span class="meta-item-label">Last Updated: </span><!----></div><div class="vp-meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: manmunlop@gmail.com">Manuel Muñoz</span><!----><!--]--><!--]--></span></div></div></footer><nav class="vp-page-nav" aria-label="page navigation"><a class="route-link auto-link prev" href="/FILES/DOCKER.html" aria-label="Docker"><div class="hint"><span class="arrow left"></span> Prev</div><div class="link"><span>Docker</span></div></a><a class="route-link auto-link next" href="/FILES/FLUTTER.html" aria-label="Flutter"><div class="hint">Next <span class="arrow right"></span></div><div class="link"><span>Flutter</span></div></a></nav><!--[--><!--]--></main><!--]--></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/assets/app-BklVy-s1.js" defer></script>
   </body>
 </html>

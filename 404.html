@@ -3,14 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="generator" content="VuePress 2.0.0-rc.9" />
+    <meta name="generator" content="VuePress 2.0.0-rc.14" />
     <style>
       :root {
         --c-bg: #fff;
       }
+
       html.dark {
         --c-bg: #22272e;
       }
+
       html,
       body {
         background-color: var(--c-bg);
@@ -21,17 +23,21 @@
       const systemDarkMode =
         window.matchMedia &&
         window.matchMedia('(prefers-color-scheme: dark)').matches
-      if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+
+      if (userMode === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (userMode === 'dark' || systemDarkMode) {
         document.documentElement.classList.toggle('dark', true)
+        document.documentElement.dataset.theme = 'dark'
       }
     </script>
     <title>Notas</title><meta name="description" content="Documentación de todas mis notas para futuras consultas">
-    <link rel="preload" href="/assets/style-BqfQaEJH.css" as="style"><link rel="stylesheet" href="/assets/style-BqfQaEJH.css">
-    <link rel="modulepreload" href="/assets/app-ig00oMQU.js"><link rel="modulepreload" href="/assets/404.html-CvaQIcL3.js">
-    <link rel="prefetch" href="/assets/index.html-BgKVas_L.js" as="script"><link rel="prefetch" href="/assets/ADB.html-kl6a1if8.js" as="script"><link rel="prefetch" href="/assets/BOOKMARKS-DEV.html-ChH-VwhZ.js" as="script"><link rel="prefetch" href="/assets/BOOKMARKS.html-DxM9zD87.js" as="script"><link rel="prefetch" href="/assets/DESKTOP-FILES.html-Hb26k7aP.js" as="script"><link rel="prefetch" href="/assets/DOCKER-COMPOSE.html-DF4dBJVN.js" as="script"><link rel="prefetch" href="/assets/DOCKER.html-CMkp8ciN.js" as="script"><link rel="prefetch" href="/assets/FLUTTER-CODES.html-Yj2ivBSA.js" as="script"><link rel="prefetch" href="/assets/FLUTTER-LINKS.html-DTDCgUB1.js" as="script"><link rel="prefetch" href="/assets/FLUTTER-PACKAGES.html-C65Uqhp_.js" as="script"><link rel="prefetch" href="/assets/FLUTTER.html-D68hjW_C.js" as="script"><link rel="prefetch" href="/assets/FSTAB.html-np3azdu5.js" as="script"><link rel="prefetch" href="/assets/GIT.html-BisrweaX.js" as="script"><link rel="prefetch" href="/assets/GITHUB-EMOJIS.html-CGVuVV91.js" as="script"><link rel="prefetch" href="/assets/GPG-SSH.html-DpP3Sl6E.js" as="script"><link rel="prefetch" href="/assets/GRUB.html-BfIHUJCw.js" as="script"><link rel="prefetch" href="/assets/LEGO.html-D_vMRLab.js" as="script"><link rel="prefetch" href="/assets/LINUX.html-Cb_6yYRI.js" as="script"><link rel="prefetch" href="/assets/MACOS.html-CoRacfne.js" as="script"><link rel="prefetch" href="/assets/OH-MY-ZSH.html-Dvq29ULq.js" as="script"><link rel="prefetch" href="/assets/OTHERS.html-DP2JIEUH.js" as="script"><link rel="prefetch" href="/assets/PI.html-CXM-Wbsj.js" as="script"><link rel="prefetch" href="/assets/PSP.html-Cyf-sK-z.js" as="script"><link rel="prefetch" href="/assets/PSVITA.html-VSzFV_yq.js" as="script"><link rel="prefetch" href="/assets/RN-LINKS.html--0YRmXVY.js" as="script"><link rel="prefetch" href="/assets/RN-PACKAGES.html-ChGUwZXF.js" as="script"><link rel="prefetch" href="/assets/RN.html-CLyu6-YT.js" as="script"><link rel="prefetch" href="/assets/RTL8812AU.html-NCsoUnwN.js" as="script"><link rel="prefetch" href="/assets/RTL8812BU.html-Cncv83xm.js" as="script"><link rel="prefetch" href="/assets/VSCODE.html-q04CKnpv.js" as="script"><link rel="prefetch" href="/assets/WINDOWS.html-C1ydj1HO.js" as="script">
+    <link rel="preload" href="/assets/style-B79ZEWqG.css" as="style"><link rel="stylesheet" href="/assets/style-B79ZEWqG.css">
+    <link rel="modulepreload" href="/assets/app-BklVy-s1.js"><link rel="modulepreload" href="/assets/404.html-6Wj7-cH8.js">
+    <link rel="prefetch" href="/assets/index.html-CeypwfAB.js" as="script"><link rel="prefetch" href="/assets/ADB.html-Bo5QN1g6.js" as="script"><link rel="prefetch" href="/assets/BOOKMARKS-DEV.html-9MlCuIBI.js" as="script"><link rel="prefetch" href="/assets/BOOKMARKS.html-CIoQt9WQ.js" as="script"><link rel="prefetch" href="/assets/DESKTOP-FILES.html-DbBPIH3a.js" as="script"><link rel="prefetch" href="/assets/DOCKER-COMPOSE.html-CuFb6jk_.js" as="script"><link rel="prefetch" href="/assets/DOCKER.html-C576cipP.js" as="script"><link rel="prefetch" href="/assets/FLUTTER-CODES.html-BpnvJRnR.js" as="script"><link rel="prefetch" href="/assets/FLUTTER-LINKS.html-oCkwi2CR.js" as="script"><link rel="prefetch" href="/assets/FLUTTER-PACKAGES.html-BCy5PZ7k.js" as="script"><link rel="prefetch" href="/assets/FLUTTER.html-CMsutyvc.js" as="script"><link rel="prefetch" href="/assets/FSTAB.html-Bb5h_Uhm.js" as="script"><link rel="prefetch" href="/assets/GIT.html-BXwjIE7a.js" as="script"><link rel="prefetch" href="/assets/GITHUB-EMOJIS.html-aO3-T2j7.js" as="script"><link rel="prefetch" href="/assets/GPG-SSH.html-BqyXGffN.js" as="script"><link rel="prefetch" href="/assets/GRUB.html-BzQc_igY.js" as="script"><link rel="prefetch" href="/assets/LEGO.html-bBG2Mi4v.js" as="script"><link rel="prefetch" href="/assets/LINUX.html-kXuLlDPF.js" as="script"><link rel="prefetch" href="/assets/MACOS.html-BWRYDmKw.js" as="script"><link rel="prefetch" href="/assets/OH-MY-ZSH.html-DbbYN8kB.js" as="script"><link rel="prefetch" href="/assets/OTHERS.html-CSYsItv4.js" as="script"><link rel="prefetch" href="/assets/PI.html-B3uyqMev.js" as="script"><link rel="prefetch" href="/assets/PSP.html-DJ3iDlAH.js" as="script"><link rel="prefetch" href="/assets/PSVITA.html-D2-W46g2.js" as="script"><link rel="prefetch" href="/assets/RN-LINKS.html-Bmgc4uTw.js" as="script"><link rel="prefetch" href="/assets/RN-PACKAGES.html-Cm5Yead4.js" as="script"><link rel="prefetch" href="/assets/RN.html-CLFnFoGd.js" as="script"><link rel="prefetch" href="/assets/RTL8812AU.html-CuwNxDjn.js" as="script"><link rel="prefetch" href="/assets/RTL8812BU.html-CyDVp04n.js" as="script"><link rel="prefetch" href="/assets/VSCODE.html-Dr7N-m6G.js" as="script"><link rel="prefetch" href="/assets/WINDOWS.html-DdP5qedW.js" as="script">
   </head>
   <body>
-    <div id="app"><!--[--><div class="theme-container"><main class="page"><div class="theme-default-content"><h1>404</h1><blockquote>Looks like we&#39;ve got some broken links.</blockquote><a class="route-link" href="/">Take me home</a></div></main></div><!--[--><!----><!--]--><!--]--></div>
-    <script type="module" src="/assets/app-ig00oMQU.js" defer></script>
+    <div id="app"><!--[--><div class="vp-theme-container" data-v-303656ba><main class="page" data-v-303656ba><div class="theme-default-content" data-v-303656ba><h1 data-v-303656ba>404</h1><blockquote data-v-303656ba>How did we get here?</blockquote><a class="route-link" href="/" data-v-303656ba>Take me home</a></div></main></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/assets/app-BklVy-s1.js" defer></script>
   </body>
 </html>
