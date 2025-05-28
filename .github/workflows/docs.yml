@@ -31,6 +31,7 @@ jobs:
           node-version: 22
           # cache deps for pnpm
           cache: pnpm
+          cache-dependency-path: "**/package-lock.json"
 
       - name: Install deps
         run: pnpm install --frozen-lockfile
