@@ -9,6 +9,7 @@
 - [Linse ](https://rebrickable.com/users/Linse/mocs/)
 - [NV Carmocs](https://rebrickable.com/users/NV%20Carmocs/mocs/)
 - [owstin](https://rebrickable.com/users/owstin/mocs/)
+- [phigeon ](https://rebrickable.com/users/phigeon/mocs/)
 - [PierreBrunsvig ](https://rebrickable.com/users/pierrebrunsvig/mocs/)
 - [Pistatsia ](https://rebrickable.com/users/pistatsia/mocs/)
 - [RollingBricks ](https://rebrickable.com/users/rollingbricks/mocs/)
@@ -18,6 +19,7 @@
 
 ## MOCs
 
+- [10242 Mini half trailer ](https://rebrickable.com/mocs/MOC-191313/jameshigson0512/10242-mini-half-trailer/)
 - [10262 Hot Rod Pickup ](https://rebrickable.com/mocs/MOC-58183/Kirvet/10262-hot-rod-pickup/)
 - [10265 Ford Mustang Shelby GT500 / CR / GT / Bullitt 1967-68 Multipack ](https://rebrickable.com/mocs/MOC-109403/NikolayFX/ford-mustang-shelby-gt500-cr-gt-bullitt-1967-68-multipack/)
 - [10271 MG MGB ](https://rebrickable.com/mocs/MOC-98534/Roy%20vd%20M./10271-mg-mgb/)

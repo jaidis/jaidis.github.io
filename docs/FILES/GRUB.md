@@ -25,6 +25,19 @@ menuentry '$LABEL' \$menuentry_id_option 'uefi-firmware' {
 }
 ```
 
+## Arranque básico
+
+A continuación se muestra la configuración mínima para hacer funcionar Grub, ya sólo queda ir añadiendo las entradas que queramos
+
+```bash
+set default="0"
+set timeout=10
+terminal_input console
+terminal_output gfxterm
+set menu_color_normal=white/black
+set menu_color_highlight=black/light-gray
+```
+
 ## Batocera
 
 Es necesario crear 2 particiones consecutivas
@@ -45,13 +58,11 @@ sudo chmod a+x /​etc/​grub.d/​15_batocera
 ```bash
 #! /bin/sh
 
-BATOCERA_UUID=$(lsblk --fs --noheadings --pairs -o TYPE,LABEL,UUID |
-		       grep -E '^TYPE="part" LABEL="BATOCERA" UUID="[^"]*"$' |
-		       sed -e s+'^TYPE="part" LABEL="BATOCERA" UUID="\([^"]*\)"$'+'\1'+ | head -1)
+BATOCERA_UUID=$(lsblk --fs --noheadings --pairs -o TYPE,LABEL,UUID | grep -E '^TYPE="part" LABEL="BATOCERA" UUID="[^"]*"$' | sed -e s+'^TYPE="part" LABEL="BATOCERA" UUID="\([^"]*\)"$'+'\1'+ | head -1)
 
 if test -n "${BATOCERA_UUID}"
 then
-    echo "Batocera v32 x86_64 Bits" >&2
+    echo "Batocera v40 x86_64 Bits" >&2
 
     cat <<EOF
 menuentry "batocera.linux" {
@@ -97,6 +108,26 @@ menuentry "LibreElec" {
 }
 ```
 
+Si usamos un sistema de partición basado en GPT + NVMe, tenemos que utilizar la siguiente configuración
+
+```bash
+menuentry "LibreElec" {
+	set root=(hd0,gpt4)
+	linux /KERNEL KERNEL boot=/dev/nvme0n1p4 disk=/dev/nvme0n1p5 quiet nosplash
+}
+```
+
+## Windows
+
+Para cualquier Windows que tengamos instalado podemos usar el siguiente archivo de configuración
+
+```bash
+menuentry "Windows 10" --class windows --class os {
+    insmod ntfs
+    search --no-floppy --set=root --fs-uuid <YOUR UUID>
+    ntldr /bootmgr
+```
+
 ## Android (BlissOS)
 
 Es necesario crear 1 particion
@@ -107,6 +138,7 @@ Es necesario crear 1 particion
 
 ```bash
 menuentry "BlissOS v16 AG13 2024-02-20" {
+    #search —file —no-floppy —fs-uuid —set=root "c222b1cc-44d3-45bd-8a92-4b20b8b31778"
     set SOURCE_NAME="2024-02-20"
     search --set=root --file /$SOURCE_NAME/kernel
     linux /$SOURCE_NAME/kernel FFMPEG_CODEC=1 FFMPEG_PREFER_C2=1 quiet root=/dev/ram0 SRC=/$SOURCE_NAME

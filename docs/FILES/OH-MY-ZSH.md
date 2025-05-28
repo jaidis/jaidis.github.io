@@ -46,6 +46,9 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # FLUTTER PATH
 export FLUTTER_HOME=$HOME/Library/FlutterSDK
 export PATH=$PATH:$FLUTTER_HOME/bin
+
+export MANPAGER='sh -c "col -bx | batcat -l man -p"'
+export MANROFFOPT="-c";
 ```
 
 ## Plugins

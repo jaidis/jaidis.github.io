@@ -92,15 +92,18 @@
 - [Unsplash's MacOS Desktop Wallpapers ](https://unsplash.com/collections/220388/macos-desktop-wallpapers)
 - [Unsplash's Phone Wallpapers ](https://unsplash.com/collections/343012/phone-wallpapers)
 
-### Juegos :information_source: (info, cracks, tiendas,...)
+### Juegos :information_source: (info, cracks, tiendas, db...)
 
 - [cdkeys ](https://www.cdkeys.com/xbox-live/memberships/ea-access-12-month-subscription)
 - [crackwatch ](https://crackwatch.com/)
 - [eneba ](https://www.eneba.com/es/xbox-xbox-game-pass-ultimate-7-days-subscription-xbox-one-windows-10-xbox-live-key-global)
 - [gamecopyworld ](https://www.gamecopyworld.com/)
 - [gamestracker ](https://www.gamestracker.com/)
+- [gogdb ](https://www.gogdb.org/)
 - [isthereanydeal ](https://isthereanydeal.com/)
 - [instant-gaming ](https://www.instant-gaming.com/en/games/xbox-game-pass-subscription/)
+- [PCGamingWiki ](https://www.pcgamingwiki.com/wiki/Home)
+- [SteamGridDB ](https://www.steamgriddb.com/)
 - [vidaplayer ](https://www.vidaplayer.com/)
 - [yambalu ](https://www.yambalu.com/)
 
@@ -289,10 +292,12 @@
 - [alwaysdomain01.online ](https://alwaysdomain01.online/cobo.html?id=DAZN_1_ES)
 - [:x: burnoutf1 ](https://burnoutf1.com/)
 - [:x: danix1610 ](https://danix1610.com/player.php?id=DAZN_1_ES)
+- [DazcFutbolios ](https://re.dazcfutbolios.xyz/)
 - [deporte-libre ](https://deporte-libre.top/en-vivo-online/dazn-1-es/embed.php)
 - [f1box.me ](https://f1box.me/dazn-formula-1-dazn-f1-live/stream-1)
 - [futbol.nu ](https://ar.futbol.nu/)
-- [flipax.es ](https://jepsikuydo5.foroactivo.com/h1-agenda)
+- [flipax.es - DAZN 1](https://gorkinimli.foroactivo.com/h15-dazn-1-es)
+- [flipax.es - DAZN 2](https://gorkinimli.foroactivo.com/h16-dazn-2-es)
 - [gvelox ](https://web.gvelox.top/canales/)
 - [mazespin.live ](https://mazespin.live/streams/motogp)
 - [motogpstream ](https://motogpstream.me/)
@@ -305,6 +310,7 @@
 - [telerium.me ](https://telerium.me/)
 - [totalsportek ](https://www.totalsportek.com/)
 - [tudeportetvhd ](https://tudeportetvhd.com/soprano.html?id=DAZN_1_ES)
+- [tucanaldeportivo ](https://tucanaldeportivo.org/dazn1.php)
 
 ### Streaming :movie_camera: Peliculas, series,...
 
@@ -381,7 +387,10 @@
 #### Info, sites, wiki...
 
 - [Champagne.dev wiki ](https://champagne.pages.dev/)
-- [Firehawk52 Guide - Saving Digital Legacy](https://rentry.org/firehawk52)
+- [Firehawk52 Guide ](https://rentry.org/firehawk52) - Saving Digital Legacy
+- [FMHY](https://fmhy.net/) - The largest collection of free stuff on the internet!
+- [Pirated Games Mega Thread](https://rentry.org/pgames)
+- [Ripped | #KeepSeeding](https://ripped.guide/)
 
 #### Descargas
 

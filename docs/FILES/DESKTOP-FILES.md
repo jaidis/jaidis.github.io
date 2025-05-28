@@ -55,6 +55,33 @@ Keywords=Player;Audio;Server;Broadcast;
 
 </details>
 
+### Flameshot
+
+**Archivo de configuración para que aparecezca en el submenú de "Accesorios".**
+
+Ruta del archivo
+
+```bash
+sudo xed /usr/share/applications/flameshot.desktop
+```
+
+<details>
+  <summary>Mostrar</summary>
+
+```bash
+[Desktop Entry]
+Name=Flameshot
+Exec="/opt/Flameshot/Flameshot.AppImage"
+Icon=/opt/Flameshot/icon.svg
+Type=Application
+Categories=GTK;GNOME;Utility;X-GNOME-Utilities;
+StartupNotify=true
+Keywords=snapshot;capture;print;screenshot;
+Comment=Start Flameshot
+```
+
+</details>
+
 ### Google Chrome
 
 **Archivo de configuración para evitar escribir en la cache del pc.**
@@ -104,6 +131,98 @@ Exec=/usr/bin/google-chrome-stable --incognito --disk-cache-dir=/dev/null
 
 </details>
 
+### LibreWolf
+
+**Archivo de configuración para que aparecezca en el submenú de "Internet".**
+
+Ruta del archivo
+
+```bash
+sudo xed /usr/share/applications/librewolf.desktop
+```
+
+<details>
+  <summary>Mostrar</summary>
+
+```bash
+[Desktop Entry]
+Name=LibreWolf
+Name[es]=LibreWolf
+Comment=Browse the World Wide Web
+Comment[es]=Navegue por la web
+GenericName=Web Browser
+GenericName[es]=Navegador web
+X-GNOME-FullName=LibreWolf Web Browser
+X-GNOME-FullName[es]=Navegador web LibreWolf
+Exec=/opt/LibreWolf/LibreWolf.x86_64.AppImage
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=librewolf
+Categories=Network;WebBrowser;
+MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/vnd.mozilla.xul+xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;
+StartupWMClass=librewolf
+StartupNotify=true
+```
+
+</details>
+
+### Lossless Cut
+
+**Archivo de configuración para que aparecezca en el submenú de "Sonido y video".**
+
+Ruta del archivo
+
+```bash
+sudo xed /usr/share/applications/losslesscut.desktop
+```
+
+<details>
+  <summary>Mostrar</summary>
+
+```bash
+[Desktop Entry]
+Name=Lossless Cut
+Exec="/opt/LosslessCut/LosslessCut-linux-x86_64.AppImage"
+Icon=/opt/LosslessCut/icon.svg
+Type=Application
+Categories=GTK;GNOME;AudioVideo;Player;Video;TV;
+StartupNotify=true
+Keywords=Video;Movie;Film;Clip;Series;Player;DVD;TV;Disc;Album;Music;GNOME;mpv;
+Comment=Start Lossless Cut
+Comment[ru_RU]=Запустить Lossless Cut
+```
+
+</details>
+
+### Mission Center
+
+**Archivo de configuración para que aparecezca en el submenú de "Administración".**
+
+Ruta del archivo
+
+```bash
+sudo xed /usr/share/applications/missioncenter.desktop
+```
+
+<details>
+  <summary>Mostrar</summary>
+
+```bash
+[Desktop Entry]
+Name=Mission Center
+Exec="/opt/MissionCenter/MissionCenter.AppImage"
+Icon=/opt/MissionCenter/icon.svg
+Type=Application
+Categories=System;Monitor;
+StartupNotify=true
+Keywords=Monitor;System;Process;CPU;Memory;Network;History;Usage;
+Comment=Start Mission Center
+Comment[ru_RU]=Запустить Mission Center
+```
+
+</details>
+
 ### Postman
 
 **Archivo de configuración para que aparecezca en el submenú de programación/desarrollo**
@@ -128,6 +247,47 @@ Categories=Development
 Type=Application
 Terminal=false
 Name[es_ES]=Postman
+```
+
+</details>
+
+### qBittorrent
+
+**Archivo de configuración para que aparecezca en el submenú de "Internet".**
+
+Ruta del archivo
+
+```bash
+sudo xed /usr/share/applications/org.qbittorrent.qBittorrent.5.x.x.desktop
+```
+
+<details>
+  <summary>Mostrar</summary>
+
+```bash
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Categories=Network;FileTransfer;P2P;Qt;
+Exec=/opt/qbittorrent/qbittorrent_x86_64.AppImage %U
+GenericName=BitTorrent client
+Comment=Download and share files over BitTorrent
+Icon=qbittorrent
+MimeType=application/x-bittorrent;x-scheme-handler/magnet;
+Name=qBittorrent
+Terminal=false
+Type=Application
+StartupNotify=false
+StartupWMClass=qbittorrent
+Keywords=bittorrent;torrent;magnet;download;p2p;
+SingleMainWindow=true
+
+# Translations
+GenericName[en_GB]=BitTorrent client
+Comment[en_GB]=Download and share files over BitTorrent
+Name[en_GB]=qBittorrent
+GenericName[es]=Cliente BitTorrent
+Comment[es]=Descargue y comparta archivos por BitTorrent
+Name[es]=qBittorrent 5.x.x
 ```
 
 </details>
