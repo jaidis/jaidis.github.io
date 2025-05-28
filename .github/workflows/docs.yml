@@ -34,7 +34,7 @@ jobs:
           cache-dependency-path: "**/package-lock.json"
 
       - name: Install deps
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --no-frozen-lockfile
 
       # run build script
       - name: Build VuePress site
